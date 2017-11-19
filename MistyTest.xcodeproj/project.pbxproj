@@ -1,0 +1,548 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */; };
+		F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342AAE1FC1E32F0018FC78 /* ViewController.swift */; };
+		F9342AB11FC1E32F0018FC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9342AB01FC1E32F0018FC78 /* Assets.xcassets */; };
+		F9342AB41FC1E32F0018FC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9342AB21FC1E32F0018FC78 /* Main.storyboard */; };
+		F9342AC01FC1E32F0018FC78 /* MistyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342ABF1FC1E32F0018FC78 /* MistyTestTests.swift */; };
+		F9342ACB1FC1E32F0018FC78 /* MistyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342ACA1FC1E32F0018FC78 /* MistyTestUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9342ABC1FC1E32F0018FC78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9342AA11FC1E32F0018FC78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9342AA81FC1E32F0018FC78;
+			remoteInfo = MistyTest;
+		};
+		F9342AC71FC1E32F0018FC78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9342AA11FC1E32F0018FC78 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9342AA81FC1E32F0018FC78;
+			remoteInfo = MistyTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F9342AA91FC1E32F0018FC78 /* MistyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MistyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F9342AAE1FC1E32F0018FC78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9342AB01FC1E32F0018FC78 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9342AB31FC1E32F0018FC78 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F9342AB51FC1E32F0018FC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9342AB61FC1E32F0018FC78 /* MistyTest.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MistyTest.entitlements; sourceTree = "<group>"; };
+		F9342ABB1FC1E32F0018FC78 /* MistyTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MistyTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9342ABF1FC1E32F0018FC78 /* MistyTestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistyTestTests.swift; sourceTree = "<group>"; };
+		F9342AC11FC1E32F0018FC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9342AC61FC1E32F0018FC78 /* MistyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MistyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9342ACA1FC1E32F0018FC78 /* MistyTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistyTestUITests.swift; sourceTree = "<group>"; };
+		F9342ACC1FC1E32F0018FC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9342AA61FC1E32F0018FC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9342AB81FC1E32F0018FC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9342AC31FC1E32F0018FC78 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F9342AA01FC1E32F0018FC78 = {
+			isa = PBXGroup;
+			children = (
+				F9342AAB1FC1E32F0018FC78 /* MistyTest */,
+				F9342ABE1FC1E32F0018FC78 /* MistyTestTests */,
+				F9342AC91FC1E32F0018FC78 /* MistyTestUITests */,
+				F9342AAA1FC1E32F0018FC78 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F9342AAA1FC1E32F0018FC78 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9342AA91FC1E32F0018FC78 /* MistyTest.app */,
+				F9342ABB1FC1E32F0018FC78 /* MistyTestTests.xctest */,
+				F9342AC61FC1E32F0018FC78 /* MistyTestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9342AAB1FC1E32F0018FC78 /* MistyTest */ = {
+			isa = PBXGroup;
+			children = (
+				F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */,
+				F9342AAE1FC1E32F0018FC78 /* ViewController.swift */,
+				F9342AB01FC1E32F0018FC78 /* Assets.xcassets */,
+				F9342AB21FC1E32F0018FC78 /* Main.storyboard */,
+				F9342AB51FC1E32F0018FC78 /* Info.plist */,
+				F9342AB61FC1E32F0018FC78 /* MistyTest.entitlements */,
+			);
+			path = MistyTest;
+			sourceTree = "<group>";
+		};
+		F9342ABE1FC1E32F0018FC78 /* MistyTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9342ABF1FC1E32F0018FC78 /* MistyTestTests.swift */,
+				F9342AC11FC1E32F0018FC78 /* Info.plist */,
+			);
+			path = MistyTestTests;
+			sourceTree = "<group>";
+		};
+		F9342AC91FC1E32F0018FC78 /* MistyTestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9342ACA1FC1E32F0018FC78 /* MistyTestUITests.swift */,
+				F9342ACC1FC1E32F0018FC78 /* Info.plist */,
+			);
+			path = MistyTestUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9342AA81FC1E32F0018FC78 /* MistyTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9342ACF1FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTest" */;
+			buildPhases = (
+				F9342AA51FC1E32F0018FC78 /* Sources */,
+				F9342AA61FC1E32F0018FC78 /* Frameworks */,
+				F9342AA71FC1E32F0018FC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MistyTest;
+			productName = MistyTest;
+			productReference = F9342AA91FC1E32F0018FC78 /* MistyTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9342ABA1FC1E32F0018FC78 /* MistyTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9342AD21FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTestTests" */;
+			buildPhases = (
+				F9342AB71FC1E32F0018FC78 /* Sources */,
+				F9342AB81FC1E32F0018FC78 /* Frameworks */,
+				F9342AB91FC1E32F0018FC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9342ABD1FC1E32F0018FC78 /* PBXTargetDependency */,
+			);
+			name = MistyTestTests;
+			productName = MistyTestTests;
+			productReference = F9342ABB1FC1E32F0018FC78 /* MistyTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9342AC51FC1E32F0018FC78 /* MistyTestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9342AD51FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTestUITests" */;
+			buildPhases = (
+				F9342AC21FC1E32F0018FC78 /* Sources */,
+				F9342AC31FC1E32F0018FC78 /* Frameworks */,
+				F9342AC41FC1E32F0018FC78 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9342AC81FC1E32F0018FC78 /* PBXTargetDependency */,
+			);
+			name = MistyTestUITests;
+			productName = MistyTestUITests;
+			productReference = F9342AC61FC1E32F0018FC78 /* MistyTestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9342AA11FC1E32F0018FC78 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "Mona Holtmann";
+				TargetAttributes = {
+					F9342AA81FC1E32F0018FC78 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					F9342ABA1FC1E32F0018FC78 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9342AA81FC1E32F0018FC78;
+					};
+					F9342AC51FC1E32F0018FC78 = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = F9342AA81FC1E32F0018FC78;
+					};
+				};
+			};
+			buildConfigurationList = F9342AA41FC1E32F0018FC78 /* Build configuration list for PBXProject "MistyTest" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9342AA01FC1E32F0018FC78;
+			productRefGroup = F9342AAA1FC1E32F0018FC78 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9342AA81FC1E32F0018FC78 /* MistyTest */,
+				F9342ABA1FC1E32F0018FC78 /* MistyTestTests */,
+				F9342AC51FC1E32F0018FC78 /* MistyTestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9342AA71FC1E32F0018FC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9342AB11FC1E32F0018FC78 /* Assets.xcassets in Resources */,
+				F9342AB41FC1E32F0018FC78 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9342AB91FC1E32F0018FC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9342AC41FC1E32F0018FC78 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9342AA51FC1E32F0018FC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */,
+				F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9342AB71FC1E32F0018FC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9342AC01FC1E32F0018FC78 /* MistyTestTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9342AC21FC1E32F0018FC78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9342ACB1FC1E32F0018FC78 /* MistyTestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9342ABD1FC1E32F0018FC78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9342AA81FC1E32F0018FC78 /* MistyTest */;
+			targetProxy = F9342ABC1FC1E32F0018FC78 /* PBXContainerItemProxy */;
+		};
+		F9342AC81FC1E32F0018FC78 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9342AA81FC1E32F0018FC78 /* MistyTest */;
+			targetProxy = F9342AC71FC1E32F0018FC78 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F9342AB21FC1E32F0018FC78 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F9342AB31FC1E32F0018FC78 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F9342ACD1FC1E32F0018FC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9342ACE1FC1E32F0018FC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		F9342AD01FC1E32F0018FC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MistyTest/MistyTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MistyTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = misty.MistyTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		F9342AD11FC1E32F0018FC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = MistyTest/MistyTest.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MistyTest/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = misty.MistyTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		F9342AD31FC1E32F0018FC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MistyTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = misty.MistyTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MistyTest.app/Contents/MacOS/MistyTest";
+			};
+			name = Debug;
+		};
+		F9342AD41FC1E32F0018FC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MistyTestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = misty.MistyTestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MistyTest.app/Contents/MacOS/MistyTest";
+			};
+			name = Release;
+		};
+		F9342AD61FC1E32F0018FC78 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MistyTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = misty.MistyTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = MistyTest;
+			};
+			name = Debug;
+		};
+		F9342AD71FC1E32F0018FC78 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = MistyTestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = misty.MistyTestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = MistyTest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9342AA41FC1E32F0018FC78 /* Build configuration list for PBXProject "MistyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9342ACD1FC1E32F0018FC78 /* Debug */,
+				F9342ACE1FC1E32F0018FC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9342ACF1FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9342AD01FC1E32F0018FC78 /* Debug */,
+				F9342AD11FC1E32F0018FC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9342AD21FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9342AD31FC1E32F0018FC78 /* Debug */,
+				F9342AD41FC1E32F0018FC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9342AD51FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9342AD61FC1E32F0018FC78 /* Debug */,
+				F9342AD71FC1E32F0018FC78 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9342AA11FC1E32F0018FC78 /* Project object */;
+}
