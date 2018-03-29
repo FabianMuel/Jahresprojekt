@@ -7,12 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		002106AF202DE04600AFD7B1 /* Karsch_beg.wav in Resources */ = {isa = PBXBuildFile; fileRef = 002106AE202DE04600AFD7B1 /* Karsch_beg.wav */; };
+		006787FC1FC9C5D30015AD81 /* gleimlek.wav in Resources */ = {isa = PBXBuildFile; fileRef = 006787FB1FC9C5D30015AD81 /* gleimlek.wav */; };
+		006787FE1FC9C7E00015AD81 /* ramlerport.wav in Resources */ = {isa = PBXBuildFile; fileRef = 006787FD1FC9C7E00015AD81 /* ramlerport.wav */; };
+		009A9C4F1FDAAF7800E6C0E3 /* Karsch_frage.wav in Resources */ = {isa = PBXBuildFile; fileRef = 009A9C4C1FDAAF7700E6C0E3 /* Karsch_frage.wav */; };
+		009A9C501FDAAF7800E6C0E3 /* Karsch_end_1.wav in Resources */ = {isa = PBXBuildFile; fileRef = 009A9C4D1FDAAF7700E6C0E3 /* Karsch_end_1.wav */; };
+		00A0FA2C1FDD4F3E000EB16A /* Gleim_beg.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA231FDD4F3E000EB16A /* Gleim_beg.wav */; };
+		00A0FA2E1FDD4F3E000EB16A /* Ramler_end.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA251FDD4F3E000EB16A /* Ramler_end.wav */; };
+		00A0FA301FDD4F3E000EB16A /* ramler_beg.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA271FDD4F3E000EB16A /* ramler_beg.wav */; };
+		00A0FA311FDD4F3E000EB16A /* Gleim_verweis.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA281FDD4F3E000EB16A /* Gleim_verweis.wav */; };
+		00A0FA331FDD4F3E000EB16A /* Gleim_end.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA2A1FDD4F3E000EB16A /* Gleim_end.wav */; };
+		00A0FA341FDD4F3E000EB16A /* ramler_frage.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA2B1FDD4F3E000EB16A /* ramler_frage.wav */; };
+		00A0FA361FDD54AE000EB16A /* KarschLek.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA351FDD54AE000EB16A /* KarschLek.wav */; };
+		1EAF6CA0DD7FF0E11D3AD150 /* Pods_MistyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265131D1F4A86AF956F315C7 /* Pods_MistyTest.framework */; };
+		28B7FEE8A78A27E3DF6541F9 /* Pods_MistyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F221B5DFA4C3D2E37ABA62D4 /* Pods_MistyTestTests.framework */; };
+		61433D4A0891852185E5237C /* Pods_MistyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */; };
 		F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */; };
 		F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342AAE1FC1E32F0018FC78 /* ViewController.swift */; };
 		F9342AB11FC1E32F0018FC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9342AB01FC1E32F0018FC78 /* Assets.xcassets */; };
 		F9342AB41FC1E32F0018FC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9342AB21FC1E32F0018FC78 /* Main.storyboard */; };
 		F9342AC01FC1E32F0018FC78 /* MistyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342ABF1FC1E32F0018FC78 /* MistyTestTests.swift */; };
 		F9342ACB1FC1E32F0018FC78 /* MistyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342ACA1FC1E32F0018FC78 /* MistyTestUITests.swift */; };
+		F9342ADB1FC1FFD20018FC78 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342ADA1FC1FFD20018FC78 /* MyController.swift */; };
+		F9342ADD1FC20BB60018FC78 /* clip.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9342ADC1FC20BB60018FC78 /* clip.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +50,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		002106AE202DE04600AFD7B1 /* Karsch_beg.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Karsch_beg.wav; sourceTree = "<group>"; };
+		0029D8841FC9A726000BA942 /* SwiftSerial-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftSerial-Bridging-Header.h"; sourceTree = "<group>"; };
+		006787FB1FC9C5D30015AD81 /* gleimlek.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = gleimlek.wav; sourceTree = "<group>"; };
+		006787FD1FC9C7E00015AD81 /* ramlerport.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ramlerport.wav; sourceTree = "<group>"; };
+		009A9C4C1FDAAF7700E6C0E3 /* Karsch_frage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Karsch_frage.wav; sourceTree = "<group>"; };
+		009A9C4D1FDAAF7700E6C0E3 /* Karsch_end_1.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Karsch_end_1.wav; sourceTree = "<group>"; };
+		00A0FA231FDD4F3E000EB16A /* Gleim_beg.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gleim_beg.wav; sourceTree = "<group>"; };
+		00A0FA251FDD4F3E000EB16A /* Ramler_end.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Ramler_end.wav; sourceTree = "<group>"; };
+		00A0FA271FDD4F3E000EB16A /* ramler_beg.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ramler_beg.wav; sourceTree = "<group>"; };
+		00A0FA281FDD4F3E000EB16A /* Gleim_verweis.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gleim_verweis.wav; sourceTree = "<group>"; };
+		00A0FA2A1FDD4F3E000EB16A /* Gleim_end.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gleim_end.wav; sourceTree = "<group>"; };
+		00A0FA2B1FDD4F3E000EB16A /* ramler_frage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ramler_frage.wav; sourceTree = "<group>"; };
+		00A0FA351FDD54AE000EB16A /* KarschLek.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = KarschLek.wav; sourceTree = "<group>"; };
+		25C55FCA9A662A545E6E7D00 /* Pods-MistyTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestTests/Pods-MistyTestTests.release.xcconfig"; sourceTree = "<group>"; };
+		265131D1F4A86AF956F315C7 /* Pods_MistyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MistyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C9E7484F2DC6527AC5F39EA /* Pods-MistyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest.release.xcconfig"; sourceTree = "<group>"; };
+		595C79FB4A23BFFC9D9A098F /* Pods-MistyTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestUITests/Pods-MistyTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MistyTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78D562FAB3BA04F526777F5E /* Pods-MistyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest.debug.xcconfig"; sourceTree = "<group>"; };
+		8F9CBE9D9D17C39CFED34C78 /* Pods-MistyTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestUITests/Pods-MistyTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C531BC932F86807209861792 /* Pods-MistyTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestTests/Pods-MistyTestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F221B5DFA4C3D2E37ABA62D4 /* Pods_MistyTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MistyTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9342AA91FC1E32F0018FC78 /* MistyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MistyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F9342AAE1FC1E32F0018FC78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +85,8 @@
 		F9342AC61FC1E32F0018FC78 /* MistyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MistyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9342ACA1FC1E32F0018FC78 /* MistyTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistyTestUITests.swift; sourceTree = "<group>"; };
 		F9342ACC1FC1E32F0018FC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F9342ADA1FC1FFD20018FC78 /* MyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
+		F9342ADC1FC20BB60018FC78 /* clip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clip.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EAF6CA0DD7FF0E11D3AD150 /* Pods_MistyTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28B7FEE8A78A27E3DF6541F9 /* Pods_MistyTestTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,12 +110,36 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				61433D4A0891852185E5237C /* Pods_MistyTestUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A4338EB940CF3C1E4DE14AEE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				78D562FAB3BA04F526777F5E /* Pods-MistyTest.debug.xcconfig */,
+				2C9E7484F2DC6527AC5F39EA /* Pods-MistyTest.release.xcconfig */,
+				C531BC932F86807209861792 /* Pods-MistyTestTests.debug.xcconfig */,
+				25C55FCA9A662A545E6E7D00 /* Pods-MistyTestTests.release.xcconfig */,
+				8F9CBE9D9D17C39CFED34C78 /* Pods-MistyTestUITests.debug.xcconfig */,
+				595C79FB4A23BFFC9D9A098F /* Pods-MistyTestUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		D70A1040BEDDAA6BB7DED890 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				265131D1F4A86AF956F315C7 /* Pods_MistyTest.framework */,
+				F221B5DFA4C3D2E37ABA62D4 /* Pods_MistyTestTests.framework */,
+				64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F9342AA01FC1E32F0018FC78 = {
 			isa = PBXGroup;
 			children = (
@@ -80,6 +147,8 @@
 				F9342ABE1FC1E32F0018FC78 /* MistyTestTests */,
 				F9342AC91FC1E32F0018FC78 /* MistyTestUITests */,
 				F9342AAA1FC1E32F0018FC78 /* Products */,
+				A4338EB940CF3C1E4DE14AEE /* Pods */,
+				D70A1040BEDDAA6BB7DED890 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +171,21 @@
 				F9342AB21FC1E32F0018FC78 /* Main.storyboard */,
 				F9342AB51FC1E32F0018FC78 /* Info.plist */,
 				F9342AB61FC1E32F0018FC78 /* MistyTest.entitlements */,
+				00A0FA2A1FDD4F3E000EB16A /* Gleim_end.wav */,
+				00A0FA281FDD4F3E000EB16A /* Gleim_verweis.wav */,
+				009A9C4D1FDAAF7700E6C0E3 /* Karsch_end_1.wav */,
+				002106AE202DE04600AFD7B1 /* Karsch_beg.wav */,
+				00A0FA351FDD54AE000EB16A /* KarschLek.wav */,
+				009A9C4C1FDAAF7700E6C0E3 /* Karsch_frage.wav */,
+				00A0FA231FDD4F3E000EB16A /* Gleim_beg.wav */,
+				00A0FA271FDD4F3E000EB16A /* ramler_beg.wav */,
+				00A0FA251FDD4F3E000EB16A /* Ramler_end.wav */,
+				00A0FA2B1FDD4F3E000EB16A /* ramler_frage.wav */,
+				006787FB1FC9C5D30015AD81 /* gleimlek.wav */,
+				006787FD1FC9C7E00015AD81 /* ramlerport.wav */,
+				F9342ADA1FC1FFD20018FC78 /* MyController.swift */,
+				F9342ADC1FC20BB60018FC78 /* clip.wav */,
+				0029D8841FC9A726000BA942 /* SwiftSerial-Bridging-Header.h */,
 			);
 			path = MistyTest;
 			sourceTree = "<group>";
@@ -131,9 +215,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9342ACF1FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTest" */;
 			buildPhases = (
+				4CAE841556534B2DF2CAEF2E /* [CP] Check Pods Manifest.lock */,
 				F9342AA51FC1E32F0018FC78 /* Sources */,
 				F9342AA61FC1E32F0018FC78 /* Frameworks */,
 				F9342AA71FC1E32F0018FC78 /* Resources */,
+				051717BBBE5CD4D437422987 /* [CP] Embed Pods Frameworks */,
+				1D50626F4FDBB6B364D35F09 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -148,9 +235,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9342AD21FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTestTests" */;
 			buildPhases = (
+				C05C73EF1448DB075FEA89D6 /* [CP] Check Pods Manifest.lock */,
 				F9342AB71FC1E32F0018FC78 /* Sources */,
 				F9342AB81FC1E32F0018FC78 /* Frameworks */,
 				F9342AB91FC1E32F0018FC78 /* Resources */,
+				7D39A151DF741B594410A48C /* [CP] Embed Pods Frameworks */,
+				1A9CE6D1AF06F94FBEBA8F7C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -166,9 +256,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F9342AD51FC1E32F0018FC78 /* Build configuration list for PBXNativeTarget "MistyTestUITests" */;
 			buildPhases = (
+				9E8BC5E193C4084DC7A768CE /* [CP] Check Pods Manifest.lock */,
 				F9342AC21FC1E32F0018FC78 /* Sources */,
 				F9342AC31FC1E32F0018FC78 /* Frameworks */,
 				F9342AC41FC1E32F0018FC78 /* Resources */,
+				0C3B438CA1C7961F309D818A /* [CP] Embed Pods Frameworks */,
+				87B13E5E02C10967D6D1C333 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,8 +324,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00A0FA2C1FDD4F3E000EB16A /* Gleim_beg.wav in Resources */,
+				F9342ADD1FC20BB60018FC78 /* clip.wav in Resources */,
+				006787FE1FC9C7E00015AD81 /* ramlerport.wav in Resources */,
 				F9342AB11FC1E32F0018FC78 /* Assets.xcassets in Resources */,
+				009A9C4F1FDAAF7800E6C0E3 /* Karsch_frage.wav in Resources */,
+				00A0FA361FDD54AE000EB16A /* KarschLek.wav in Resources */,
+				009A9C501FDAAF7800E6C0E3 /* Karsch_end_1.wav in Resources */,
+				006787FC1FC9C5D30015AD81 /* gleimlek.wav in Resources */,
+				00A0FA2E1FDD4F3E000EB16A /* Ramler_end.wav in Resources */,
+				00A0FA341FDD4F3E000EB16A /* ramler_frage.wav in Resources */,
+				002106AF202DE04600AFD7B1 /* Karsch_beg.wav in Resources */,
+				00A0FA311FDD4F3E000EB16A /* Gleim_verweis.wav in Resources */,
+				00A0FA331FDD4F3E000EB16A /* Gleim_end.wav in Resources */,
 				F9342AB41FC1E32F0018FC78 /* Main.storyboard in Resources */,
+				00A0FA301FDD4F3E000EB16A /* ramler_beg.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,11 +358,150 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		051717BBBE5CD4D437422987 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		0C3B438CA1C7961F309D818A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MistyTestUITests/Pods-MistyTestUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1A9CE6D1AF06F94FBEBA8F7C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MistyTestTests/Pods-MistyTestTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D50626F4FDBB6B364D35F09 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4CAE841556534B2DF2CAEF2E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7D39A151DF741B594410A48C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MistyTestTests/Pods-MistyTestTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		87B13E5E02C10967D6D1C333 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MistyTestUITests/Pods-MistyTestUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E8BC5E193C4084DC7A768CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C05C73EF1448DB075FEA89D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F9342AA51FC1E32F0018FC78 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9342ADB1FC1FFD20018FC78 /* MyController.swift in Sources */,
 				F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */,
 				F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */,
 			);
@@ -358,6 +603,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "MistyTest/SwiftSerial-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -407,12 +653,14 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = macosx;
+				SWIFT_OBJC_BRIDGING_HEADER = "MistyTest/SwiftSerial-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 			};
 			name = Release;
 		};
 		F9342AD01FC1E32F0018FC78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 78D562FAB3BA04F526777F5E /* Pods-MistyTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MistyTest/MistyTest.entitlements;
@@ -428,6 +676,7 @@
 		};
 		F9342AD11FC1E32F0018FC78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2C9E7484F2DC6527AC5F39EA /* Pods-MistyTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = MistyTest/MistyTest.entitlements;
@@ -443,6 +692,7 @@
 		};
 		F9342AD31FC1E32F0018FC78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C531BC932F86807209861792 /* Pods-MistyTestTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -459,6 +709,7 @@
 		};
 		F9342AD41FC1E32F0018FC78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 25C55FCA9A662A545E6E7D00 /* Pods-MistyTestTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -475,6 +726,7 @@
 		};
 		F9342AD61FC1E32F0018FC78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F9CBE9D9D17C39CFED34C78 /* Pods-MistyTestUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -490,6 +742,7 @@
 		};
 		F9342AD71FC1E32F0018FC78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 595C79FB4A23BFFC9D9A098F /* Pods-MistyTestUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
