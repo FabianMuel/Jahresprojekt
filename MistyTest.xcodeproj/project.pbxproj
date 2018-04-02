@@ -21,6 +21,8 @@
 		00A0FA361FDD54AE000EB16A /* KarschLek.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA351FDD54AE000EB16A /* KarschLek.wav */; };
 		1EAF6CA0DD7FF0E11D3AD150 /* Pods_MistyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265131D1F4A86AF956F315C7 /* Pods_MistyTest.framework */; };
 		28B7FEE8A78A27E3DF6541F9 /* Pods_MistyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F221B5DFA4C3D2E37ABA62D4 /* Pods_MistyTestTests.framework */; };
+		60002193207267BF00657860 /* OwnWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60002192207267BF00657860 /* OwnWindow.swift */; };
+		600021952072699800657860 /* OwnWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 600021942072699800657860 /* OwnWindowController.swift */; };
 		61433D4A0891852185E5237C /* Pods_MistyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */; };
 		F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */; };
 		F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342AAE1FC1E32F0018FC78 /* ViewController.swift */; };
@@ -67,6 +69,8 @@
 		265131D1F4A86AF956F315C7 /* Pods_MistyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MistyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9E7484F2DC6527AC5F39EA /* Pods-MistyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest.release.xcconfig"; sourceTree = "<group>"; };
 		595C79FB4A23BFFC9D9A098F /* Pods-MistyTestUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestUITests/Pods-MistyTestUITests.release.xcconfig"; sourceTree = "<group>"; };
+		60002192207267BF00657860 /* OwnWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnWindow.swift; sourceTree = "<group>"; };
+		600021942072699800657860 /* OwnWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OwnWindowController.swift; sourceTree = "<group>"; };
 		64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MistyTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D562FAB3BA04F526777F5E /* Pods-MistyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8F9CBE9D9D17C39CFED34C78 /* Pods-MistyTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestUITests/Pods-MistyTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,7 +171,9 @@
 			children = (
 				F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */,
 				F9342AAE1FC1E32F0018FC78 /* ViewController.swift */,
+				600021942072699800657860 /* OwnWindowController.swift */,
 				F9342AB01FC1E32F0018FC78 /* Assets.xcassets */,
+				60002192207267BF00657860 /* OwnWindow.swift */,
 				F9342AB21FC1E32F0018FC78 /* Main.storyboard */,
 				F9342AB51FC1E32F0018FC78 /* Info.plist */,
 				F9342AB61FC1E32F0018FC78 /* MistyTest.entitlements */,
@@ -280,7 +286,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Mona Holtmann";
 				TargetAttributes = {
 					F9342AA81FC1E32F0018FC78 = {
@@ -503,6 +509,8 @@
 			files = (
 				F9342ADB1FC1FFD20018FC78 /* MyController.swift in Sources */,
 				F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */,
+				60002193207267BF00657860 /* OwnWindow.swift in Sources */,
+				600021952072699800657860 /* OwnWindowController.swift in Sources */,
 				F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -564,6 +572,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -571,6 +580,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -622,6 +632,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -629,6 +640,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

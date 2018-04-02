@@ -51,10 +51,10 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        sr!.delegate = self
+        sr?.delegate = self
         serialPort?.delegate=self
-        sr!.commands = [gleimBegr, gleimLek1, gleimLek2, gleimPort1, gleimPort2, gleimJa, ramlerBegr, ramlerPort1, ramlerPort2, ramlerFrage, ramlerNein, karschBegr, karschLek1, karschLek2,karschFrage, karschNein, stop] //erkennbare Befehle
-        sr!.startListening()  //laesst recognizer auf befehle hören
+        sr?.commands = [gleimBegr, gleimLek1, gleimLek2, gleimPort1, gleimPort2, gleimJa, ramlerBegr, ramlerPort1, ramlerPort2, ramlerFrage, ramlerNein, karschBegr, karschLek1, karschLek2,karschFrage, karschNein, stop] //erkennbare Befehle
+        sr?.startListening()  //laesst recognizer auf befehle hören
         
        var spm = ORSSerialPortManager()
        var s = spm.availablePorts
@@ -68,6 +68,13 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             return $0
         }
     }
+    
+    //Bn Actions
+    @IBAction func SegBn_On_Off_OnClick(_ sender: Any) {
+        
+    }
+    
+    
     
     //Methode die aufgerufen wird, wenn sr etwas erkannt hat. "didRecognizeCommand" ist erkannter Befehl
     func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
