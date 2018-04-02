@@ -22,6 +22,11 @@
 		1EAF6CA0DD7FF0E11D3AD150 /* Pods_MistyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265131D1F4A86AF956F315C7 /* Pods_MistyTest.framework */; };
 		28B7FEE8A78A27E3DF6541F9 /* Pods_MistyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F221B5DFA4C3D2E37ABA62D4 /* Pods_MistyTestTests.framework */; };
 		61433D4A0891852185E5237C /* Pods_MistyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */; };
+		B97A59212072756200453B12 /* ORSSerialRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = B97A59182072756000453B12 /* ORSSerialRequest.m */; };
+		B97A59222072756200453B12 /* ORSSerialBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = B97A59192072756100453B12 /* ORSSerialBuffer.m */; };
+		B97A59232072756200453B12 /* ORSSerialPort.m in Sources */ = {isa = PBXBuildFile; fileRef = B97A591C2072756100453B12 /* ORSSerialPort.m */; };
+		B97A59242072756200453B12 /* ORSSerialPortManager.m in Sources */ = {isa = PBXBuildFile; fileRef = B97A591D2072756100453B12 /* ORSSerialPortManager.m */; };
+		B97A59252072756200453B12 /* ORSSerialPacketDescriptor.m in Sources */ = {isa = PBXBuildFile; fileRef = B97A591E2072756200453B12 /* ORSSerialPacketDescriptor.m */; };
 		F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */; };
 		F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342AAE1FC1E32F0018FC78 /* ViewController.swift */; };
 		F9342AB11FC1E32F0018FC78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9342AB01FC1E32F0018FC78 /* Assets.xcassets */; };
@@ -70,6 +75,16 @@
 		64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MistyTestUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78D562FAB3BA04F526777F5E /* Pods-MistyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8F9CBE9D9D17C39CFED34C78 /* Pods-MistyTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestUITests/Pods-MistyTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B97A59172072756000453B12 /* ORSSerialBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORSSerialBuffer.h; sourceTree = "<group>"; };
+		B97A59182072756000453B12 /* ORSSerialRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORSSerialRequest.m; sourceTree = "<group>"; };
+		B97A59192072756100453B12 /* ORSSerialBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORSSerialBuffer.m; sourceTree = "<group>"; };
+		B97A591A2072756100453B12 /* ORSSerialPort.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORSSerialPort.h; sourceTree = "<group>"; };
+		B97A591B2072756100453B12 /* ORSSerialPacketDescriptor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORSSerialPacketDescriptor.h; sourceTree = "<group>"; };
+		B97A591C2072756100453B12 /* ORSSerialPort.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPort.m; sourceTree = "<group>"; };
+		B97A591D2072756100453B12 /* ORSSerialPortManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPortManager.m; sourceTree = "<group>"; };
+		B97A591E2072756200453B12 /* ORSSerialPacketDescriptor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ORSSerialPacketDescriptor.m; sourceTree = "<group>"; };
+		B97A591F2072756200453B12 /* ORSSerialPortManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORSSerialPortManager.h; sourceTree = "<group>"; };
+		B97A59202072756200453B12 /* ORSSerialRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ORSSerialRequest.h; sourceTree = "<group>"; };
 		C531BC932F86807209861792 /* Pods-MistyTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestTests/Pods-MistyTestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F221B5DFA4C3D2E37ABA62D4 /* Pods_MistyTestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MistyTestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9342AA91FC1E32F0018FC78 /* MistyTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MistyTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,6 +201,16 @@
 				F9342ADA1FC1FFD20018FC78 /* MyController.swift */,
 				F9342ADC1FC20BB60018FC78 /* clip.wav */,
 				0029D8841FC9A726000BA942 /* SwiftSerial-Bridging-Header.h */,
+				B97A59172072756000453B12 /* ORSSerialBuffer.h */,
+				B97A59192072756100453B12 /* ORSSerialBuffer.m */,
+				B97A591B2072756100453B12 /* ORSSerialPacketDescriptor.h */,
+				B97A591E2072756200453B12 /* ORSSerialPacketDescriptor.m */,
+				B97A591A2072756100453B12 /* ORSSerialPort.h */,
+				B97A591C2072756100453B12 /* ORSSerialPort.m */,
+				B97A591F2072756200453B12 /* ORSSerialPortManager.h */,
+				B97A591D2072756100453B12 /* ORSSerialPortManager.m */,
+				B97A59202072756200453B12 /* ORSSerialRequest.h */,
+				B97A59182072756000453B12 /* ORSSerialRequest.m */,
 			);
 			path = MistyTest;
 			sourceTree = "<group>";
@@ -502,8 +527,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F9342ADB1FC1FFD20018FC78 /* MyController.swift in Sources */,
+				B97A59252072756200453B12 /* ORSSerialPacketDescriptor.m in Sources */,
 				F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */,
+				B97A59212072756200453B12 /* ORSSerialRequest.m in Sources */,
+				B97A59232072756200453B12 /* ORSSerialPort.m in Sources */,
 				F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */,
+				B97A59242072756200453B12 /* ORSSerialPortManager.m in Sources */,
+				B97A59222072756200453B12 /* ORSSerialBuffer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
