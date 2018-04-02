@@ -28,7 +28,6 @@
 		F9342AB41FC1E32F0018FC78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F9342AB21FC1E32F0018FC78 /* Main.storyboard */; };
 		F9342AC01FC1E32F0018FC78 /* MistyTestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342ABF1FC1E32F0018FC78 /* MistyTestTests.swift */; };
 		F9342ACB1FC1E32F0018FC78 /* MistyTestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342ACA1FC1E32F0018FC78 /* MistyTestUITests.swift */; };
-		F9342ADB1FC1FFD20018FC78 /* MyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9342ADA1FC1FFD20018FC78 /* MyController.swift */; };
 		F9342ADD1FC20BB60018FC78 /* clip.wav in Resources */ = {isa = PBXBuildFile; fileRef = F9342ADC1FC20BB60018FC78 /* clip.wav */; };
 /* End PBXBuildFile section */
 
@@ -85,7 +84,6 @@
 		F9342AC61FC1E32F0018FC78 /* MistyTestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MistyTestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F9342ACA1FC1E32F0018FC78 /* MistyTestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MistyTestUITests.swift; sourceTree = "<group>"; };
 		F9342ACC1FC1E32F0018FC78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F9342ADA1FC1FFD20018FC78 /* MyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyController.swift; sourceTree = "<group>"; };
 		F9342ADC1FC20BB60018FC78 /* clip.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clip.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -183,7 +181,6 @@
 				00A0FA2B1FDD4F3E000EB16A /* ramler_frage.wav */,
 				006787FB1FC9C5D30015AD81 /* gleimlek.wav */,
 				006787FD1FC9C7E00015AD81 /* ramlerport.wav */,
-				F9342ADA1FC1FFD20018FC78 /* MyController.swift */,
 				F9342ADC1FC20BB60018FC78 /* clip.wav */,
 				0029D8841FC9A726000BA942 /* SwiftSerial-Bridging-Header.h */,
 			);
@@ -280,7 +277,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Mona Holtmann";
 				TargetAttributes = {
 					F9342AA81FC1E32F0018FC78 = {
@@ -501,7 +498,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F9342ADB1FC1FFD20018FC78 /* MyController.swift in Sources */,
 				F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */,
 				F9342AAD1FC1E32F0018FC78 /* AppDelegate.swift in Sources */,
 			);
@@ -564,6 +560,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -571,6 +568,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -622,6 +620,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -629,6 +628,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
