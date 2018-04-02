@@ -18,8 +18,6 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     func serialPort(_ serialPort: ORSSerialPort, didEncounterError error: Error) {
         print(error)
     }
-
-  //  @IBOutlet var output: NSTextView!k
     
     var sr = NSSpeechRecognizer()
     var player = AVAudioPlayer()
