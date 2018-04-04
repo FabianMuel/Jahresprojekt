@@ -69,7 +69,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         }
     }
     
-    //Methode die aufgerufen wird, wenn sr etwas erkannt hat. "didRecognizeCommand" ist erkannter Befehl
+    //Methode die aufgerufen wird, wenn sr etwas erkannt hat. didRecognizeCommand "command" ist erkannter Befehl
     func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
        
         print(command)
