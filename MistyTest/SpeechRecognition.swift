@@ -2,8 +2,9 @@
 
 import Cocoa
 import AVFoundation
+import Foundation
 
-class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPortDelegate {
+class SpeechRecognition: NSObject, NSSpeechRecognizerDelegate, ORSSerialPortDelegate {
     
     
     func serialPortWasRemoved(fromSystem serialPort: ORSSerialPort) {
@@ -25,156 +26,110 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     
     var sleepTimeSek = 0
     
-    var menuCreator = MenuCreator()
-    var topLevelMenu = GleimMenu()
-    var currentMenu = GleimMenu()
+    var gleimBegr = "Hallo Liebster Gleim"
+    var gleimLek1 = "können sie mir etwas über das Thema Lektüre sagen?"
+    var gleimLek2 = "können sie mir etwas über das Thema Lektüre erzählen?"
+    var gleimPort1 = "können Sie mir auch etwas über Ihr Portrait erzählen?"
+    var gleimPort2 = "können Sie mir auch etwas über Ihr Portrait sagen?"
+    var gleimJa = "ja ok"
     
-    var stopCommand = "stop"
+    var ramlerBegr = "Herr Ramler"
+    var ramlerPort1 = "ich hab gehört sie können mir etwas über ihr Portrait erzählen?"
+    var ramlerPort2 = "ich hab gehört sie können mir etwas über ihr Portrait sagen?"
+    var ramlerNein = "Nein danke"
+    var ramlerFrage = "wie interessant"
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    var karschBegr = "Frau Karsch sie sind ja auch hier"
+    var karschLek1 = "was können sie zum Thema Lektüre sagen?"
+    var karschLek2 = "was können sie zum Thema Lektüre erzählen?"
+    var karschNein = "nein auf Wiedersehen"
+    var karschFrage = "sehr schön"
+    
+    var stop = "stop"
+    
+    override init() {
+        super.init()
         sr?.delegate = self
         serialPort?.delegate=self
-        
-        topLevelMenu = menuCreator.getMenu()
-        currentMenu = topLevelMenu
-        
-        updateSpeechCommands()
+        sr?.commands = [gleimBegr, gleimLek1, gleimLek2, gleimPort1, gleimPort2, gleimJa, ramlerBegr, ramlerPort1, ramlerPort2, ramlerFrage, ramlerNein, karschBegr, karschLek1, karschLek2,karschFrage, karschNein, stop] //erkennbare Befehle
         sr?.startListening()  //laesst recognizer auf befehle hören
         
         let spm = ORSSerialPortManager()
         let s = spm.availablePorts
         print(s)
-       
+        
         serialPort?.baudRate = 9600
         serialPort?.open()
-        
-        NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
-            self.keyDown(with: $0)
-            return $0
-        }
     }
-    
-    //Bn Actions
-    @IBAction func SegBn_On_Off_OnClick(_ sender: Any) {
-        
-    }
-    
-    func updateSpeechCommands() {
-        var newCommands = currentMenu.getSubMenuCommandList()
-        newCommands.append(contentsOf: currentMenu.getReturnCommandList())
-        newCommands.append(stopCommand)
-        sr?.commands=newCommands
-    }
+
     
     //Methode die aufgerufen wird, wenn sr etwas erkannt hat. "didRecognizeCommand" ist erkannter Befehl
     func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
+        
         print(command)
-        if command == stopCommand {
-            serialPort?.send("4".data(using: .utf8)!)
-            if(player.isPlaying) {
-                player.stop()
-            }
-         //   currentMenu = topLevelMenu
-         //   updateSpeechCommands()
-            return
-        }
-        
-        for returnCommand in currentMenu.getReturnCommandList(){
-            if returnCommand == command {
-                currentMenu = topLevelMenu
-                updateSpeechCommands()
-                return
-            }
-        }
-        
-        for menuElement in currentMenu.getSubMenu() {
-            for elementCommand in menuElement.getOwnCommandList() {
-                if elementCommand == command {
-                    serialPort?.send(menuElement.getSerialCommand().data(using: .utf8)!)
-                    playSound(file: menuElement.getAudioFilePath(), ext: "wav")
-                    
-                    if menuElement.getSubMenuCommandList().count != 0{
-                        currentMenu = menuElement
-                        updateSpeechCommands()
-                        print("changed")
-                    }
-                    break
-                }
-            }
-        }
-    }
-    
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
-    }
-    override func keyDown(with event: NSEvent) { //Backup Plan
-        if event.keyCode == 18 {
+        if command == gleimBegr {
             let data = "1".data(using: .utf8)
             serialPort?.send(data!)
             
             playSound(file: "Gleim_beg", ext: "wav")
             print("ich bin gleim")
         }
-        if event.keyCode == 19 {
+        if command == gleimLek1 || command == gleimLek2 {
             playSound(file: "gleimlek", ext: "wav")
             print("gleim lektüre")
         }
-        if event.keyCode == 20 {
+        if command == gleimPort1 || command == gleimPort2 {
             playSound(file: "Gleim_verweis", ext: "wav")
             print("gleim portrait")
         }
-        if event.keyCode == 21 {
+        if command == gleimJa {
             playSound(file: "Gleim_end", ext: "wav")
             let data = "2".data(using: .utf8) //Schalte Ramler-lampe an
             serialPort?.send(data!)
             print("gleim ja")
         }
-        if event.keyCode == 23 {
+        if command == ramlerBegr {
             //      let data = "2".data(using: .utf8)
             //       serialPort?.send(data!)
             playSound(file: "ramler_beg", ext: "wav")
             print("ramler begr")
         }
-        if event.keyCode == 26 {
+        if command == ramlerFrage {
             playSound(file: "ramler_frage", ext: "wav")
             
             print("ramler frage")
         }
-        if event.keyCode == 22 {
+        if command == ramlerPort1 || command == ramlerPort2 {
             playSound(file: "ramlerport", ext: "wav")
             print("ramler portrait")
         }
-        if event.keyCode == 28 {
+        if command == ramlerNein {
             playSound(file: "Ramler_end", ext: "wav")
             let data = "4".data(using: .utf8) //Schalte Lampen aus
             serialPort?.send(data!)
             print("ramler nein")
         }
-        if event.keyCode == 25 {
+        if command == karschBegr {
             let data = "3".data(using: .utf8)
             serialPort?.send(data!)
             playSound(file: "Karsch_beg", ext: "wav")
             print("karsch begr")
         }
-        if event.keyCode == 29 {
+        if command == karschLek1 || command == karschLek2 {
             playSound(file: "KarschLek", ext: "wav")
             print("karsch lek")
         }
-        if event.keyCode == 27 {
+        if command == karschFrage {
             playSound(file: "Karsch_frage", ext: "wav")
             print("karsch frage")
         }
-        if event.keyCode == 24 {
+        if command == karschNein {
             playSound(file: "Karsch_end_1", ext: "wav")
             let data = "4".data(using: .utf8) //Schalte Lampen aus
             serialPort?.send(data!)
             print("karsch nein")
         }
-        if event.keyCode == 0 {
+        if command == stop {
             let data = "4".data(using: .utf8)
             serialPort?.send(data!)
             player.stop()
@@ -185,12 +140,12 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         let url = Bundle.main.url(forResource: file, withExtension: ext)!
         do {
             player = try AVAudioPlayer(contentsOf: url)
-     //       guard let player = player else { return }
+            //       guard let player = player else { return }
             
             player.prepareToPlay()
             player.play()
         } catch let error {
-       //     print(error.localizedDescription)
+            //     print(error.localizedDescription)
         }
     }
 }
