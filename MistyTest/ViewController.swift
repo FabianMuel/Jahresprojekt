@@ -3,7 +3,7 @@
 import Cocoa
 import AVFoundation
 
-class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPortDelegate {
+class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPortDelegate, NSTableViewDataSource, NSTableViewDelegate {
     
     
     func serialPortWasRemoved(fromSystem serialPort: ORSSerialPort) {
@@ -31,8 +31,21 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     
     var stopCommand = "stop"
     
+    //Outlets
+    @IBOutlet var Seg_Bn_On_Off: NSSegmentedControl!
+    
+    @IBOutlet var tableview: NSTableView!
+    var data: NSArray!
+    var portraitData: NSArray!
+    var soundData: NSArray!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        portraitData = ["Gleim", "Ramler", "Ramler" , "Ramler"]
+        data = ["Thema0", "Thema1", "Thema2", "Thema3"]
+        soundData = ["0.wav", "1.wav", "2.wav", "3.wav"]
+        
         // Do any additional setup after loading the view.
         sr?.delegate = self
         serialPort?.delegate=self
@@ -56,9 +69,47 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         }
     }
     
+    //Tableview
+    func numberOfRows(in tableView: NSTableView) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {
+        var identifierStr = ""
+        identifierStr = tableColumn!.identifier.rawValue
+        if(identifierStr == "portrait"){
+            return portraitData.object(at: row)
+            //return topLevelMenu.object(at: row)
+        }else if(identifierStr == "thema"){
+            return data.object(at: row)
+        }else if(identifierStr == "wavDatei"){
+            return soundData.object(at: row)
+        }
+        return nil
+    }
+    
     //Bn Actions
     @IBAction func SegBn_On_Off_OnClick(_ sender: Any) {
-        
+        switch Seg_Bn_On_Off.selectedSegment{
+        case 0:
+            activateListener()
+        case 1:
+            deactivateListener()
+        default:
+            print("default case, Segmented Button ON OFF")
+        }
+    }
+    
+    func deactivateListener(){
+        print("aus")
+        sr?.stopListening()
+        currentMenu = topLevelMenu
+        updateSpeechCommands()
+    }
+    
+    func activateListener(){
+        print("an")
+        sr?.startListening()
     }
     
     func updateSpeechCommands() {
