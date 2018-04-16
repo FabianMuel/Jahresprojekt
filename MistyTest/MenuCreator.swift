@@ -35,8 +35,8 @@ class MenuCreator {
     
     init() {
         topLevelMenu = GleimMenu(name: "TopLevel")
-        var gleim = GleimMenu(name: "Gleim")
-        var ramler = GleimMenu(name: "Ramler")
+        let gleim = GleimMenu(name: "Gleim")
+        let ramler = GleimMenu(name: "Ramler")
         
         gleim.addCommand(command: gleimBegr)
         gleim.setAudioFilePath(path: "Gleim_beg")
@@ -45,7 +45,7 @@ class MenuCreator {
         ramler.addCommand(command: ramlerBegr)
         ramler.setAudioFilePath(path: "ramler_beg")
         
-        var gleimLek = GleimMenu(name: "GleimLek")
+        let gleimLek = GleimMenu(name: "GleimLek")
         gleimLek.addCommand(command: gleimLek1)
         gleimLek.addCommand(command: gleimLek2)
         gleimLek.setAudioFilePath(path: "gleimlek")
@@ -57,5 +57,29 @@ class MenuCreator {
     
     public func getMenu() -> GleimMenu {
         return topLevelMenu
+    }
+    
+    public func getIntLevel(i: Int) -> GleimMenu {
+        topLevelMenu = GleimMenu(name: "TopLevel")
+        let gleim = GleimMenu(name: "Gleim")
+        
+        gleim.addCommand(command: gleimBegr)
+        gleim.setAudioFilePath(path: "Gleim_beg")
+     //   gleim.addReturnCommand(command: karschFrage)
+        
+        for _ in 0...i{
+            let gleimLek = GleimMenu(name: "GleimLek")
+            gleimLek.addCommand(command: gleimLek1)
+            gleimLek.setAudioFilePath(path: "gleimlek")
+            gleim.addSubMenuElement(element: gleimLek)
+        }
+        let gleimKarschFrage = GleimMenu(name: "GleimKarschFrage")
+        gleimKarschFrage.addCommand(command: karschFrage)
+        gleimKarschFrage.setAudioFilePath(path: "Karsch_end_1")
+        gleim.addSubMenuElement(element: gleimKarschFrage)
+        
+        topLevelMenu.addSubMenuElement(element: gleim)
+        
+        return topLevelMenu;
     }
 }

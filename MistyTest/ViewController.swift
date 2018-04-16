@@ -29,6 +29,8 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     var topLevelMenu = GleimMenu()
     var currentMenu = GleimMenu()
     
+    var timer = Timer()
+    
     var stopCommand = "stop"
     
     override func viewDidLoad() {
@@ -37,7 +39,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         sr?.delegate = self
         serialPort?.delegate=self
         
-        topLevelMenu = menuCreator.getMenu()
+        topLevelMenu = menuCreator.getIntLevel(i: 100)
         currentMenu = topLevelMenu
         
         updateSpeechCommands()
@@ -50,10 +52,14 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         serialPort?.baudRate = 9600
         serialPort?.open()
         
+        timer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: Selector("Function"), userInfo: nil, repeats: Bool)
+        
         NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
             self.keyDown(with: $0)
             return $0
         }
+        
+        
     }
     
     //Bn Actions
@@ -77,7 +83,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
                 player.stop()
             }
          //   currentMenu = topLevelMenu
-         //   updateSpeechCommands()
+         //2   updateSpeechCommands()
             return
         }
         
