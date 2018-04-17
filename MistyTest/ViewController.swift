@@ -29,6 +29,9 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     var topLevelMenu = GleimMenu()
     var currentMenu = GleimMenu()
     
+    var timer = Timer()
+    let timerInterval = 120.0 //TimeOut und reset auf TopLevelMenu in Sekunden (double)
+    
     var stopCommand = "stop"
     
     override func viewDidLoad() {
@@ -54,6 +57,8 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             self.keyDown(with: $0)
             return $0
         }
+        
+        
     }
     
     //Bn Actions
@@ -68,6 +73,21 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         sr?.commands=newCommands
     }
     
+    @objc func resetMenu() {
+        print("reset commands")
+        currentMenu = topLevelMenu
+        updateSpeechCommands()
+    }
+    
+    func startTimer(){
+        timer = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(resetMenu), userInfo: nil, repeats: true)
+    }
+    
+    func resetTimer(){
+        timer.invalidate()
+        startTimer()
+    }
+    
     //Methode die aufgerufen wird, wenn sr etwas erkannt hat. "didRecognizeCommand" ist erkannter Befehl
     func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
         print(command)
@@ -78,6 +98,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             }
          //   currentMenu = topLevelMenu
          //   updateSpeechCommands()
+            resetTimer()
             return
         }
         
@@ -85,6 +106,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             if returnCommand == command {
                 currentMenu = topLevelMenu
                 updateSpeechCommands()
+                resetTimer()
                 return
             }
         }
@@ -100,7 +122,8 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
                         updateSpeechCommands()
                         print("changed")
                     }
-                    break
+                    resetTimer()
+                    return
                 }
             }
         }
@@ -179,6 +202,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             serialPort?.send(data!)
             player.stop()
         }
+        resetTimer()
     }
     
     func playSound(file:String, ext:String) -> Void {
