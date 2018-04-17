@@ -36,6 +36,7 @@ class MenuCreator {
     init() {
         topLevelMenu = GleimMenu(name: "TopLevel")
         var gleim = GleimMenu(name: "Gleim")
+        gleim.setSerialCommand(serialCommand: "1")
         var ramler = GleimMenu(name: "Ramler")
         
         gleim.addCommand(command: gleimBegr)
