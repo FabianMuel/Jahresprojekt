@@ -19,7 +19,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         print(error)
     }
     
-    var sr = NSSpeechRecognizer()
+    var speechRecognizer = NSSpeechRecognizer()
     var player = AVAudioPlayer()
     var serialPort = ORSSerialPort(path: "/dev/cu.usbmodem14111")
     
@@ -37,22 +37,25 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        sr?.delegate = self
-        serialPort?.delegate=self
-        
-        topLevelMenu = menuCreator.getMenu()
-        currentMenu = topLevelMenu
-        
-        updateSpeechCommands()
-        sr?.startListening()  //laesst recognizer auf befehle hören
         
         let spm = ORSSerialPortManager()
         let s = spm.availablePorts
-        print(s)
-       
+        for port in s {
+            print("Name: ", port.name)
+            if port.name.contains("usbmodem") {
+                serialPort = ORSSerialPort(path: port.path)
+            }
+        }
+        serialPort?.delegate=self
         serialPort?.baudRate = 9600
         serialPort?.open()
         
+        speechRecognizer?.delegate = self
+        topLevelMenu = menuCreator.getMenu()
+        currentMenu = topLevelMenu
+        updateSpeechCommands()
+        speechRecognizer?.startListening()  //laesst recognizer auf befehle hören
+       
         NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
             self.keyDown(with: $0)
             return $0
@@ -70,7 +73,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         var newCommands = currentMenu.getSubMenuCommandList()
         newCommands.append(contentsOf: currentMenu.getReturnCommandList())
         newCommands.append(stopCommand)
-        sr?.commands=newCommands
+        speechRecognizer?.commands=newCommands
     }
     
     @objc func resetMenu() {
