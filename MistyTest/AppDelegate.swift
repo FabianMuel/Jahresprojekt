@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  MistyTest
 //
-//  Created by Mona Holtmann on 19.11.17.
-//  Copyright © 2017 Mona Holtmann. All rights reserved.
+//  Created by Ivo Max Muellner on 19.11.17.
+//  Copyright © 2017 Ivo Max Muellner. All rights reserved.
 //
 
 import Cocoa

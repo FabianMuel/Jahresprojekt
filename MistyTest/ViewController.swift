@@ -3,21 +3,7 @@
 import Cocoa
 import AVFoundation
 
-class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPortDelegate {
-    
-    
-    func serialPortWasRemoved(fromSystem serialPort: ORSSerialPort) {
-        
-    }
-    func serialPortWasOpened(_ serialPort: ORSSerialPort) {
-        print("Port opened")
-    }
-    func serialPort(_ serialPort: ORSSerialPort, didReceive data: Data) {
-        print(data)
-    }
-    func serialPort(_ serialPort: ORSSerialPort, didEncounterError error: Error) {
-        print(error)
-    }
+class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPortDelegate, FileStalkerDelegate {
     
     var speechRecognizer = NSSpeechRecognizer()
     var player = AVAudioPlayer()
@@ -32,7 +18,10 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     var timer = Timer()
     let timerInterval = 120.0 //TimeOut und reset auf TopLevelMenu in Sekunden (double)
     
-    var stopCommand = "stop"
+    let stopCommand = "stop"
+    let stopCommandSerial = "4"
+    
+    let fileStalker = FileStalker(timerInterval: 0.1, filename: "file.txt")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,13 +44,14 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         currentMenu = topLevelMenu
         updateSpeechCommands()
         speechRecognizer?.startListening()  //laesst recognizer auf befehle hören
+        
+        fileStalker.delegate = self
+        fileStalker.startStalking() //start listening to file and notify when content changed
        
         NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
             self.keyDown(with: $0)
             return $0
         }
-        
-        
     }
     
     //Bn Actions
@@ -74,6 +64,10 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         newCommands.append(contentsOf: currentMenu.getReturnCommandList())
         newCommands.append(stopCommand)
         speechRecognizer?.commands=newCommands
+    }
+    
+    func sendDataToSP(commandData: String) {
+        serialPort?.send(commandData.data(using: .utf8)!)
     }
     
     @objc func resetMenu() {
@@ -91,11 +85,16 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         startTimer()
     }
     
+    //aufgerufen wenn text in datei geaendert wurde
+    func fileContentChanged(didChangeCommand command: String) {
+        sendDataToSP(commandData: command)
+    }
+    
     //Methode die aufgerufen wird, wenn sr etwas erkannt hat. "didRecognizeCommand" ist erkannter Befehl
     func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
         print(command)
         if command == stopCommand {
-            serialPort?.send("4".data(using: .utf8)!)
+            sendDataToSP(commandData: stopCommandSerial)
             if(player.isPlaying) {
                 player.stop()
             }
@@ -107,6 +106,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         
         for returnCommand in currentMenu.getReturnCommandList(){
             if returnCommand == command {
+                sendDataToSP(commandData: stopCommandSerial)
                 currentMenu = topLevelMenu
                 updateSpeechCommands()
                 resetTimer()
@@ -117,7 +117,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         for menuElement in currentMenu.getSubMenu() {
             for elementCommand in menuElement.getOwnCommandList() {
                 if elementCommand == command {
-                    serialPort?.send(menuElement.getSerialCommand().data(using: .utf8)!)
+                    sendDataToSP(commandData: menuElement.getSerialCommand())
                     playSound(file: menuElement.getAudioFilePath(), ext: "wav")
                     
                     if menuElement.getSubMenuCommandList().count != 0{
@@ -130,6 +130,19 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
                 }
             }
         }
+    }
+    
+    func serialPortWasRemoved(fromSystem serialPort: ORSSerialPort) {
+        
+    }
+    func serialPortWasOpened(_ serialPort: ORSSerialPort) {
+        print("Port opened")
+    }
+    func serialPort(_ serialPort: ORSSerialPort, didReceive data: Data) {
+        print(data)
+    }
+    func serialPort(_ serialPort: ORSSerialPort, didEncounterError error: Error) {
+        print(error)
     }
     
     override var representedObject: Any? {
