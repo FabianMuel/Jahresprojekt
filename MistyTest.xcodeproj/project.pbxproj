@@ -138,6 +138,26 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B98798CF2089D8520045CC42 /* soundfiles */ = {
+			isa = PBXGroup;
+			children = (
+				00A0FA2A1FDD4F3E000EB16A /* Gleim_end.wav */,
+				009A9C4D1FDAAF7700E6C0E3 /* Karsch_end_1.wav */,
+				002106AE202DE04600AFD7B1 /* Karsch_beg.wav */,
+				00A0FA351FDD54AE000EB16A /* KarschLek.wav */,
+				009A9C4C1FDAAF7700E6C0E3 /* Karsch_frage.wav */,
+				00A0FA231FDD4F3E000EB16A /* Gleim_beg.wav */,
+				00A0FA271FDD4F3E000EB16A /* ramler_beg.wav */,
+				00A0FA251FDD4F3E000EB16A /* Ramler_end.wav */,
+				00A0FA2B1FDD4F3E000EB16A /* ramler_frage.wav */,
+				006787FB1FC9C5D30015AD81 /* gleimlek.wav */,
+				006787FD1FC9C7E00015AD81 /* ramlerport.wav */,
+				F9342ADC1FC20BB60018FC78 /* clip.wav */,
+				00A0FA281FDD4F3E000EB16A /* Gleim_verweis.wav */,
+			);
+			path = soundfiles;
+			sourceTree = "<group>";
+		};
 		D70A1040BEDDAA6BB7DED890 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -173,6 +193,7 @@
 		F9342AAB1FC1E32F0018FC78 /* MistyTest */ = {
 			isa = PBXGroup;
 			children = (
+				B98798CF2089D8520045CC42 /* soundfiles */,
 				F9342AAC1FC1E32F0018FC78 /* AppDelegate.swift */,
 				F9342AAE1FC1E32F0018FC78 /* ViewController.swift */,
 				B9535C89207A3C4900E34868 /* SpeechRecognition.swift */,
@@ -184,19 +205,6 @@
 				F9342AB21FC1E32F0018FC78 /* Main.storyboard */,
 				F9342AB51FC1E32F0018FC78 /* Info.plist */,
 				F9342AB61FC1E32F0018FC78 /* MistyTest.entitlements */,
-				00A0FA2A1FDD4F3E000EB16A /* Gleim_end.wav */,
-				00A0FA281FDD4F3E000EB16A /* Gleim_verweis.wav */,
-				009A9C4D1FDAAF7700E6C0E3 /* Karsch_end_1.wav */,
-				002106AE202DE04600AFD7B1 /* Karsch_beg.wav */,
-				00A0FA351FDD54AE000EB16A /* KarschLek.wav */,
-				009A9C4C1FDAAF7700E6C0E3 /* Karsch_frage.wav */,
-				00A0FA231FDD4F3E000EB16A /* Gleim_beg.wav */,
-				00A0FA271FDD4F3E000EB16A /* ramler_beg.wav */,
-				00A0FA251FDD4F3E000EB16A /* Ramler_end.wav */,
-				00A0FA2B1FDD4F3E000EB16A /* ramler_frage.wav */,
-				006787FB1FC9C5D30015AD81 /* gleimlek.wav */,
-				006787FD1FC9C7E00015AD81 /* ramlerport.wav */,
-				F9342ADC1FC20BB60018FC78 /* clip.wav */,
 				0029D8841FC9A726000BA942 /* SwiftSerial-Bridging-Header.h */,
 			);
 			path = MistyTest;
