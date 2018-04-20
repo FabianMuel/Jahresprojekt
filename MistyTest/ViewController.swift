@@ -21,7 +21,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     let stopCommand = "stop"
     let stopCommandSerial = "4"
     
-    let fileStalker = FileStalker(timerInterval: 0.1, filename: "file.txt")
+    let fileStalker = FileStalker(timerInterval: 0.1, filename: "/Users/jahresprojekt/Desktop/file.txt")
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -87,6 +87,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     
     //aufgerufen wenn text in datei geaendert wurde
     func fileContentChanged(didChangeCommand command: String) {
+        print("file changed")
         sendDataToSP(commandData: command)
     }
     

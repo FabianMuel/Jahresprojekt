@@ -29,18 +29,24 @@ class FileStalker  {
         timer = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(readFromFile), userInfo: nil, repeats: true)
     }
     
+    func stopStalking(){
+        timer.invalidate()
+    }
+    
     @objc private func readFromFile() {
         let fileURL = URL(fileURLWithPath: filename)
         //reading
         do {
             let currentText = try String(contentsOf: fileURL, encoding: .utf8)
-            print("Loaded text: ", currentText)
+           // print("Loaded text: ", currentText)
             if lastReadText != currentText {
                 lastReadText = currentText
                 delegate?.fileContentChanged(didChangeCommand: currentText)
             }
         }
-        catch {/* error handling here */}
+        catch {
+            print("reading failed")
+        }
         
     }
 }
