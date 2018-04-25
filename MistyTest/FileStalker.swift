@@ -15,7 +15,7 @@ protocol FileStalkerDelegate {
 class FileStalker  {
     
     var delegate : FileStalkerDelegate?
-    var lastReadText = ""
+    var lastReadText = String
     var timer = Timer()
     var timerInterval = 0.1 //sek
     var filename = ""
@@ -39,6 +39,9 @@ class FileStalker  {
         do {
             let currentText = try String(contentsOf: fileURL, encoding: .utf8)
            // print("Loaded text: ", currentText)
+            if(lastReadText == nil) {
+                lastReadText = currentText
+            }
             if lastReadText != currentText {
                 lastReadText = currentText
                 delegate?.fileContentChanged(didChangeCommand: currentText)
