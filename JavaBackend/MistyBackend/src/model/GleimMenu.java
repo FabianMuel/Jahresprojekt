@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class GleimMenu {
 
     private ArrayList<GleimMenu> subMenuList = new ArrayList<>();
-    private String name;
-    private String audioFilePath;
-    private ArrayList<String> commandList = new ArrayList<>();
-    private String serialCommand;
+    private String name = "";
+    private String audioFilePath = "";
+    private ArrayList<String> voiceCommandList = new ArrayList<>();
+    private String serialCommand = "";
     private ArrayList<String> returnCommandList = new ArrayList<>();
 
     public GleimMenu(String name){
@@ -18,7 +18,7 @@ public class GleimMenu {
     public ArrayList<String> getSubMenuCommandList(){
         ArrayList<String> array = new ArrayList<>();
         for(GleimMenu menuElement : subMenuList){
-            for(String command : menuElement.getCommandList()){
+            for(String command : menuElement.getVoiceCommandList()){
                 array.add(command);
             }
         }
@@ -29,8 +29,8 @@ public class GleimMenu {
         subMenuList.add(gleimMenu);
     }
 
-    public void addCommand(String command){
-        commandList.add(command);
+    public void addVoiceCommand(String command){
+        voiceCommandList.add(command);
     }
 
     public void addReturnCommand(String command){
@@ -63,12 +63,12 @@ public class GleimMenu {
         this.audioFilePath = audioFilePath;
     }
 
-    public ArrayList<String> getCommandList() {
-        return commandList;
+    public ArrayList<String> getVoiceCommandList() {
+        return voiceCommandList;
     }
 
-    public void setCommandList(ArrayList<String> commandList) {
-        this.commandList = commandList;
+    public void setVoiceCommandList(ArrayList<String> voiceCommandList) {
+        this.voiceCommandList = voiceCommandList;
     }
 
     public String getSerialCommand() {

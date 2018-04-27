@@ -51,7 +51,71 @@ public class XmlWriter {
         this.gleimMenu=gleimMenu;
     }
 
-    public void createXML(){
+    public void createXML(GleimMenu gleimMenu){
+        document = builder.newDocument();
+        Element mainRootElement = document.createElement("MenuStructure");
+        document.appendChild(mainRootElement);
+        appendMenu(gleimMenu, mainRootElement);
+
+        TransformerFactory transformerFactory = TransformerFactory.newInstance();
+        try {
+            Transformer transformer = transformerFactory.newTransformer();
+            DOMSource source = new DOMSource(document);
+            StreamResult result = new StreamResult(new File(documentPath));
+            transformer.transform(source, result);
+            System.out.println("File saved!");
+        } catch (TransformerConfigurationException e) {
+            e.printStackTrace();
+        } catch (TransformerException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void appendMenu(GleimMenu gleimMenu, Element parentElement){
+        Element menuElement = document.createElement("GleimMenu");
+        //name
+        menuElement.setAttribute("Name", gleimMenu.getName());
+
+        //voice commands
+        Element commandListElement = document.createElement("VoiceCommandList");
+        for (String command : gleimMenu.getVoiceCommandList()){
+            Element commandElement = document.createElement("VoiceCommand");
+            commandElement.appendChild(document.createTextNode(command));
+            commandListElement.appendChild(commandElement);
+        }
+        menuElement.appendChild(commandListElement);
+
+        //serial command
+        Element serialCommandElement = document.createElement("SerialCommand");
+        serialCommandElement.appendChild(document.createTextNode(gleimMenu.getSerialCommand()));
+        menuElement.appendChild(serialCommandElement);
+
+        //audio file Path
+        Element audioPathElement = document.createElement("AudioPath");
+        audioPathElement.appendChild(document.createTextNode(gleimMenu.getAudioFilePath()));
+        menuElement.appendChild(audioPathElement);
+
+        //return commands
+        Element returnCommandListElement = document.createElement("ReturnCommandList");
+        for (String command : gleimMenu.getReturnCommandList()){
+            Element commandElement = document.createElement("ReturnCommand");
+            commandElement.appendChild(document.createTextNode(command));
+            returnCommandListElement.appendChild(commandElement);
+        }
+        menuElement.appendChild(returnCommandListElement);
+
+        //SubMenuElements
+        Element subMenuListElement = document.createElement("SubMenuList");
+        for(GleimMenu subMenuElement : gleimMenu.getSubMenuList()){
+            appendMenu(subMenuElement, subMenuListElement); //recursive
+        }
+        menuElement.appendChild(subMenuListElement);
+
+        //append to parent Element
+        parentElement.appendChild(menuElement);
+    }
+
+ /*   public void createXML(){
         document = builder.newDocument();
         Element mainRootElement = document.createElement("MenuStructure");
         document.appendChild(mainRootElement);
@@ -97,7 +161,7 @@ public class XmlWriter {
 
 
         //mainRootElement.appendChild();
-    }
+    } */
     /**
      * liest xml mit X-Path ein.
      * @return String nachricht
