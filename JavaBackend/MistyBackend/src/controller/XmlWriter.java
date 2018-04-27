@@ -1,5 +1,6 @@
 package controller;
 
+import model.GleimMenu;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -29,6 +30,7 @@ public class XmlWriter {
     private DocumentBuilder builder;
     private Document document;
     private String documentPath;
+    private GleimMenu gleimMenu;
 
     /**
      * http://www.mkyong.com/java/how-to-create-xml-file-in-java-dom/
@@ -39,51 +41,31 @@ public class XmlWriter {
         this.documentPath=documentPath;
         try {
             builder = factory.newDocumentBuilder();
-
-
-
         } catch (ParserConfigurationException e) {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
     }
-    /**
-     * schreibt xml-datei und wandelt xml mit xsl in html um.
-     * @param arrayList String
-     */
-    private ArrayList<String> listMarken = new ArrayList<String>();
-    private ArrayList<String> listPS = new ArrayList<String>();
-    private ArrayList<String> listFarben = new ArrayList<String>();
-    private ArrayList<String> listVerfuegbar = new ArrayList<String>();
 
-    public void addListMarken(String marke){
-        listMarken.add(marke);
-    }
-    public void addListPS(String ps){
-        listPS.add(ps);
-    }
-    public void addListFarben(String farbe){
-        listFarben.add(farbe);
-    }
-    public void addListVerfuegbar(String verfuegbar){
-        listVerfuegbar.add(verfuegbar);
+    public void setMenu(GleimMenu gleimMenu){
+        this.gleimMenu=gleimMenu;
     }
 
     public void createXML(){
-        System.out.println("marken: "+listMarken.size());
-        System.out.println("ps: "+listPS.size());
-        System.out.println("farben: "+listFarben.size());
         document = builder.newDocument();
-        Element mainRootElement = document.createElement("Autovermietung");
+        Element mainRootElement = document.createElement("MenuStructure");
         document.appendChild(mainRootElement);
-        for(int t=0; t<listMarken.size(); t++){
-            Element auto = document.createElement("Auto");
-            Element marke = document.createElement("Marke");
-            Element ps = document.createElement("PS");
-            Element farbe = document.createElement("Farbe");
-            Element verfuegbar = document.createElement("verfuegbar");
 
-            auto.appendChild(marke);
+        for(GleimMenu menuElement : gleimMenu.getSubMenuList()){
+            Element gleimMenu = document.createElement("GleimMenu");
+            Element subMenuList = document.createElement("SubMenuList");
+            Element audioFilePath = document.createElement("AudioFilePath");
+            Element commandList = document.createElement("CommandList");
+            Element serialCommand = document.createElement("SerialCommand");
+            Element returnCommandList = document.createElement("ReturnCommandList");
+
+            gleimMenu.appendChild(document.createAttribute(menuElement.getName()));
+            gleimMenu.appendChild(marke);
             marke.appendChild(document.createTextNode(listMarken.get(t)));
 
             auto.appendChild(ps);

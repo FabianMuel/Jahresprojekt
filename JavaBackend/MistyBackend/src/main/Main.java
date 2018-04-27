@@ -5,7 +5,7 @@ import view.*;
 public class Main {
 
     public static void main(String args[]){
-        new View();
-        new GleimMenu("test");
+       View view = new View();
+       GleimMenu gleimMenu = new GleimMenu("test");
     }
 }
