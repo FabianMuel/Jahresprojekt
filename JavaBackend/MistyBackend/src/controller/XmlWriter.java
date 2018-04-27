@@ -30,7 +30,6 @@ public class XmlWriter {
     private DocumentBuilder builder;
     private Document document;
     private String documentPath;
-    private GleimMenu gleimMenu;
 
     /**
      * http://www.mkyong.com/java/how-to-create-xml-file-in-java-dom/
@@ -45,10 +44,6 @@ public class XmlWriter {
             // TODO Auto-generated catch block
             e.printStackTrace();
         }
-    }
-
-    public void setMenu(GleimMenu gleimMenu){
-        this.gleimMenu=gleimMenu;
     }
 
     public void createXML(GleimMenu gleimMenu){
@@ -115,53 +110,6 @@ public class XmlWriter {
         parentElement.appendChild(menuElement);
     }
 
- /*   public void createXML(){
-        document = builder.newDocument();
-        Element mainRootElement = document.createElement("MenuStructure");
-        document.appendChild(mainRootElement);
-
-        for(GleimMenu menuElement : gleimMenu.getSubMenuList()){
-            Element gleimMenu = document.createElement("GleimMenu");
-            Element subMenuList = document.createElement("SubMenuList");
-            Element audioFilePath = document.createElement("AudioFilePath");
-            Element commandList = document.createElement("CommandList");
-            Element serialCommand = document.createElement("SerialCommand");
-            Element returnCommandList = document.createElement("ReturnCommandList");
-
-            gleimMenu.appendChild(document.createAttribute(menuElement.getName()));
-            gleimMenu.appendChild(marke);
-            marke.appendChild(document.createTextNode(listMarken.get(t)));
-
-            auto.appendChild(ps);
-            ps.appendChild(document.createTextNode(listPS.get(t)));
-
-            auto.appendChild(farbe);
-            farbe.appendChild(document.createTextNode(listFarben.get(t)));
-
-            auto.appendChild(verfuegbar);
-            verfuegbar.appendChild(document.createTextNode(listVerfuegbar.get(t)));
-            mainRootElement.appendChild(auto);
-        }
-        TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        try {
-            Transformer transformer = transformerFactory.newTransformer();
-            DOMSource source = new DOMSource(document);
-            StreamResult result = new StreamResult(new File("autovermietung.xml"));
-            transformer.transform(source, result);
-            System.out.println("File saved!");
-            //	XSL_Transformer xsl_transformer = new XSL_Transformer();
-            //	xsl_transformer.transform();
-        } catch (TransformerConfigurationException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (TransformerException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
-
-        //mainRootElement.appendChild();
-    } */
     /**
      * liest xml mit X-Path ein.
      * @return String nachricht
