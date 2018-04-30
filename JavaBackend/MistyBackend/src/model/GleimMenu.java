@@ -1,8 +1,12 @@
 package model;
 
+import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.MutableTreeNode;
+import javax.swing.tree.TreeNode;
 import java.util.ArrayList;
+import java.util.Enumeration;
 
-public class GleimMenu {
+public class GleimMenu extends DefaultMutableTreeNode {
 
     private ArrayList<GleimMenu> subMenuList = new ArrayList<>();
     private String name = "";
@@ -12,6 +16,7 @@ public class GleimMenu {
     private ArrayList<String> returnCommandList = new ArrayList<>();
 
     public GleimMenu(String name){
+        super.setUserObject(name);
         this.name=name;
     }
 
@@ -26,6 +31,7 @@ public class GleimMenu {
     }
 
     public void addSubMenu(GleimMenu gleimMenu){
+        super.add(gleimMenu);
         subMenuList.add(gleimMenu);
     }
 
@@ -86,4 +92,5 @@ public class GleimMenu {
     public void setReturnCommandList(ArrayList<String> returnCommandList) {
         this.returnCommandList = returnCommandList;
     }
+
 }
