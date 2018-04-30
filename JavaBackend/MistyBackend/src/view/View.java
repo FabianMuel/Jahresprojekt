@@ -5,8 +5,10 @@ import java.awt.*;
 
 public class View {
 
+    JFrame frame;
+
     public View(){
-        JFrame frame = new JFrame("MistyBackend");
+        frame = new JFrame("MistyBackend");
         frame.setContentPane(new MainView().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.pack();

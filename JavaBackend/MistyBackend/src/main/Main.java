@@ -6,7 +6,7 @@ import view.*;
 public class Main {
 
     public static void main(String args[]){
-       View view = new View();
+       MainView view = new MainView();
        GleimMenu topLevelMenu = new GleimMenu("topLevel");
 
        GleimMenu gleim = new GleimMenu("Gleim");
