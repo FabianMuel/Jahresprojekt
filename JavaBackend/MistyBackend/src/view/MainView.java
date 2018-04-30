@@ -1,13 +1,19 @@
 package view;
 
+import controller.XmlWriter;
 import model.GleimMenu;
 
 import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultMutableTreeNode;
+import javax.swing.tree.DefaultTreeModel;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
 
 public class MainView extends JFrame{
     public JPanel panel1;
@@ -23,24 +29,39 @@ public class MainView extends JFrame{
     private JScrollBar sbReturnCommands;
     private JButton addSubmenuButton;
     private JButton removeSubmenuButton;
-    private JButton saveValuesButton;
+    private JButton saveButton;
     private JLabel nameLabel;
     private JLabel voiceCommandLabel;
     private JLabel serialCommandLabel;
     private JLabel audioLabel;
     private JLabel returnCommandLabel;
+    private JButton openFileButton;
+    private JButton saveValuesButton;
+
+    private GleimMenu selectedMenu;
+    private XmlWriter xmlWriter;
+    private GleimMenu topLevelMenu;
+    private String xmlFilePath = "test.xml";
 
     public MainView() {
         this.setContentPane(panel1);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setVisible(true);
+        this.setTitle("Misty Backend");
 
+        xmlWriter = new XmlWriter(xmlFilePath);
 
         button1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                JFileChooser fileChooser = new JFileChooser();
+                int result = fileChooser.showOpenDialog(null);
+                if (result == JFileChooser.APPROVE_OPTION) {
+                    String path = fileChooser.getSelectedFile().getPath();
+                    selectedMenu.setAudioFilePath(path);
+                    tfAudio.setText(path);
+                }
             }
         });
         removeSubmenuButton.addActionListener(new ActionListener() {
@@ -52,13 +73,64 @@ public class MainView extends JFrame{
         addSubmenuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                selectedMenu.addSubMenu(new GleimMenu("another_child"));
+                DefaultTreeModel model = (DefaultTreeModel)tree1.getModel();
+                model.reload(topLevelMenu);
+            }
+        });
+        saveButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                saveValues();
+                File file = xmlWriter.createXML(topLevelMenu);
 
+                //open file after writing
+                if(!Desktop.isDesktopSupported()){
+                    System.out.println("Desktop is not supported");
+                    return;
+                }
+                Desktop desktop = Desktop.getDesktop();
+                if( file.exists()) {
+                    try {
+                        desktop.open(file);
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
+                    }
+                }
+            }
+        });
+        saveValuesButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                saveValues();
             }
         });
     }
 
+    private void saveValues() {
+        selectedMenu.setName(tfName.getText());
+        selectedMenu.setAudioFilePath(tfName.getText());
+        selectedMenu.setSerialCommand(tfSerialCommand.getText());
+
+        String[] voiceCommands = taVoiceCommand.getText().split("\n");
+        ArrayList<String> voiceCommandList = new ArrayList<>();
+        for (String command : voiceCommands){
+            System.out.println("Voice Command: "+command);
+            voiceCommandList.add(command);
+        }
+        selectedMenu.setVoiceCommandList(voiceCommandList);
+
+        String[] returnCommands = taReturnCommand.getText().split("\n");
+        ArrayList<String> returnCommandList = new ArrayList<>();
+        for (String command : returnCommands){
+            returnCommandList.add(command);
+        }
+        selectedMenu.setReturnCommandList(returnCommandList);
+
+    }
+
     private void createUIComponents() {
-        GleimMenu topLevelMenu = new GleimMenu("topLevel");
+        topLevelMenu = new GleimMenu("topLevel");
 
         GleimMenu gleim = new GleimMenu("Gleim");
         gleim.setAudioFilePath("gleim.wav");
@@ -82,16 +154,12 @@ public class MainView extends JFrame{
 
         topLevelMenu.addSubMenu(gleim);
         topLevelMenu.addSubMenu(ramler);
-        //add the child nodes to the root node
-    //    root.add(vegetableNode);
-   //     root.add(fruitNode);
         tree1 = new JTree(topLevelMenu);
 
         tree1.addTreeSelectionListener(new TreeSelectionListener() {
             @Override
             public void valueChanged(TreeSelectionEvent e) {
-
-                GleimMenu selectedMenu = (GleimMenu) e.getPath().getLastPathComponent();
+                selectedMenu = (GleimMenu) e.getPath().getLastPathComponent();
                 tfName.setText(selectedMenu.getName());
                 tfAudio.setText(selectedMenu.getAudioFilePath());
                 tfSerialCommand.setText(selectedMenu.getSerialCommand());

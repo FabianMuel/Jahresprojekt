@@ -20,10 +20,13 @@
                     <GleimMenu Name="GleimLek">
                         <VoiceCommandList>
                             <VoiceCommand>Lektüre</VoiceCommand>
+                            <VoiceCommand>TestKommando</VoiceCommand>
                         </VoiceCommandList>
                         <SerialCommand/>
-                        <AudioPath>gleimLek.wav</AudioPath>
-                        <ReturnCommandList/>
+                        <AudioPath>GleimLek</AudioPath>
+                        <ReturnCommandList>
+                            <ReturnCommand/>
+                        </ReturnCommandList>
                         <SubMenuList/>
                     </GleimMenu>
                 </SubMenuList>

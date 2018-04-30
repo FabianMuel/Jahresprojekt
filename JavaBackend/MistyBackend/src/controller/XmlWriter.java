@@ -43,7 +43,7 @@ public class XmlWriter {
         }
     }
 
-    public void createXML(GleimMenu gleimMenu){
+    public File createXML(GleimMenu gleimMenu){
         document = builder.newDocument();
         Element mainRootElement = document.createElement("MenuStructure");
         document.appendChild(mainRootElement);
@@ -54,14 +54,17 @@ public class XmlWriter {
             Transformer transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes"); //make it pretty
             DOMSource source = new DOMSource(document);
-            StreamResult result = new StreamResult(new File(documentPath));
+            File file = new File(documentPath);
+            StreamResult result = new StreamResult(file);
             transformer.transform(source, result);
             System.out.println("File saved!");
+            return file;
         } catch (TransformerConfigurationException e) {
             e.printStackTrace();
         } catch (TransformerException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
     private void appendMenu(GleimMenu gleimMenu, Element parentElement){
