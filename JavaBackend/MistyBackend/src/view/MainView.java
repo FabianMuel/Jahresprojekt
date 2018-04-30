@@ -6,7 +6,6 @@ import model.GleimMenu;
 import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
-import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -48,6 +47,7 @@ public class MainView extends JFrame{
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setVisible(true);
+        this.setLocationRelativeTo(null);
         this.setTitle("Misty Backend");
 
         xmlWriter = new XmlWriter(xmlFilePath);
@@ -67,20 +67,24 @@ public class MainView extends JFrame{
         removeSubmenuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                if(selectedMenu == null) return;
+                GleimMenu parentMenu = (GleimMenu) selectedMenu.getParent();
+                if(parentMenu == null) return;
+                System.out.println(parentMenu.getName());
+                new removeMenuDialog(parentMenu, selectedMenu, (DefaultTreeModel) tree1.getModel());
             }
         });
         addSubmenuButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                selectedMenu.addSubMenu(new GleimMenu("another_child"));
-                DefaultTreeModel model = (DefaultTreeModel)tree1.getModel();
-                model.reload(topLevelMenu);
+                if(selectedMenu == null) return;
+                new addMenuDialog(selectedMenu, (DefaultTreeModel) tree1.getModel());
             }
         });
         saveButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if(selectedMenu == null) return;
                 saveValues();
                 File file = xmlWriter.createXML(topLevelMenu);
 
@@ -102,6 +106,7 @@ public class MainView extends JFrame{
         saveValuesButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                if(selectedMenu == null) return;
                 saveValues();
             }
         });

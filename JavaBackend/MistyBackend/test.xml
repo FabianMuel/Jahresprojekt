@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <MenuStructure>
     <GleimMenu Name="topLevel">
-        <VoiceCommandList/>
+        <VoiceCommandList>
+            <VoiceCommand/>
+        </VoiceCommandList>
         <SerialCommand/>
-        <AudioPath/>
-        <ReturnCommandList/>
+        <AudioPath>topLevel</AudioPath>
+        <ReturnCommandList>
+            <ReturnCommand/>
+        </ReturnCommandList>
         <SubMenuList>
             <GleimMenu Name="Gleim">
                 <VoiceCommandList>
@@ -20,13 +24,10 @@
                     <GleimMenu Name="GleimLek">
                         <VoiceCommandList>
                             <VoiceCommand>Lektüre</VoiceCommand>
-                            <VoiceCommand>TestKommando</VoiceCommand>
                         </VoiceCommandList>
                         <SerialCommand/>
-                        <AudioPath>GleimLek</AudioPath>
-                        <ReturnCommandList>
-                            <ReturnCommand/>
-                        </ReturnCommandList>
+                        <AudioPath>gleimLek.wav</AudioPath>
+                        <ReturnCommandList/>
                         <SubMenuList/>
                     </GleimMenu>
                 </SubMenuList>

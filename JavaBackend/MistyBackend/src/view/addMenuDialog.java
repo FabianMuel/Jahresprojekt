@@ -1,22 +1,32 @@
 package view;
 
+import model.GleimMenu;
+
 import javax.swing.*;
+import javax.swing.tree.DefaultTreeModel;
+import java.awt.*;
 import java.awt.event.*;
 
-public class NewMenuView extends JDialog {
+public class addMenuDialog extends JDialog {
     private JPanel contentPane;
     private JButton buttonOK;
     private JButton buttonCancel;
     private JTextField textField1;
 
-    public NewMenuView() {
+    private GleimMenu gleimMenu;
+    private  DefaultTreeModel model;
+
+    public addMenuDialog(GleimMenu gleimMenu, DefaultTreeModel model) {
         pack();
         setVisible(true);
-        System.exit(0);
-
+        setLocationRelativeTo(null);
         setContentPane(contentPane);
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
+        setMinimumSize(new Dimension(300, 150));
+
+        this.gleimMenu = gleimMenu;
+        this.model=model;
 
         buttonOK.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent e) {
@@ -48,7 +58,8 @@ public class NewMenuView extends JDialog {
 
     private void onOK() {
         // add your code here
-
+        gleimMenu.addSubMenu(new GleimMenu(textField1.getText()));
+        model.reload();
         dispose();
     }
 

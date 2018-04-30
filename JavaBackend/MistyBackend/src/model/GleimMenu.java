@@ -40,6 +40,11 @@ public class GleimMenu extends DefaultMutableTreeNode {
         returnCommandList.add(command);
     }
 
+    public void removeSubMenu(GleimMenu toRemove){
+        super.remove(toRemove);
+        subMenuList.remove(toRemove);
+    }
+
     //-----------Generated Getter Setter------------
 
     public ArrayList<GleimMenu> getSubMenuList() {
