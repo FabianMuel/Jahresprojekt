@@ -1,6 +1,4 @@
 package main;
-import controller.XmlWriter;
-import model.GleimMenu;
 import view.*;
 
 public class Main {

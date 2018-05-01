@@ -2,19 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="780b7983-7647-4b8e-a774-c24c5530a35f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/controller/XmlWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/main/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/main/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/model/GleimMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/model/GleimMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$3.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$4.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$5.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$6.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/XmlWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/XmlReaderWriter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model/GleimMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/GleimMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/MainView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainView.form" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/MainView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/NewMenuView.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addMenuView.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/NewMenuView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/addMenuDialog.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -26,88 +30,71 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/MainView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="removeMenuDialog.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/removeMenuDialog.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file leaf-file-name="removeMenuDialog.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/removeMenuDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="48" />
-              <folding>
-                <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#503#504#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainView.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/MainView.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file leaf-file-name="addMenuView.form" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/view/addMenuView.form">
-          <provider selected="true" editor-type-id="ui-designer" />
-        </entry>
-      </file>
-      <file leaf-file-name="addMenuDialog.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/view/addMenuDialog.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-              <folding>
-                <element signature="e#455#456#0" expanded="true" />
-                <element signature="e#493#494#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="test.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="XmlWriter.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/controller/XmlWriter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="105" column="71" lean-forward="true" selection-start-line="105" selection-start-column="71" selection-end-line="105" selection-end-column="71" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="GleimMenu.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/model/GleimMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-272">
-              <caret line="5" column="53" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5674827">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/view/MainView.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="62">
+                  <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#4422#4423#0" expanded="true" />
+                    <element signature="e#4468#4469#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="addMenuDialog.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/view/addMenuDialog.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="425">
+                  <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="23" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="MainView.form" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/view/MainView.form">
+              <provider selected="true" editor-type-id="ui-designer" />
+            </entry>
+          </file>
+          <file leaf-file-name="XmlReaderWriter.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="408">
+                  <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="GleimMenu.java" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/model/GleimMenu.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="272">
+                  <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="test.xml" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/test.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="306">
+                  <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -130,15 +117,16 @@
         <option value="$PROJECT_DIR$/test.xml" />
         <option value="$PROJECT_DIR$/src/view/ViewFrame.java" />
         <option value="$PROJECT_DIR$/src/main/Main.java" />
-        <option value="$PROJECT_DIR$/src/controller/XmlWriter.java" />
         <option value="$PROJECT_DIR$/src/view/NewMenuView.form" />
         <option value="$PROJECT_DIR$/src/view/NewMenuView.java" />
         <option value="$PROJECT_DIR$/src/view/removeMenuDialog.form" />
+        <option value="$PROJECT_DIR$/src/view/removeMenuDialog.java" />
+        <option value="$PROJECT_DIR$/src/view/addMenuDialog.java" />
+        <option value="$PROJECT_DIR$/src/controller/XmlWriter.java" />
+        <option value="$PROJECT_DIR$/src/controller/XmlReaderWriter.java" />
         <option value="$PROJECT_DIR$/src/model/GleimMenu.java" />
         <option value="$PROJECT_DIR$/src/view/MainView.java" />
         <option value="$PROJECT_DIR$/src/view/MainView.form" />
-        <option value="$PROJECT_DIR$/src/view/removeMenuDialog.java" />
-        <option value="$PROJECT_DIR$/src/view/addMenuDialog.java" />
       </list>
     </option>
   </component>
@@ -152,10 +140,10 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="-7" />
     <option name="y" value="30" />
-    <option name="width" value="1155" />
-    <option name="height" value="1178" />
+    <option name="width" value="1154" />
+    <option name="height" value="1100" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -165,6 +153,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -216,19 +205,11 @@
               <item name="view" type="462c0819:PsiDirectoryNode" />
               <item name="MainView" type="e9f4de52:FormNode" />
             </path>
-            <path>
-              <item name="MistyBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MistyBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="view" type="462c0819:PsiDirectoryNode" />
-              <item name="removeMenuDialog" type="e9f4de52:FormNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="AndroidView" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -344,14 +325,15 @@
       <workItem from="1524866190711" duration="5044000" />
       <workItem from="1525080956151" duration="4211000" />
       <workItem from="1525092887712" duration="15412000" />
+      <workItem from="1525176855859" duration="6148000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38513000" />
+    <option name="totallyTimeSpent" value="44661000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="23" width="1550" height="848" extended-state="6" />
+    <frame x="-8" y="22" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
@@ -364,11 +346,11 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24291497" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24242425" />
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17057292" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1703125" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -400,6 +382,20 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1462">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/GleimMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -417,7 +413,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/XmlWriter.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1020">
           <caret line="82" column="24" lean-forward="true" selection-start-line="82" selection-start-column="24" selection-end-line="82" selection-end-column="24" />
@@ -455,7 +451,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/XmlWriter.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="43" column="50" lean-forward="true" selection-start-line="43" selection-start-column="50" selection-end-line="43" selection-end-column="50" />
@@ -500,7 +496,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/XmlWriter.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="25" column="13" selection-start-line="25" selection-start-column="13" selection-end-line="25" selection-end-column="13" />
@@ -531,7 +527,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/XmlWriter.java">
+    <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="697">
           <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
@@ -679,13 +675,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/ViewFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/ViewFrame.java" />
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
@@ -697,23 +687,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/addMenuView.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/XmlWriter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="105" column="71" lean-forward="true" selection-start-line="105" selection-start-column="71" selection-end-line="105" selection-end-column="71" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="177">
@@ -721,26 +694,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/view/removeMenuDialog.java" />
     <entry file="file://$PROJECT_DIR$/src/model/GleimMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="5" column="53" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="272">
+          <caret line="62" column="34" lean-forward="true" selection-start-line="62" selection-start-column="34" selection-end-line="62" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/removeMenuDialog.form">
-      <provider selected="true" editor-type-id="ui-designer" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/removeMenuDialog.java">
+    <entry file="file://$PROJECT_DIR$/src/view/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="24" column="8" lean-forward="true" selection-start-line="24" selection-start-column="8" selection-end-line="24" selection-end-column="48" />
+        <state relative-caret-position="62">
+          <caret line="125" column="13" lean-forward="true" selection-start-line="125" selection-start-column="13" selection-end-line="125" selection-end-column="13" />
           <folding>
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#503#504#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+            <element signature="e#4422#4423#0" expanded="true" />
+            <element signature="e#4468#4469#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -748,21 +717,24 @@
     <entry file="file://$PROJECT_DIR$/src/view/MainView.form">
       <provider selected="true" editor-type-id="ui-designer" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/MainView.java">
+    <entry file="file://$PROJECT_DIR$/src/view/addMenuDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="47" column="20" lean-forward="true" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
+        <state relative-caret-position="425">
+          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="7" selection-end-line="61" selection-end-column="23" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/addMenuDialog.java">
+    <entry file="file://$PROJECT_DIR$/test.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#455#456#0" expanded="true" />
-            <element signature="e#493#494#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="306">
+          <caret line="18" column="29" lean-forward="true" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="92" lean-forward="true" selection-start-line="92" selection-end-line="92" />
         </state>
       </provider>
     </entry>

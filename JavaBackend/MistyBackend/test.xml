@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <MenuStructure>
     <GleimMenu Name="topLevel">
-        <VoiceCommandList>
-            <VoiceCommand/>
-        </VoiceCommandList>
+        <VoiceCommandList/>
         <SerialCommand/>
-        <AudioPath>topLevel</AudioPath>
-        <ReturnCommandList>
-            <ReturnCommand/>
-        </ReturnCommandList>
+        <AudioPath/>
+        <ReturnCommandList/>
         <SubMenuList>
             <GleimMenu Name="Gleim">
                 <VoiceCommandList>
@@ -16,7 +12,7 @@
                     <VoiceCommand>Moin Gleim</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath>gleim.wav</AudioPath>
+                <AudioPath>Gleim</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand>auf Wiedersehen</ReturnCommand>
                 </ReturnCommandList>
@@ -27,6 +23,15 @@
                         </VoiceCommandList>
                         <SerialCommand/>
                         <AudioPath>gleimLek.wav</AudioPath>
+                        <ReturnCommandList/>
+                        <SubMenuList/>
+                    </GleimMenu>
+                    <GleimMenu Name="GleimWitz">
+                        <VoiceCommandList>
+                            <VoiceCommand>Erzähl mir was über Witz</VoiceCommand>
+                        </VoiceCommandList>
+                        <SerialCommand/>
+                        <AudioPath>GleimWitz</AudioPath>
                         <ReturnCommandList/>
                         <SubMenuList/>
                     </GleimMenu>

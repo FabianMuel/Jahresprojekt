@@ -1,6 +1,6 @@
 package view;
 
-import controller.XmlWriter;
+import controller.XmlReaderWriter;
 import model.GleimMenu;
 
 import javax.swing.*;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 public class MainView extends JFrame{
     public JPanel panel1;
     private JTree tree1;
-    private JScrollBar sbTree;
+    private JScrollBar sbTreeV;
     private JTextField tfName;
     private JTextArea taVoiceCommand;
     private JTextField tfSerialCommand;
@@ -25,7 +25,7 @@ public class MainView extends JFrame{
     private JButton button1;
     private JTextArea taReturnCommand;
     private JScrollBar sbVoiceCommands;
-    private JScrollBar sbReturnCommands;
+    private JScrollBar sbReturnCommandsV;
     private JButton addSubmenuButton;
     private JButton removeSubmenuButton;
     private JButton saveButton;
@@ -36,9 +36,12 @@ public class MainView extends JFrame{
     private JLabel returnCommandLabel;
     private JButton openFileButton;
     private JButton saveValuesButton;
+    private JButton newFileButton;
+    private JScrollBar sbTreeH;
+    private JScrollBar sbReturnCommandsH;
 
     private GleimMenu selectedMenu;
-    private XmlWriter xmlWriter;
+    private XmlReaderWriter xmlReaderWriter;
     private GleimMenu topLevelMenu;
     private String xmlFilePath = "test.xml";
 
@@ -50,7 +53,7 @@ public class MainView extends JFrame{
         this.setLocationRelativeTo(null);
         this.setTitle("Misty Backend");
 
-        xmlWriter = new XmlWriter(xmlFilePath);
+        xmlReaderWriter = new XmlReaderWriter(xmlFilePath);
 
         button1.addActionListener(new ActionListener() {
             @Override
@@ -86,7 +89,7 @@ public class MainView extends JFrame{
             public void actionPerformed(ActionEvent e) {
                 if(selectedMenu == null) return;
                 saveValues();
-                File file = xmlWriter.createXML(topLevelMenu);
+                File file = xmlReaderWriter.createXML(topLevelMenu);
 
                 //open file after writing
                 if(!Desktop.isDesktopSupported()){
@@ -110,11 +113,23 @@ public class MainView extends JFrame{
                 saveValues();
             }
         });
+        newFileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+
+            }
+        });
+        openFileButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                xmlReaderWriter.readXML(new File(xmlFilePath));
+            }
+        });
     }
 
     private void saveValues() {
         selectedMenu.setName(tfName.getText());
-        selectedMenu.setAudioFilePath(tfName.getText());
+        selectedMenu.setAudioFilePath(tfAudio.getText());
         selectedMenu.setSerialCommand(tfSerialCommand.getText());
 
         String[] voiceCommands = taVoiceCommand.getText().split("\n");
@@ -131,7 +146,8 @@ public class MainView extends JFrame{
             returnCommandList.add(command);
         }
         selectedMenu.setReturnCommandList(returnCommandList);
-
+        DefaultTreeModel model = (DefaultTreeModel) tree1.getModel();
+        model.reload();
     }
 
     private void createUIComponents() {

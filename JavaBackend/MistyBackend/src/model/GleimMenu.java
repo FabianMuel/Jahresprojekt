@@ -60,6 +60,7 @@ public class GleimMenu extends DefaultMutableTreeNode {
     }
 
     public void setName(String name) {
+        super.setUserObject(name);
         this.name = name;
     }
 

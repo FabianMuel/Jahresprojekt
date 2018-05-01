@@ -21,7 +21,7 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 
-public class XmlWriter {
+public class XmlReaderWriter {
 
     private DocumentBuilderFactory factory;
     private DocumentBuilder builder;
@@ -32,7 +32,7 @@ public class XmlWriter {
      * http://www.mkyong.com/java/how-to-create-xml-file-in-java-dom/
      * @param documentPath String
      */
-    public XmlWriter(String documentPath){
+    public XmlReaderWriter(String documentPath){
         factory = DocumentBuilderFactory.newInstance();
         this.documentPath=documentPath;
         try {
@@ -111,41 +111,95 @@ public class XmlWriter {
         parentElement.appendChild(menuElement);
     }
 
-    /**
-     * liest xml mit X-Path ein.
-     * @return String nachricht
-     */
-    public ArrayList<String> readXML(){
-        ArrayList<String> tmpList = new ArrayList<String>();
-        DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
-        docFactory.setNamespaceAware(false); // important!
-        DocumentBuilder docBuilder;
-        try {
-            docBuilder = docFactory.newDocumentBuilder();
-            Document doc = docBuilder.parse("chat.xml");
-            XPath xpath = XPathFactory.newInstance().newXPath();
-            NodeList nodeList = (NodeList)xpath.compile("/chat/nachricht").evaluate(doc, XPathConstants.NODESET);
-            for (int i = 0; i < nodeList.getLength(); ++i) {
-                Node node = nodeList.item(i);
-                tmpList.add(node.getFirstChild().getFirstChild().getNodeValue());
-                //tmpList.add(nodeList.item(i).getFirstChild().getNodeValue());
-            }
+    private GleimMenu readMenu(NodeList nodelist, GleimMenu gleimMenu){
 
-            return tmpList;
-        } catch (ParserConfigurationException e) {
-            // TODO Auto-generated catch block
-        } catch (SAXException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (IOException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        } catch (XPathExpressionException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
+        for (int t = 0; t < nodelist.getLength(); t++){
+            Node node = nodelist.item(t);
+
+            System.out.println(node.getAttributes().getLength());
+
+    //        gleimMenu.setName(node.getAttributes().item(0).toString());
+            System.out.println("dd: "+node.getChildNodes().getLength());
+            NodeList childNotes = node.getChildNodes();
+            System.out.println(childNotes.item(0).toString());
+
+        //    System.out.println(childNotes.item(t).getAttributes().getLength());
         }
         return null;
+    }
 
+    /**
+     * liest xml mit X-Path ein.
+     */
+    public GleimMenu readXML(File inputFile) {
+
+        GleimMenu topLevelMenu = new GleimMenu(null);
+        try {
+            DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
+
+            Document doc = dBuilder.parse(inputFile);
+            doc.getDocumentElement().normalize();
+
+            XPath xPath = XPathFactory.newInstance().newXPath();
+
+            String expression = "/MenuStructure";
+            NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(doc, XPathConstants.NODESET);
+            readMenu(nodeList, topLevelMenu);
+
+   /*         // Manager Liste
+            for (int i = 0; i < nodeList.getLength(); i++) {
+
+                Node manager = nodeList.item(i);
+                NodeList kampagnen = manager.getChildNodes();
+
+                // Kamapgnen Liste
+                for (int j = 0; j < kampagnen.getLength(); j++) {
+
+                    Node kampagne = kampagnen.item(j);
+                    NodeList kampAttr = kampagne.getChildNodes();
+
+                    // Attribute der Kampagne
+                    for (int k = 0; k < kampAttr.getLength(); k++) {
+
+                        Node attr = kampAttr.item(k);
+                        if (attr.getNodeName().equals("name")) {
+                            topLevelMenu.setName(attr.getTextContent());
+                        }
+                        if (attr.getNodeName().equals("ort")) {
+                            topLevelMenu.setOrt(attr.getTextContent());
+                        }
+                        if (attr.getNodeName().equals("zeit")) {
+                            topLevelMenu.setZeit(attr.getTextContent());
+                        }
+                        if (attr.getNodeName().equals("datum")) {
+                            topLevelMenu.setDatum(attr.getTextContent());
+                        }
+                        if (attr.getNodeName().equals("veranstalter")) {
+                            topLevelMenu.setVeranstalter(attr.getTextContent());
+                        }
+                        if (attr.getNodeName().equals("kurzbesch")) {
+                            topLevelMenu.setKurzbesch(attr.getTextContent());
+                        }
+                        if (attr.getNodeName().equals("limitierung")) {
+                            topLevelMenu.setLimitierung(attr.getTextContent());
+                        }
+                        if (attr.getNodeName().equals("kommentar")) {
+                            topLevelMenu.addKommentar(attr.getTextContent());
+                        }
+                        if (attr.getNodeName().equals("sumBewertung")) {
+                            topLevelMenu.setSumBewertung(Integer.parseInt(attr.getTextContent()));
+                        }
+                        if (attr.getNodeName().equals("countBewertung")) {
+                            topLevelMenu.setCountBewertung(Integer.parseInt(attr.getTextContent()));
+                        }
+                    }
+                }
+            } */
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return topLevelMenu;
     }
 
 }
