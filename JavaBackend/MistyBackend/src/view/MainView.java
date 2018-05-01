@@ -7,6 +7,7 @@ import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
 import javax.swing.tree.DefaultTreeModel;
+import javax.swing.tree.TreePath;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -44,6 +45,9 @@ public class MainView extends JFrame{
     private XmlReaderWriter xmlReaderWriter;
     private GleimMenu topLevelMenu;
     private String xmlFilePath = "test.xml";
+    private int selectedRow;
+    private TreePath selectedPath;
+    private boolean[] expandedRowArray;
 
     public MainView() {
         this.setContentPane(panel1);
@@ -148,6 +152,7 @@ public class MainView extends JFrame{
         selectedMenu.setReturnCommandList(returnCommandList);
         DefaultTreeModel model = (DefaultTreeModel) tree1.getModel();
         model.reload();
+     //   expandRows();
     }
 
     private void createUIComponents() {
@@ -181,6 +186,7 @@ public class MainView extends JFrame{
             @Override
             public void valueChanged(TreeSelectionEvent e) {
                 selectedMenu = (GleimMenu) e.getPath().getLastPathComponent();
+             //   getExpandedRows();
                 tfName.setText(selectedMenu.getName());
                 tfAudio.setText(selectedMenu.getAudioFilePath());
                 tfSerialCommand.setText(selectedMenu.getSerialCommand());
@@ -196,6 +202,19 @@ public class MainView extends JFrame{
                 }
             }
         });
+    }
+
+    private void getExpandedRows() {
+     //   expandedRowArray = new boolean[tree1.cou()];
+        for (int t = 0; t < expandedRowArray.length; t++){
+           expandedRowArray[t] =  tree1.isExpanded(t);
+        }
+    }
+
+    private void expandRows(){
+        for(int t = 0; t < expandedRowArray.length; t++){
+            if(expandedRowArray[t]) tree1.expandRow(t);
+        }
     }
 
     public void setTree1(GleimMenu gleimMenu){
