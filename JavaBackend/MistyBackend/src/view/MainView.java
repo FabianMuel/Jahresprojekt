@@ -6,6 +6,7 @@ import model.GleimMenu;
 import javax.swing.*;
 import javax.swing.event.TreeSelectionEvent;
 import javax.swing.event.TreeSelectionListener;
+import javax.swing.tree.DefaultMutableTreeNode;
 import javax.swing.tree.DefaultTreeModel;
 import javax.swing.tree.TreePath;
 import java.awt.*;
@@ -44,20 +45,19 @@ public class MainView extends JFrame{
     private GleimMenu selectedMenu;
     private XmlReaderWriter xmlReaderWriter;
     private GleimMenu topLevelMenu;
-    private String xmlFilePath = "test.xml";
+    private String xmlFilePath = "GleimMenuStructure.xml";
     private int selectedRow;
     private TreePath selectedPath;
     private boolean[] expandedRowArray;
 
     public MainView() {
+        xmlReaderWriter = new XmlReaderWriter(xmlFilePath);
         this.setContentPane(panel1);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.pack();
         this.setVisible(true);
         this.setLocationRelativeTo(null);
         this.setTitle("Misty Backend");
-
-        xmlReaderWriter = new XmlReaderWriter(xmlFilePath);
 
         button1.addActionListener(new ActionListener() {
             @Override
@@ -126,7 +126,38 @@ public class MainView extends JFrame{
         openFileButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                xmlReaderWriter.readXML(new File(xmlFilePath));
+                JFileChooser fileChooser = new JFileChooser();
+                int result = fileChooser.showOpenDialog(null);
+                if (result == JFileChooser.APPROVE_OPTION) {
+                    String path = fileChooser.getSelectedFile().getPath();
+                    setTree1(new XmlReaderWriter(path).readXML(new File(path)));
+                }
+
+             //   repaint();
+            }
+        });
+    }
+
+    private void createUIComponents() {
+        tree1 = new JTree(new GleimMenu("topLevel"));
+        tree1.addTreeSelectionListener(new TreeSelectionListener() {
+            @Override
+            public void valueChanged(TreeSelectionEvent e) {
+                selectedMenu = (GleimMenu) e.getPath().getLastPathComponent();
+                //   getExpandedRows();
+                tfName.setText(selectedMenu.getName());
+                tfAudio.setText(selectedMenu.getAudioFilePath());
+                tfSerialCommand.setText(selectedMenu.getSerialCommand());
+
+                taVoiceCommand.setText("");
+                for(String vcommand : selectedMenu.getVoiceCommandList()) {
+                    taVoiceCommand.append(vcommand + "\n");
+                }
+
+                taReturnCommand.setText("");
+                for (String rcommand : selectedMenu.getReturnCommandList()){
+                    taReturnCommand.append(rcommand + "\n");
+                }
             }
         });
     }
@@ -152,56 +183,13 @@ public class MainView extends JFrame{
         selectedMenu.setReturnCommandList(returnCommandList);
         DefaultTreeModel model = (DefaultTreeModel) tree1.getModel();
         model.reload();
-     //   expandRows();
     }
 
-    private void createUIComponents() {
-        topLevelMenu = new GleimMenu("topLevel");
-
-        GleimMenu gleim = new GleimMenu("Gleim");
-        gleim.setAudioFilePath("gleim.wav");
-        gleim.setSerialCommand("1");
-        gleim.addReturnCommand("auf Wiedersehen");
-        gleim.addVoiceCommand("Hallo Gleim");
-        gleim.addVoiceCommand("Moin Gleim");
-
-        GleimMenu gleimLek = new GleimMenu("GleimLek");
-        gleimLek.setAudioFilePath("gleimLek.wav");
-        gleimLek.addVoiceCommand("Lektüre");
-
-        gleim.addSubMenu(gleimLek);
-
-        GleimMenu ramler = new GleimMenu("Ramler");
-        ramler.setAudioFilePath("ramler.wav");
-        ramler.setSerialCommand("2");
-        ramler.addReturnCommand("tschüss");
-        ramler.addVoiceCommand("Hallo Ramler");
-        ramler.addVoiceCommand("Was geht ab");
-
-        topLevelMenu.addSubMenu(gleim);
-        topLevelMenu.addSubMenu(ramler);
-        tree1 = new JTree(topLevelMenu);
-
-        tree1.addTreeSelectionListener(new TreeSelectionListener() {
-            @Override
-            public void valueChanged(TreeSelectionEvent e) {
-                selectedMenu = (GleimMenu) e.getPath().getLastPathComponent();
-             //   getExpandedRows();
-                tfName.setText(selectedMenu.getName());
-                tfAudio.setText(selectedMenu.getAudioFilePath());
-                tfSerialCommand.setText(selectedMenu.getSerialCommand());
-
-                taVoiceCommand.setText("");
-                for(String vcommand : selectedMenu.getVoiceCommandList()) {
-                    taVoiceCommand.append(vcommand + "\n");
-                }
-
-                taReturnCommand.setText("");
-                for (String rcommand : selectedMenu.getReturnCommandList()){
-                    taReturnCommand.append(rcommand + "\n");
-                }
-            }
-        });
+    private void setTree1(GleimMenu gleimMenu){
+        topLevelMenu = gleimMenu;
+        DefaultTreeModel model = (DefaultTreeModel) tree1.getModel();
+        model.setRoot(topLevelMenu);
+        model.reload();
     }
 
     private void getExpandedRows() {
@@ -217,7 +205,5 @@ public class MainView extends JFrame{
         }
     }
 
-    public void setTree1(GleimMenu gleimMenu){
 
-    }
 }

@@ -111,65 +111,60 @@ public class XmlReaderWriter {
         parentElement.appendChild(menuElement);
     }
 
-    private GleimMenu readMenu(NodeList nodelist, GleimMenu gleimMenu){
+    private GleimMenu readMenu(Node node, GleimMenu gleimMenu){
 
-        for (int t = 0; t < nodelist.getLength(); t++){
-            Node node = nodelist.item(t);
-            //name
-            gleimMenu.setName(node.getAttributes().getNamedItem("Name").getTextContent());
+        //name
+        gleimMenu.setName(node.getAttributes().getNamedItem("Name").getTextContent());
 
-            NodeList childNotes = node.getChildNodes();
-            for(int i = 0; i<childNotes.getLength(); i++){
-                Node childNode = childNotes.item(i);
+        NodeList childNotes = node.getChildNodes();
+        for(int i = 0; i<childNotes.getLength(); i++){
+            Node childNode = childNotes.item(i);
 
-                //voice command list
-                if(childNode.getNodeName().equals("VoiceCommandList")){
-                    NodeList voiceCommandNodes = childNode.getChildNodes();
-                    for(int j = 0; j < voiceCommandNodes.getLength(); j++){
-                        Node voiceCommandNode = voiceCommandNodes.item(j);
-                        if(voiceCommandNode.getNodeName().equals("VoiceCommand")){
-                            gleimMenu.addVoiceCommand(voiceCommandNode.getTextContent());
-                        }
+            //voice command list
+            if(childNode.getNodeName().equals("VoiceCommandList")){
+                NodeList voiceCommandNodes = childNode.getChildNodes();
+                for(int j = 0; j < voiceCommandNodes.getLength(); j++){
+                    Node voiceCommandNode = voiceCommandNodes.item(j);
+                    if(voiceCommandNode.getNodeName().equals("VoiceCommand")){
+                        gleimMenu.addVoiceCommand(voiceCommandNode.getTextContent());
                     }
-                }
-
-                //serial command
-                if(childNode.getNodeName().equals("SerialCommand")){
-                    gleimMenu.setSerialCommand(childNode.getTextContent());
-                }
-
-                //audio path
-                if(childNode.getNodeName().equals("AudioPath")){
-                    gleimMenu.setAudioFilePath(childNode.getTextContent());
-                }
-
-                //return command list
-                if(childNode.getNodeName().equals("ReturnCommandList")){
-                    NodeList returnCommandNodes = childNode.getChildNodes();
-                    for(int j = 0; j < returnCommandNodes.getLength(); j++){
-                        Node returnCommandNode = returnCommandNodes.item(j);
-                        if(returnCommandNode.getNodeName().equals("ReturnCommand")){
-                            gleimMenu.addReturnCommand(returnCommandNode.getTextContent());
-                        }
-                    }
-                }
-
-                if(childNotes.item(i).getNodeName().equals("SubMenuList")){
-                    System.out.println(childNotes.item(i).getChildNodes().item(1).getNodeName());
-
                 }
             }
 
-    //        gleimMenu.setName(node.getAttributes().item(0).toString());
-            System.out.println("childnotes.getLength(): "+node.getChildNodes().getLength());
-            System.out.println(node.getNodeName());
-            System.out.println(node.getAttributes().getNamedItem("Name").getTextContent());
+            //serial command
+            if(childNode.getNodeName().equals("SerialCommand")){
+                gleimMenu.setSerialCommand(childNode.getTextContent());
+            }
 
+            //audio path
+            if(childNode.getNodeName().equals("AudioPath")){
+                gleimMenu.setAudioFilePath(childNode.getTextContent());
+            }
 
+            //return command list
+            if(childNode.getNodeName().equals("ReturnCommandList")){
+                NodeList returnCommandNodes = childNode.getChildNodes();
+                for(int j = 0; j < returnCommandNodes.getLength(); j++){
+                    Node returnCommandNode = returnCommandNodes.item(j);
+                    if(returnCommandNode.getNodeName().equals("ReturnCommand")){
+                        gleimMenu.addReturnCommand(returnCommandNode.getTextContent());
+                    }
+                }
+            }
 
-        //    System.out.println(childNotes.item(t).getAttributes().getLength());
+            //Sub menu List
+            if(childNode.getNodeName().equals("SubMenuList")){
+                NodeList subMenuNodes = childNode.getChildNodes();
+                for(int j = 0; j < subMenuNodes.getLength(); j++){
+                    Node subMenuNode = subMenuNodes.item(j);
+                    if(subMenuNode.getNodeName().equals("GleimMenu")){
+                        GleimMenu subMenu = new GleimMenu(null);
+                        gleimMenu.addSubMenu(readMenu(subMenuNode, subMenu)); //recursive
+                    }
+                }
+            }
         }
-        return null;
+        return gleimMenu;
     }
 
     /**
@@ -189,57 +184,8 @@ public class XmlReaderWriter {
 
             String expression = "/MenuStructure/GleimMenu";
             NodeList nodeList = (NodeList) xPath.compile(expression).evaluate(doc, XPathConstants.NODESET);
-            readMenu(nodeList, topLevelMenu);
+            if(nodeList.getLength() == 1) topLevelMenu = readMenu(nodeList.item(0), topLevelMenu);
 
-   /*         // Manager Liste
-            for (int i = 0; i < nodeList.getLength(); i++) {
-
-                Node manager = nodeList.item(i);
-                NodeList kampagnen = manager.getChildNodes();
-
-                // Kamapgnen Liste
-                for (int j = 0; j < kampagnen.getLength(); j++) {
-
-                    Node kampagne = kampagnen.item(j);
-                    NodeList kampAttr = kampagne.getChildNodes();
-
-                    // Attribute der Kampagne
-                    for (int k = 0; k < kampAttr.getLength(); k++) {
-
-                        Node attr = kampAttr.item(k);
-                        if (attr.getNodeName().equals("name")) {
-                            topLevelMenu.setName(attr.getTextContent());
-                        }
-                        if (attr.getNodeName().equals("ort")) {
-                            topLevelMenu.setOrt(attr.getTextContent());
-                        }
-                        if (attr.getNodeName().equals("zeit")) {
-                            topLevelMenu.setZeit(attr.getTextContent());
-                        }
-                        if (attr.getNodeName().equals("datum")) {
-                            topLevelMenu.setDatum(attr.getTextContent());
-                        }
-                        if (attr.getNodeName().equals("veranstalter")) {
-                            topLevelMenu.setVeranstalter(attr.getTextContent());
-                        }
-                        if (attr.getNodeName().equals("kurzbesch")) {
-                            topLevelMenu.setKurzbesch(attr.getTextContent());
-                        }
-                        if (attr.getNodeName().equals("limitierung")) {
-                            topLevelMenu.setLimitierung(attr.getTextContent());
-                        }
-                        if (attr.getNodeName().equals("kommentar")) {
-                            topLevelMenu.addKommentar(attr.getTextContent());
-                        }
-                        if (attr.getNodeName().equals("sumBewertung")) {
-                            topLevelMenu.setSumBewertung(Integer.parseInt(attr.getTextContent()));
-                        }
-                        if (attr.getNodeName().equals("countBewertung")) {
-                            topLevelMenu.setCountBewertung(Integer.parseInt(attr.getTextContent()));
-                        }
-                    }
-                }
-            } */
         } catch (Exception e) {
             e.printStackTrace();
         }
