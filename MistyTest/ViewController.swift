@@ -68,6 +68,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     
     func sendDataToSP(commandData: String) {
         serialPort?.send(commandData.data(using: .utf8)!)
+        resetTimer()
     }
     
     @objc func resetMenu() {
