@@ -10,6 +10,8 @@ import Foundation
 
 class XmlMenuReader: NSObject, XMLParserDelegate {
     
+    private var gleimMenu = GleimMenu()
+    private var currentElement = ""
     
     override init(){
         super.init()
@@ -21,5 +23,24 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
         }
     }
     
-    parser
+    func parserDidStartDocument(_ parser: XMLParser) {
+        
+    }
+    
+    func parser(_ parser: XMLParser, foundCharacters string: String) {
+        
+    }
+    
+    func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
+        
+    }
+    
+    func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
+        
+        currentElement = elementName
+        if currentElement == "GleimMenu" {
+            gleimMenu.setName(name: attributeDict["Name"]!)
+        }
+    }
+    
 }
