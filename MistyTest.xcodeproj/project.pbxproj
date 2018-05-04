@@ -23,6 +23,7 @@
 		28B7FEE8A78A27E3DF6541F9 /* Pods_MistyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F221B5DFA4C3D2E37ABA62D4 /* Pods_MistyTestTests.framework */; };
 		61433D4A0891852185E5237C /* Pods_MistyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */; };
 		B9146FB020889BB4000FCF4F /* FileStalker.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9146FAF20889BB4000FCF4F /* FileStalker.swift */; };
+		B91FE790209C62BB00638CAB /* XmlMenuReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = B91FE78F209C62BB00638CAB /* XmlMenuReader.swift */; };
 		B9535C8C207A401400E34868 /* GleimMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9535C8B207A401400E34868 /* GleimMenu.swift */; };
 		B9535C8E207A43DF00E34868 /* MenuCreator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9535C8D207A43DF00E34868 /* MenuCreator.swift */; };
 		B98798CE2089D6D30045CC42 /* file.txt in Resources */ = {isa = PBXBuildFile; fileRef = B98798CD2089D6D30045CC42 /* file.txt */; };
@@ -74,6 +75,7 @@
 		78D562FAB3BA04F526777F5E /* Pods-MistyTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest.debug.xcconfig"; sourceTree = "<group>"; };
 		8F9CBE9D9D17C39CFED34C78 /* Pods-MistyTestUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestUITests/Pods-MistyTestUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9146FAF20889BB4000FCF4F /* FileStalker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStalker.swift; sourceTree = "<group>"; };
+		B91FE78F209C62BB00638CAB /* XmlMenuReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlMenuReader.swift; sourceTree = "<group>"; };
 		B9535C8B207A401400E34868 /* GleimMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GleimMenu.swift; sourceTree = "<group>"; };
 		B9535C8D207A43DF00E34868 /* MenuCreator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCreator.swift; sourceTree = "<group>"; };
 		B98798CD2089D6D30045CC42 /* file.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = file.txt; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				B9535C8D207A43DF00E34868 /* MenuCreator.swift */,
 				B9535C8B207A401400E34868 /* GleimMenu.swift */,
 				B9146FAF20889BB4000FCF4F /* FileStalker.swift */,
+				B91FE78F209C62BB00638CAB /* XmlMenuReader.swift */,
 				B98798CD2089D6D30045CC42 /* file.txt */,
 				F9342AB01FC1E32F0018FC78 /* Assets.xcassets */,
 				F9342AB21FC1E32F0018FC78 /* Main.storyboard */,
@@ -520,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B9146FB020889BB4000FCF4F /* FileStalker.swift in Sources */,
+				B91FE790209C62BB00638CAB /* XmlMenuReader.swift in Sources */,
 				F9342AAF1FC1E32F0018FC78 /* ViewController.swift in Sources */,
 				B9535C8C207A401400E34868 /* GleimMenu.swift in Sources */,
 				B9535C8E207A43DF00E34868 /* MenuCreator.swift in Sources */,
