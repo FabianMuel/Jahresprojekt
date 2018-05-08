@@ -31,7 +31,7 @@ class MenuCreator {
     
     var stop = "stop"
     
-    var topLevelMenu = GleimMenu()
+    public var topLevelMenu = GleimMenu()
     
     init() {
         topLevelMenu = GleimMenu(name: "TopLevel")

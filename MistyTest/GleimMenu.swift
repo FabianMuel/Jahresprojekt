@@ -10,7 +10,7 @@ import Foundation
 
 class GleimMenu{
     
-    private var subMenu = [GleimMenu]()
+    private var subMenuList = [GleimMenu]()
     private var name = ""
     private var audioFilePath = ""
     private var commandList = [String]()
@@ -19,7 +19,7 @@ class GleimMenu{
     
     init(name: String, subMenu: Array<GleimMenu>, audioFilePath: String, commandList: Array<String>, serialCommand: String, returnCommandList: Array<String>){
         self.name=name
-        self.subMenu=subMenu
+        self.subMenuList=subMenu
         self.audioFilePath=audioFilePath
         self.commandList=commandList
         self.serialCommand=serialCommand
@@ -34,8 +34,8 @@ class GleimMenu{
         
     }
     
-    public func getSubMenu() -> Array<GleimMenu> {
-        return subMenu
+    public func getSubMenuList() -> Array<GleimMenu> {
+        return subMenuList
     }
     
     public func getName() -> String {
@@ -52,7 +52,7 @@ class GleimMenu{
     
     public func getSubMenuCommandList() -> Array<String> {
         var array = [String]()
-        for menuElement in subMenu {
+        for menuElement in subMenuList {
             for command in menuElement.getOwnCommandList() {
                 array.append(command)
             }
@@ -85,7 +85,7 @@ class GleimMenu{
     }
     
     public func addSubMenuElement(element: GleimMenu){
-        subMenu.append(element)
+        subMenuList.append(element)
     }
     
     public func setSerialCommand(serialCommand: String) {

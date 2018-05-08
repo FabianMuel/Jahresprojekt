@@ -19,7 +19,7 @@
                 <SubMenuList>
                     <GleimMenu Name="GleimLek">
                         <VoiceCommandList>
-                            <VoiceCommand>Lektüre</VoiceCommand>
+                            <VoiceCommand>Lektuere</VoiceCommand>
                         </VoiceCommandList>
                         <SerialCommand/>
                         <AudioPath>gleimLek.wav</AudioPath>
@@ -36,12 +36,12 @@
                 <SerialCommand>2</SerialCommand>
                 <AudioPath>ramler.wav</AudioPath>
                 <ReturnCommandList>
-                    <ReturnCommand>tschüss</ReturnCommand>
+                    <ReturnCommand>tschuess</ReturnCommand>
                 </ReturnCommandList>
                 <SubMenuList>
                     <GleimMenu Name="RamlerLek">
                         <VoiceCommandList>
-                            <VoiceCommand>Lektüre</VoiceCommand>
+                            <VoiceCommand>Lektuere</VoiceCommand>
                         </VoiceCommandList>
                         <SerialCommand/>
                         <AudioPath/>
