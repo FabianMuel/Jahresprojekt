@@ -27,6 +27,8 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        let xml = XmlMenuReader(menuCreator: menuCreator)
+        
         let spm = ORSSerialPortManager()
         let s = spm.availablePorts
         for port in s {
@@ -40,6 +42,9 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         serialPort?.open()
         
         speechRecognizer?.delegate = self
+    /*    while !xml.complete {
+            //wait
+        } */
         topLevelMenu = menuCreator.getMenu()
         currentMenu = topLevelMenu
         updateSpeechCommands()
@@ -116,11 +121,11 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             }
         }
         
-        for menuElement in currentMenu.getSubMenu() {
+        for menuElement in currentMenu.getSubMenuList() {
             for elementCommand in menuElement.getOwnCommandList() {
                 if elementCommand == command {
                     sendDataToSP(commandData: menuElement.getSerialCommand())
-                    playSound(file: menuElement.getAudioFilePath(), ext: "wav")
+             //       playSound(file: menuElement.getAudioFilePath(), ext: "wav") BUG FOUND! Look at T22
                     
                     if menuElement.getSubMenuCommandList().count != 0{
                         currentMenu = menuElement
