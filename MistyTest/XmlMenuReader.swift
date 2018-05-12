@@ -72,7 +72,7 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
             print("added <"+currentMenu.getName()+"> to parent <"+parentMenu.getName()+">" )
         //    parentMenu.addSubMenuElement(element: currentMenu)
             currentMenu = parentMenu
-            parentMenu = getParentMenu(menuToFind: currentMenu, searchMenu: topLevelMenu)
+            parentMenu = GleimMenu.getParentMenu(childOfParent: currentMenu, searchMenu: topLevelMenu)
         }
         currentElement = "nil" //just the string element not the current GleimMenu
     }
@@ -92,22 +92,4 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
             print("GLEIMMENU NAME: "+attributeDict["Name"]!)
         }
     }
-    
-    private func getParentMenu(menuToFind :GleimMenu, searchMenu: GleimMenu) -> GleimMenu {
-        
-        for subMenu in searchMenu.getSubMenuList() {
-            if menuToFind.getName() == subMenu.getName() {
-                return searchMenu
-            }
-        }
-        for subMenu in searchMenu.getSubMenuList() {
-            let potentialParent = getParentMenu(menuToFind: menuToFind, searchMenu: subMenu) //recursive
-            if potentialParent.getName() != "" {
-                return potentialParent
-            }
-        }
-        
-        return GleimMenu()
-    }
-    
 }
