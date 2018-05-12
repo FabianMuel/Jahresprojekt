@@ -34,6 +34,22 @@ class GleimMenu{
         
     }
     
+    public static func getParentMenu(childOfParent :GleimMenu, searchMenu: GleimMenu) -> GleimMenu {
+        for subMenu in searchMenu.getSubMenuList() {
+            if childOfParent.getName() == subMenu.getName() {
+                return searchMenu
+            }
+        }
+        for subMenu in searchMenu.getSubMenuList() {
+            let potentialParent = getParentMenu(childOfParent: childOfParent, searchMenu: subMenu) //recursive
+            if potentialParent.getName() != "" {
+                return potentialParent
+            }
+        }
+        
+        return GleimMenu()
+    }
+    
     public func getSubMenuList() -> Array<GleimMenu> {
         return subMenuList
     }
