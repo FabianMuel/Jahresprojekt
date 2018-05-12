@@ -13,14 +13,16 @@ class GleimMenu{
     private var subMenuList = [GleimMenu]()
     private var name = ""
     private var audioFilePath = ""
+    private var audioExt = ""
     private var commandList = [String]()
     private var serialCommand = ""
     private var returnCommandList = [String]()
     
-    init(name: String, subMenu: Array<GleimMenu>, audioFilePath: String, commandList: Array<String>, serialCommand: String, returnCommandList: Array<String>){
+    init(name: String, subMenu: Array<GleimMenu>, audioFilePath: String, audioExt: String, commandList: Array<String>, serialCommand: String, returnCommandList: Array<String>){
         self.name=name
         self.subMenuList=subMenu
         self.audioFilePath=audioFilePath
+        self.audioExt = audioExt
         self.commandList=commandList
         self.serialCommand=serialCommand
         self.returnCommandList=returnCommandList
@@ -84,12 +86,25 @@ class GleimMenu{
         return returnCommandList
     }
     
+    public func getAudioExt() -> String {
+        return audioExt
+    }
+    
     public func setName(name: String) {
         self.name=name
     }
     
     public func setAudioFilePath(path: String){
-        audioFilePath=path
+        if path.contains(".") {
+            var splittedString = audioFilePath.components(separatedBy: ".")
+            audioFilePath = splittedString[0]
+            print("full path: "+path+", filepath: "+audioFilePath)
+            audioExt=String(splittedString[1])
+        } else {
+            audioFilePath = path
+            audioExt = "wav"
+        }
+        
     }
     
     public func setCommandList(list: Array<String>){
