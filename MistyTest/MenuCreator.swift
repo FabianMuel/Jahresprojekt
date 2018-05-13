@@ -8,6 +8,10 @@
 
 import Foundation
 
+/*
+ Creates the menu containing the commands for the portraits and
+ the first audiofile that is played when the name of the person is recognized.
+ */
 class MenuCreator {
     
     var gleimBegr = "Hallo Liebster Gleim"
@@ -33,6 +37,7 @@ class MenuCreator {
     
     public var topLevelMenu = GleimMenu()
     
+    /*constructor*/
     init() {
         topLevelMenu = GleimMenu(name: "TopLevel")
         var gleim = GleimMenu(name: "Gleim")

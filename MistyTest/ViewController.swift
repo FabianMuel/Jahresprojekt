@@ -1,8 +1,11 @@
-
-
 import Cocoa
 import AVFoundation
-
+/*
+ Main - connects Code and Storybord
+ Sets the menus, commandlists and audiosamples.
+ Plays sound on command.
+ Updates programm, if a command is recoginized or the timer is up.
+ */
 class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPortDelegate, FileStalkerDelegate {
     
     var speechRecognizer = NSSpeechRecognizer()
@@ -23,9 +26,12 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     
     let fileStalker = FileStalker(timerInterval: 0.1, filename: "/Users/jahresprojekt/Desktop/file.txt")
     
+    /*
+     Gets serialport for the arduino and creates the menu.
+     This includes the menu itself, as well as the commandlists.
+     */
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         
         let xml = XmlMenuReader(menuCreator: menuCreator)
         
@@ -59,11 +65,9 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         }
     }
     
-    //Bn Actions
-    @IBAction func SegBn_On_Off_OnClick(_ sender: Any) {
-        
-    }
-    
+    /*
+     Sets the commands of the currently active menu (or submenu).
+     */
     func updateSpeechCommands() {
         var newCommands = currentMenu.getSubMenuCommandList()
         newCommands.append(contentsOf: currentMenu.getReturnCommandList())
@@ -71,33 +75,50 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         speechRecognizer?.commands=newCommands
     }
     
+    /*
+     Sends the data to the serialport and calls the function to reset the timer.
+     */
     func sendDataToSP(commandData: String) {
         serialPort?.send(commandData.data(using: .utf8)!)
         resetTimer()
     }
     
+    /*
+     Updates the menu and commands if the menu is reset to main menu.
+     */
     @objc func resetMenu() {
         print("reset commands")
         currentMenu = topLevelMenu
         updateSpeechCommands()
     }
     
+    /*
+     Starts a timer, that is needed for going back if the user didn't say anything after a certain time.
+     */
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(resetMenu), userInfo: nil, repeats: true)
     }
     
+    /*
+     Resets the timer needed for going back automaticly.
+     */
     func resetTimer(){
         timer.invalidate()
         startTimer()
     }
     
-    //aufgerufen wenn text in datei geaendert wurde
+    /*
+     Calls the function sending the data, if said data was changed.
+     */
     func fileContentChanged(didChangeCommand command: String) {
         print("file changed")
         sendDataToSP(commandData: command)
     }
     
-    //Methode die aufgerufen wird, wenn sr etwas erkannt hat. "didRecognizeCommand" ist erkannter Befehl
+    /*
+     Is called when the speechRecognizer hears a known command.
+     Resets timer, changes the menu if needed and calls the functions to play the audio.
+     */
     func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
         print(command)
         if command == stopCommand {
@@ -105,8 +126,6 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             if(player.isPlaying) {
                 player.stop()
             }
-         //   currentMenu = topLevelMenu
-         //   updateSpeechCommands()
             resetTimer()
             return
         }
@@ -157,6 +176,11 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         // Update the view, if already loaded.
         }
     }
+    /*
+     Backup plan in case the audiolistener doesn't work anymore.
+     Plays the sound via keyinput.
+     This method is only needed for debugging and testing new things.
+     */
     override func keyDown(with event: NSEvent) { //Backup Plan
         if event.keyCode == 18 {
             let data = "1".data(using: .utf8)
@@ -228,6 +252,9 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         resetTimer()
     }
     
+    /*
+     Plays the audio.
+     */
     func playSound(file:String, ext:String) -> Void {
         let url = Bundle.main.url(forResource: file, withExtension: ext)!
         do {

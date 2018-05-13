@@ -8,6 +8,9 @@
 
 import Foundation
 
+/*
+ Creates subMenu of the portraits
+ */
 class GleimMenu{
     
     private var subMenuList = [GleimMenu]()
@@ -17,6 +20,7 @@ class GleimMenu{
     private var serialCommand = ""
     private var returnCommandList = [String]()
     
+    /*constructor*/
     init(name: String, subMenu: Array<GleimMenu>, audioFilePath: String, commandList: Array<String>, serialCommand: String, returnCommandList: Array<String>){
         self.name=name
         self.subMenuList=subMenu
@@ -34,6 +38,9 @@ class GleimMenu{
         
     }
     
+    /*
+     Sets submenu for each portrait
+     */
     public static func getParentMenu(childOfParent :GleimMenu, searchMenu: GleimMenu) -> GleimMenu {
         for subMenu in searchMenu.getSubMenuList() {
             if childOfParent.getName() == subMenu.getName() {

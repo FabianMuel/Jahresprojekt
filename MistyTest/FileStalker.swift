@@ -12,6 +12,10 @@ protocol FileStalkerDelegate {
     func fileContentChanged(didChangeCommand command: String)
 }
 
+/*
+ Reads the file containing the data.
+ Is needed for the backend.
+ */
 class FileStalker  {
     
     var delegate : FileStalkerDelegate?
@@ -20,19 +24,31 @@ class FileStalker  {
     var timerInterval = 0.1 //sek
     var filename = ""
     
+    /*constructor*/
     init(timerInterval: Double, filename: String) {
         self.timerInterval = timerInterval
         self.filename = filename
     }
     
+    /*
+     Sets a timer.
+     After a certain time calls the method for reading the file.
+     */
     func startStalking(){
         timer = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(readFromFile), userInfo: nil, repeats: true)
     }
     
+    /*
+     Stops reading the file.
+     */
     func stopStalking(){
         timer.invalidate()
     }
     
+    /*
+     Reads the file and looks for changes.
+     Changes the data if the data in the file was changed.
+     */
     @objc private func readFromFile() {
         let fileURL = URL(fileURLWithPath: filename)
         //reading

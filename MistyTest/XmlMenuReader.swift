@@ -8,6 +8,9 @@
 
 import Foundation
 
+/*
+ Parser
+ */
 class XmlMenuReader: NSObject, XMLParserDelegate {
     
     private var topLevelMenu = GleimMenu()
@@ -20,6 +23,7 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
     
     public var complete = false
     
+    /*constructor*/
     init(menuCreator: MenuCreator){
         super.init()
         self.menuCreator = menuCreator
@@ -34,18 +38,25 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
         }
     }
     
+    /*
+     Sets current menu to topLevelMenu and starts parsing.
+     */
     func parserDidStartDocument(_ parser: XMLParser) {
         print("reading started!")
         currentMenu = topLevelMenu
     }
-    
+    /*
+     Sets "new" topLevelMenu (the one containing the corret data) as topLevelMenu, if the parsing ends.
+     */
     func parserDidEndDocument(_ parser: XMLParser) {
         print("finished reading!")
         complete = true
         menuCreator.topLevelMenu = topLevelMenu
-    //    print(topLevelMenu.getSubMenuList()[0].getName())
     }
     
+    /*
+     Adds the data correctly to the menu.
+     */
     func parser(_ parser: XMLParser, foundCharacters string: String) {
         if currentElement == "nil" { return };
         
@@ -65,6 +76,9 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
         print("found characters: <"+string+"> for current element: "+currentElement)
     }
     
+    /*
+     Adds the new elements to the menu.
+     */
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
         print("Endelement: "+elementName)
@@ -77,6 +91,9 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
         currentElement = "nil" //just the string element not the current GleimMenu
     }
     
+    /*
+     Gets each element sets the menupath for it.
+     */
     func parser(_ parser: XMLParser, didStartElement elementName: String, namespaceURI: String?, qualifiedName qName: String?, attributes attributeDict: [String : String] = [:]) {
         
         currentElement = elementName
