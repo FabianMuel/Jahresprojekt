@@ -43,7 +43,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     override func viewDidLoad() {
         super.viewDidLoad()
         portraitData = ["Gleim", "Ramler", "Ramler" , "Ramler"]
-        data = ["Thema0", "Thema1", "Thema2", "Thema3"]
+        //data = ["Thema0", "Thema1", "Thema2", "Thema3"]
         soundData = ["0.wav", "1.wav", "2.wav", "3.wav"]
         
         // Do any additional setup after loading the view.
@@ -52,6 +52,9 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         
         topLevelMenu = menuCreator.getMenu()
         currentMenu = topLevelMenu
+        
+        data = data?.adding(currentMenu.getName()) as NSArray?
+
         
         updateSpeechCommands()
         sr?.startListening()  //laesst recognizer auf befehle hören
@@ -71,7 +74,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     
     //Tableview
     func numberOfRows(in tableView: NSTableView) -> Int {
-        return data.count
+        return (data?.count)!
     }
     
     func tableView(_ tableView: NSTableView, objectValueFor tableColumn: NSTableColumn?, row: Int) -> Any? {

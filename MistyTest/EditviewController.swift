@@ -10,6 +10,9 @@ import Cocoa
 
 class EditviewController: NSViewController {
     
+    //var editviewInput;
+    //var audioInput;
+    
     //Outlets
     @IBOutlet var SegBn_Portrait_Thema: NSSegmentedControl!
     @IBOutlet var Editview_Portrait: NSTextField!
@@ -49,11 +52,21 @@ class EditviewController: NSViewController {
     }
     
     @IBAction func Bn_SelectWav_OnClick(_ sender: Any) {
-        Wav_Name.stringValue = "Wav_Name"
         //audiopicker
+        //->set audio
+        Wav_Name.stringValue = "Wav_Name"
     }
     
     @IBAction func Bn_Save_OnClick(_ sender: Any) {
+        //get text from editview
+        //editviewInput = Editview_Portrait.stringValue
+        //print(input)
+        
+        //erstelle neues objekt
+        //füge es liste hinzu
+        
+        //gebe feedback
+        
     }
     
 }
