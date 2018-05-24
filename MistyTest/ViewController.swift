@@ -54,6 +54,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         topLevelMenu = menuCreator.getMenu()
         currentMenu = topLevelMenu
         updateSpeechCommands()
+        speechRecognizer?.blocksOtherRecognizers = false
         speechRecognizer?.startListening()  //laesst recognizer auf befehle hören
         
         fileStalker.delegate = self
@@ -144,7 +145,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             for elementCommand in menuElement.getOwnCommandList() {
                 if elementCommand == command {
                     sendDataToSP(commandData: menuElement.getSerialCommand())
-             //       playSound(file: menuElement.getAudioFilePath(), ext: "wav") BUG FOUND! Look at T22
+                    playSound(file: menuElement.getAudioFilePath(), ext: "") //BUG FOUND! Look at T22
                     
                     if menuElement.getSubMenuCommandList().count != 0{
                         currentMenu = menuElement

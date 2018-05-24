@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<MenuStructure>
+    <GleimMenu Name="topLevel">
+        <VoiceCommandList/>
+        <SerialCommand/>
+        <AudioPath/>
+        <ReturnCommandList/>
+        <SubMenuList>
+            <GleimMenu Name="Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Gleim</VoiceCommand>
+                    <VoiceCommand>Klein</VoiceCommand>
+                    <VoiceCommand>Koeln</VoiceCommand>
+                    <VoiceCommand>Gehen</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>1</SerialCommand>
+                <AudioPath>Gleim_beg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand>auf Wiedersehen</ReturnCommand>
+                </ReturnCommandList>
+                <SubMenuList>
+                    <GleimMenu Name="GleimLek">
+                        <VoiceCommandList>
+                            <VoiceCommand>Lektuere</VoiceCommand>
+                        </VoiceCommandList>
+                        <SerialCommand/>
+                        <AudioPath>gleimlek.wav</AudioPath>
+                        <ReturnCommandList>
+                            <ReturnCommand/>
+                        </ReturnCommandList>
+                        <SubMenuList/>
+                    </GleimMenu>
+                    <GleimMenu Name="GleimEnd">
+                        <VoiceCommandList/>
+                        <SerialCommand/>
+                        <AudioPath/>
+                        <ReturnCommandList/>
+                        <SubMenuList/>
+                    </GleimMenu>
+                </SubMenuList>
+            </GleimMenu>
+            <GleimMenu Name="Ramler">
+                <VoiceCommandList>
+                    <VoiceCommand>Ramler</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>ramler.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand>tschuess</ReturnCommand>
+                </ReturnCommandList>
+                <SubMenuList>
+                    <GleimMenu Name="RamlerLek">
+                        <VoiceCommandList>
+                            <VoiceCommand>Lektuere</VoiceCommand>
+                        </VoiceCommandList>
+                        <SerialCommand/>
+                        <AudioPath/>
+                        <ReturnCommandList>
+                            <ReturnCommand>auf wiedersehen</ReturnCommand>
+                            <ReturnCommand>vielen dank</ReturnCommand>
+                        </ReturnCommandList>
+                        <SubMenuList/>
+                    </GleimMenu>
+                    <GleimMenu Name="test">
+                        <VoiceCommandList>
+                            <VoiceCommand>test</VoiceCommand>
+                        </VoiceCommandList>
+                        <SerialCommand/>
+                        <AudioPath/>
+                        <ReturnCommandList/>
+                        <SubMenuList/>
+                    </GleimMenu>
+                </SubMenuList>
+            </GleimMenu>
+        </SubMenuList>
+    </GleimMenu>
+</MenuStructure>
