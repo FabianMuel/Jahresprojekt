@@ -145,8 +145,13 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             for elementCommand in menuElement.getOwnCommandList() {
                 if elementCommand == command {
                     sendDataToSP(commandData: menuElement.getSerialCommand())
-                    playSound(file: menuElement.getAudioFilePath(), ext: "") //BUG FOUND! Look at T22
                     
+                    print("AUDIO FILE: <"+menuElement.getAudioFilePath()+">")
+                    let audioFilePath = menuElement.getAudioFilePath()
+                    if audioFilePath != "" {
+                        playSound(file: menuElement.getAudioFilePath(), ext: "")
+                    }
+            
                     if menuElement.getSubMenuCommandList().count != 0{
                         currentMenu = menuElement
                         updateSpeechCommands()

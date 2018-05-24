@@ -17,6 +17,8 @@
                 <AudioPath>Gleim_beg.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand>auf Wiedersehen</ReturnCommand>
+                    <ReturnCommand>zurueck</ReturnCommand>
+                    <ReturnCommand>schnauze</ReturnCommand>
                 </ReturnCommandList>
                 <SubMenuList>
                     <GleimMenu Name="GleimLek">
@@ -30,10 +32,13 @@
                         </ReturnCommandList>
                         <SubMenuList/>
                     </GleimMenu>
-                    <GleimMenu Name="GleimEnd">
-                        <VoiceCommandList/>
+                    <GleimMenu Name="GleimZeitereignisse">
+                        <VoiceCommandList>
+                            <VoiceCommand>Zeitereignisse</VoiceCommand>
+                            <VoiceCommand>Zeitereignis</VoiceCommand>
+                        </VoiceCommandList>
                         <SerialCommand/>
-                        <AudioPath/>
+                        <AudioPath>GleimZeitereignisse.wav</AudioPath>
                         <ReturnCommandList/>
                         <SubMenuList/>
                     </GleimMenu>
@@ -42,32 +47,85 @@
             <GleimMenu Name="Ramler">
                 <VoiceCommandList>
                     <VoiceCommand>Ramler</VoiceCommand>
+                    <VoiceCommand>Anlage</VoiceCommand>
+                    <VoiceCommand>Komma</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath>ramler.wav</AudioPath>
+                <AudioPath>ramler_beg.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand>tschuess</ReturnCommand>
+                    <ReturnCommand>zurueck</ReturnCommand>
+                    <ReturnCommand>schnauze</ReturnCommand>
                 </ReturnCommandList>
                 <SubMenuList>
-                    <GleimMenu Name="RamlerLek">
+                    <GleimMenu Name="RamlerPortrait">
+                        <VoiceCommandList>
+                            <VoiceCommand>Portrait</VoiceCommand>
+                        </VoiceCommandList>
+                        <SerialCommand/>
+                        <AudioPath>ramlerport.wav</AudioPath>
+                        <ReturnCommandList>
+                            <ReturnCommand/>
+                        </ReturnCommandList>
+                        <SubMenuList/>
+                    </GleimMenu>
+                    <GleimMenu Name="RamlerVisionen">
+                        <VoiceCommandList>
+                            <VoiceCommand>Vision</VoiceCommand>
+                            <VoiceCommand>Visionen</VoiceCommand>
+                        </VoiceCommandList>
+                        <SerialCommand/>
+                        <AudioPath>RamlerVisionen</AudioPath>
+                        <ReturnCommandList/>
+                        <SubMenuList/>
+                    </GleimMenu>
+                </SubMenuList>
+            </GleimMenu>
+            <GleimMenu Name="Easteregg">
+                <VoiceCommandList>
+                    <VoiceCommand>inoffiziell</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand/>
+                <AudioPath/>
+                <ReturnCommandList>
+                    <ReturnCommand>zurueck</ReturnCommand>
+                    <ReturnCommand>schnauze</ReturnCommand>
+                </ReturnCommandList>
+                <SubMenuList>
+                    <GleimMenu Name="Sandsturm">
+                        <VoiceCommandList>
+                            <VoiceCommand>Sandsturm</VoiceCommand>
+                            <VoiceCommand>Sandstorm</VoiceCommand>
+                            <VoiceCommand>Darude</VoiceCommand>
+                        </VoiceCommandList>
+                        <SerialCommand/>
+                        <AudioPath>/Users/jahresprojekt/Documents/GitHub/Jahresprojekt/clip.wav</AudioPath>
+                        <ReturnCommandList/>
+                        <SubMenuList/>
+                    </GleimMenu>
+                </SubMenuList>
+            </GleimMenu>
+            <GleimMenu Name="Karsch">
+                <VoiceCommandList>
+                    <VoiceCommand>Karsch</VoiceCommand>
+                    <VoiceCommand>Arsch</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>Karsch_beg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand>zurueck</ReturnCommand>
+                    <ReturnCommand>schnauze</ReturnCommand>
+                </ReturnCommandList>
+                <SubMenuList>
+                    <GleimMenu Name="KarschLektuere">
                         <VoiceCommandList>
                             <VoiceCommand>Lektuere</VoiceCommand>
                         </VoiceCommandList>
                         <SerialCommand/>
-                        <AudioPath/>
+                        <AudioPath>KarschLek.wav</AudioPath>
                         <ReturnCommandList>
-                            <ReturnCommand>auf wiedersehen</ReturnCommand>
-                            <ReturnCommand>vielen dank</ReturnCommand>
+                            <ReturnCommand/>
                         </ReturnCommandList>
-                        <SubMenuList/>
-                    </GleimMenu>
-                    <GleimMenu Name="test">
-                        <VoiceCommandList>
-                            <VoiceCommand>test</VoiceCommand>
-                        </VoiceCommandList>
-                        <SerialCommand/>
-                        <AudioPath/>
-                        <ReturnCommandList/>
                         <SubMenuList/>
                     </GleimMenu>
                 </SubMenuList>
