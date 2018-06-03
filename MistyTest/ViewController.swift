@@ -146,7 +146,6 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
                 if elementCommand == command {
                     sendDataToSP(commandData: menuElement.getSerialCommand())
                     
-                    print("AUDIO FILE: <"+menuElement.getAudioFilePath()+">")
                     let audioFilePath = menuElement.getAudioFilePath()
                     if audioFilePath != "" {
                         playSound(file: menuElement.getAudioFilePath(), ext: "")
