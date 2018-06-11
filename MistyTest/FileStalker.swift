@@ -9,7 +9,7 @@
 import Foundation
 
 protocol FileStalkerDelegate {
-    func fileContentChanged(didChangeCommand command: String)
+    func fileContentChanged(fileSerialCommand serialCommand: String, fileAudio audiofile: String)
 }
 
 /*
@@ -54,17 +54,22 @@ class FileStalker  {
         //reading
         do {
             let currentText = try String(contentsOf: fileURL, encoding: .utf8)
-           // print("Loaded text: ", currentText)
-            if(lastReadText == "nil") {
-                lastReadText = currentText
-            }
-            if lastReadText != currentText {
-                lastReadText = currentText
-                delegate?.fileContentChanged(didChangeCommand: currentText)
+            if currentText.contains("unread"){
+                if lastReadText != "nil" && lastReadText != currentText {
+                    let splitCommand = currentText.split(separator: ";")
+                    delegate?.fileContentChanged(fileSerialCommand: String(splitCommand[0]), fileAudio: String(splitCommand[1]))
+                    
+                    //write "read" to file
+                    try (String(splitCommand[0])+";"+String(splitCommand[1])+";"+"read").write(to: fileURL, atomically: false, encoding: .utf8)
+                } else {
+                    lastReadText = currentText
+                    let splitCommand = currentText.split(separator: ";")
+                    try (String(splitCommand[0])+";"+String(splitCommand[1])+";"+"read").write(to: fileURL, atomically: false, encoding: .utf8)
+                }
             }
         }
         catch {
-            print("reading failed")
+            print("reading or writing failed")
         }
         
     }

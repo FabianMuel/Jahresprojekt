@@ -7,7 +7,7 @@ import AVFoundation
  Updates programm, if a command is recoginized or the timer is up.
  */
 class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPortDelegate, FileStalkerDelegate {
-    
+
     var speechRecognizer = NSSpeechRecognizer()
     var player = AVAudioPlayer()
     var serialPort = ORSSerialPort(path: "/dev/cu.usbmodem14111")
@@ -24,7 +24,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     let stopCommand = "stop"
     let stopCommandSerial = "4"
     
-    let fileStalker = FileStalker(timerInterval: 0.1, filename: "/Users/jahresprojekt/Desktop/file.txt")
+    let fileStalker = FileStalker(timerInterval: 0.1, filename: "/Applications/MAMP/htdocs/Gleimhaus/personen/file.txt")
     
     /*
      Gets serialport for the arduino and creates the menu.
@@ -111,10 +111,15 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     /*
      Calls the function sending the data, if said data was changed.
      */
-    func fileContentChanged(didChangeCommand command: String) {
-        print("file changed")
-        sendDataToSP(commandData: command)
+    func fileContentChanged(fileSerialCommand serialCommand: String, fileAudio audiofile: String) {
+        sendDataToSP(commandData: serialCommand)
+        if audiofile != stopCommand {
+            playSound(file: audiofile, ext: "")
+        } else if player.isPlaying {
+            player.stop()
+        }
     }
+    
     
     /*
      Is called when the speechRecognizer hears a known command.
