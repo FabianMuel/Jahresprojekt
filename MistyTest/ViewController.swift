@@ -118,6 +118,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         } else if player.isPlaying {
             player.stop()
         }
+		resetTimer()
     }
     
     
