@@ -63,13 +63,13 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
         if currentElement == "VoiceCommand" {
             currentMenu.addCommand(command: string)
         }
-        if currentElement == "SerialCommand" {
+        else if currentElement == "SerialCommand" {
             currentMenu.setSerialCommand(serialCommand: string)
         }
-        if currentElement == "AudioPath" {
+        else if currentElement == "AudioPath" {
             currentMenu.setAudioFilePath(path: string)
         }
-        if currentElement == "ReturnCommand" {
+        else if currentElement == "ReturnCommand" {
             currentMenu.addReturnCommand(command: string)
         }
         
