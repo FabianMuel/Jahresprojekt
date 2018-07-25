@@ -120,7 +120,7 @@ public class MainView extends JFrame{
         newFileButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //hab ich wohl vergessen zu implementieren
             }
         });
         openFileButton.addActionListener(new ActionListener() {
