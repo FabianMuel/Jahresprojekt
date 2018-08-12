@@ -1,138 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <MenuStructure>
     <GleimMenu Name="topLevel">
-        <VoiceCommandList/>
+        <VoiceCommandList>
+            <VoiceCommand/>
+        </VoiceCommandList>
         <SerialCommand/>
         <AudioPath/>
-        <ReturnCommandList/>
+        <ReturnCommandList>
+            <ReturnCommand/>
+        </ReturnCommandList>
         <SubMenuList>
-            <GleimMenu Name="Gleim">
-                <VoiceCommandList>
-                    <VoiceCommand>Gleim</VoiceCommand>
-                    <VoiceCommand>Klein</VoiceCommand>
-                    <VoiceCommand>Koeln</VoiceCommand>
-                    <VoiceCommand>Gehen</VoiceCommand>
-                </VoiceCommandList>
-                <SerialCommand>1</SerialCommand>
-                <AudioPath>Gleim_beg.wav</AudioPath>
-                <ReturnCommandList>
-                    <ReturnCommand>auf Wiedersehen</ReturnCommand>
-                    <ReturnCommand>zurueck</ReturnCommand>
-                </ReturnCommandList>
-                <SubMenuList>
-                    <GleimMenu Name="GleimLek">
-                        <VoiceCommandList>
-                            <VoiceCommand>Lektuere</VoiceCommand>
-                        </VoiceCommandList>
-                        <SerialCommand/>
-                        <AudioPath>gleimlek.wav</AudioPath>
-                        <ReturnCommandList>
-                            <ReturnCommand/>
-                        </ReturnCommandList>
-                        <SubMenuList/>
-                    </GleimMenu>
-                    <GleimMenu Name="GleimZeitereignisse">
-                        <VoiceCommandList>
-                            <VoiceCommand>Zeitereignisse</VoiceCommand>
-                            <VoiceCommand>Zeitereignis</VoiceCommand>
-                        </VoiceCommandList>
-                        <SerialCommand/>
-                        <AudioPath>GleimZeitereignisse.wav</AudioPath>
-                        <ReturnCommandList/>
-                        <SubMenuList/>
-                    </GleimMenu>
-                </SubMenuList>
-            </GleimMenu>
-            <GleimMenu Name="Ramler">
-                <VoiceCommandList>
-                    <VoiceCommand>Ramler</VoiceCommand>
-                    <VoiceCommand>Anlage</VoiceCommand>
-                    <VoiceCommand>Komma</VoiceCommand>
-                </VoiceCommandList>
-                <SerialCommand>2</SerialCommand>
-                <AudioPath>ramler_beg.wav</AudioPath>
-                <ReturnCommandList>
-                    <ReturnCommand>tschuess</ReturnCommand>
-                    <ReturnCommand>zurueck</ReturnCommand>
-                </ReturnCommandList>
-                <SubMenuList>
-                    <GleimMenu Name="RamlerPortrait">
-                        <VoiceCommandList>
-                            <VoiceCommand>Portrait</VoiceCommand>
-                        </VoiceCommandList>
-                        <SerialCommand/>
-                        <AudioPath>ramlerport.wav</AudioPath>
-                        <ReturnCommandList>
-                            <ReturnCommand/>
-                        </ReturnCommandList>
-                        <SubMenuList/>
-                    </GleimMenu>
-                    <GleimMenu Name="RamlerVisionen">
-                        <VoiceCommandList>
-                            <VoiceCommand>Vision</VoiceCommand>
-                            <VoiceCommand>Visionen</VoiceCommand>
-                        </VoiceCommandList>
-                        <SerialCommand/>
-                        <AudioPath>RamlerVisionen.wav</AudioPath>
-                        <ReturnCommandList/>
-                        <SubMenuList/>
-                    </GleimMenu>
-                </SubMenuList>
-            </GleimMenu>
-            <GleimMenu Name="Easteregg">
-                <VoiceCommandList>
-                    <VoiceCommand>inoffiziell</VoiceCommand>
-                </VoiceCommandList>
-                <SerialCommand/>
-                <AudioPath/>
-                <ReturnCommandList>
-                    <ReturnCommand>zurueck</ReturnCommand>
-                </ReturnCommandList>
-                <SubMenuList>
-                    <GleimMenu Name="Sandsturm">
-                        <VoiceCommandList>
-                            <VoiceCommand>Sandsturm</VoiceCommand>
-                        </VoiceCommandList>
-                        <SerialCommand/>
-                        <AudioPath>clip.wav</AudioPath>
-                        <ReturnCommandList/>
-                        <SubMenuList/>
-                    </GleimMenu>
-                </SubMenuList>
-            </GleimMenu>
-            <GleimMenu Name="Karsch">
-                <VoiceCommandList>
-                    <VoiceCommand>Karsch</VoiceCommand>
-                </VoiceCommandList>
-                <SerialCommand>3</SerialCommand>
-                <AudioPath>Karsch_beg.wav</AudioPath>
-                <ReturnCommandList>
-                    <ReturnCommand>zurueck</ReturnCommand>
-                </ReturnCommandList>
-                <SubMenuList>
-                    <GleimMenu Name="KarschLektuere">
-                        <VoiceCommandList>
-                            <VoiceCommand>Lektuere</VoiceCommand>
-                        </VoiceCommandList>
-                        <SerialCommand/>
-                        <AudioPath>KarschLek.wav</AudioPath>
-                        <ReturnCommandList>
-                            <ReturnCommand/>
-                        </ReturnCommandList>
-                        <SubMenuList/>
-                    </GleimMenu>
-                </SubMenuList>
-            </GleimMenu>
             <GleimMenu Name="Gleim Portrait">
                 <VoiceCommandList>
                     <VoiceCommand>Gleim Portrait</VoiceCommand>
                     <VoiceCommand>Klein Portrait</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList>
-                    <ReturnCommand/>
-                </ReturnCommandList>
+                <AudioPath>gleim_portrait.wav</AudioPath>
+                <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Gleim Literatur">
@@ -265,8 +150,6 @@
                     <VoiceCommand>Rammler Gleim</VoiceCommand>
                     <VoiceCommand>Ramler klein</VoiceCommand>
                     <VoiceCommand>Rammler klein</VoiceCommand>
-                    <VoiceCommand>Werner Gleim</VoiceCommand>
-                    <VoiceCommand>Werner klein</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -279,7 +162,6 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Portrait</VoiceCommand>
                     <VoiceCommand>Rammler Portrait</VoiceCommand>
-                    <VoiceCommand>Werner Portrait</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -292,7 +174,6 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Literatur</VoiceCommand>
                     <VoiceCommand>Rammler Literatur</VoiceCommand>
-                    <VoiceCommand>Werner Literatur</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -305,7 +186,6 @@
                     <VoiceCommand>Rammler Zeitereignisse</VoiceCommand>
                     <VoiceCommand>Ramler Zeit Ereignisse</VoiceCommand>
                     <VoiceCommand>Rammler Zeit Ereignisse</VoiceCommand>
-                    <VoiceCommand>Werner Zeitereignisse</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -316,7 +196,6 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Scherz</VoiceCommand>
                     <VoiceCommand>Rammler Scherz</VoiceCommand>
-                    <VoiceCommand>Werner Scherz</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -329,7 +208,6 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Freundschaft</VoiceCommand>
                     <VoiceCommand>Rammler Freundschaft</VoiceCommand>
-                    <VoiceCommand>Werner Freundschaft</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -342,7 +220,6 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Plaene</VoiceCommand>
                     <VoiceCommand>Rammler Plaene</VoiceCommand>
-                    <VoiceCommand>Werner Plaene</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -355,7 +232,6 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Streit</VoiceCommand>
                     <VoiceCommand>Rammler Streit</VoiceCommand>
-                    <VoiceCommand>Werner Streit</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -368,10 +244,8 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler beim Hausherrn</VoiceCommand>
                     <VoiceCommand>Rammler beim Haushernn</VoiceCommand>
-                    <VoiceCommand>Werner beim Hausherrn</VoiceCommand>
                     <VoiceCommand>Ramler beim Hausherren</VoiceCommand>
                     <VoiceCommand>Rammler beim Hausherren</VoiceCommand>
-                    <VoiceCommand>Werner beim Hausherren</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -384,7 +258,6 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler persoenliches</VoiceCommand>
                     <VoiceCommand>Rammler persoenliches</VoiceCommand>
-                    <VoiceCommand>Werner persoenliches</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath/>
@@ -530,6 +403,41 @@
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
                 <AudioPath/>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Gleim</VoiceCommand>
+                    <VoiceCommand>Wieland klein</VoiceCommand>
+                    <VoiceCommand>Wieland kleine</VoiceCommand>
+                    <VoiceCommand>Wieland bleiben</VoiceCommand>
+                    <VoiceCommand>Wie lang klein</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>wieland_gleim.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lavater Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Lavatar Gleim</VoiceCommand>
+                    <VoiceCommand>Lavatar klein</VoiceCommand>
+                    <VoiceCommand>Lavater bleiben</VoiceCommand>
+                    <VoiceCommand>Labertal bleiben</VoiceCommand>
+                    <VoiceCommand>Lavater Klein</VoiceCommand>
+                    <VoiceCommand>Lavater Gleim</VoiceCommand>
+                    <VoiceCommand>La Vater Gleim</VoiceCommand>
+                    <VoiceCommand>La Vater bleiben</VoiceCommand>
+                    <VoiceCommand>Love Vater bleiben</VoiceCommand>
+                    <VoiceCommand>La Vater bleiben</VoiceCommand>
+                    <VoiceCommand>La Vater klein</VoiceCommand>
+                    <VoiceCommand>La Vater Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>lavater_gleim.wav</AudioPath>
                 <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>

@@ -62,9 +62,11 @@ class FileStalker  {
                     //write "read" to file
                     try (String(splitCommand[0])+";"+String(splitCommand[1])+";"+"read").write(to: fileURL, atomically: false, encoding: .utf8)
                 } else {
-                    lastReadText = currentText
                     let splitCommand = currentText.split(separator: ";")
-                    try (String(splitCommand[0])+";"+String(splitCommand[1])+";"+"read").write(to: fileURL, atomically: false, encoding: .utf8)
+                    let readCommand = String(splitCommand[0])+";"+String(splitCommand[1])+";"+"read"
+                    try readCommand.write(to: fileURL, atomically: false, encoding: .utf8)
+                    lastReadText = readCommand
+                    
                 }
             }
         }
