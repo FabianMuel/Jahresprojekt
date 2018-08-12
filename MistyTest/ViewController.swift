@@ -24,7 +24,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     let stopCommand = "stop"
     let stopCommandSerial = "4"
     
-    let fileStalker = FileStalker(timerInterval: 0.1, filename: "/Applications/MAMP/htdocs/Gleimhaus/personen/file.txt")
+    let fileStalker = FileStalker(timerInterval: 0.05, filename: "/Applications/MAMP/htdocs/Gleimhaus/personen/file.txt")
     
     /*
      Gets serialport for the arduino and creates the menu.
