@@ -74,6 +74,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
         newCommands.append(contentsOf: currentMenu.getReturnCommandList())
         newCommands.append(stopCommand)
         speechRecognizer?.commands=newCommands
+        //kommentar einfuegen
     }
     
     /*
