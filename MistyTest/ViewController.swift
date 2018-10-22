@@ -13,13 +13,13 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     var serialPort = ORSSerialPort(path: "/dev/cu.usbmodem14111")
     
     var sleepTimeSek = 0
-    
+   
     var menuCreator = MenuCreator()
     var topLevelMenu = GleimMenu()
     var currentMenu = GleimMenu()
     
     var timer = Timer()
-    let timerInterval = 120.0 //TimeOut und reset auf TopLevelMenu in Sekunden (double)
+    let timerInterval = 24.0 //TimeOut und reset auf TopLevelMenu in Sekunden (double)
     
     let stopCommand = "stop"
     let stopCommandSerial = "4"
@@ -86,9 +86,15 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     
     /*
      Updates the menu and commands if the menu is reset to main menu.
+     und licht geht aus
      */
     @objc func resetMenu() {
         print("reset commands")
+        sendDataToSP(commandData: stopCommandSerial)
+        if(player.isPlaying) {
+            player.stop()
+        }
+        resetTimer()
         currentMenu = topLevelMenu
         updateSpeechCommands()
     }
@@ -99,6 +105,8 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
     func startTimer(){
         timer = Timer.scheduledTimer(timeInterval: timerInterval, target: self, selector: #selector(resetMenu), userInfo: nil, repeats: true)
     }
+    
+    
     
     /*
      Resets the timer needed for going back automaticly.
@@ -154,6 +162,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
                     
                     let audioFilePath = menuElement.getAudioFilePath()
                     if audioFilePath != "" {
+                        
                         playSound(file: menuElement.getAudioFilePath(), ext: "")
                     }
             
@@ -267,7 +276,9 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
      Plays the audio.
      */
     func playSound(file:String, ext:String) -> Void {
+        
         let url = Bundle.main.url(forResource: file, withExtension: ext)!
+        print(url)
         do {
             player = try AVAudioPlayer(contentsOf: url)
      //       guard let player = player else { return }
@@ -275,7 +286,7 @@ class ViewController: NSViewController, NSSpeechRecognizerDelegate, ORSSerialPor
             player.prepareToPlay()
             player.play()
         } catch let error {
-       //     print(error.localizedDescription)
+            print(error.localizedDescription)
         }
     }
 }

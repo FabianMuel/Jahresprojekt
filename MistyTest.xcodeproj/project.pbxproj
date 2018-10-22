@@ -19,6 +19,10 @@
 		00A0FA331FDD4F3E000EB16A /* Gleim_end.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA2A1FDD4F3E000EB16A /* Gleim_end.wav */; };
 		00A0FA341FDD4F3E000EB16A /* ramler_frage.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA2B1FDD4F3E000EB16A /* ramler_frage.wav */; };
 		00A0FA361FDD54AE000EB16A /* KarschLek.wav in Resources */ = {isa = PBXBuildFile; fileRef = 00A0FA351FDD54AE000EB16A /* KarschLek.wav */; };
+		0FAEDCA32179FFD400007443 /* Test_Box2.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0FAEDCA22179FFD400007443 /* Test_Box2.aif */; };
+		0FAEDCA5217A00CA00007443 /* Test_Box1.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0FAEDCA4217A00CA00007443 /* Test_Box1.aif */; };
+		0FAEDCA6217A00CA00007443 /* Test_Box1.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0FAEDCA4217A00CA00007443 /* Test_Box1.aif */; };
+		0FAEDCA7217A00CA00007443 /* Test_Box1.aif in Resources */ = {isa = PBXBuildFile; fileRef = 0FAEDCA4217A00CA00007443 /* Test_Box1.aif */; };
 		1EAF6CA0DD7FF0E11D3AD150 /* Pods_MistyTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 265131D1F4A86AF956F315C7 /* Pods_MistyTest.framework */; };
 		28B7FEE8A78A27E3DF6541F9 /* Pods_MistyTestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F221B5DFA4C3D2E37ABA62D4 /* Pods_MistyTestTests.framework */; };
 		61433D4A0891852185E5237C /* Pods_MistyTestUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64437962A7FB49EEA6DFA60A /* Pods_MistyTestUITests.framework */; };
@@ -73,6 +77,8 @@
 		00A0FA2A1FDD4F3E000EB16A /* Gleim_end.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = Gleim_end.wav; sourceTree = "<group>"; };
 		00A0FA2B1FDD4F3E000EB16A /* ramler_frage.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = ramler_frage.wav; sourceTree = "<group>"; };
 		00A0FA351FDD54AE000EB16A /* KarschLek.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = KarschLek.wav; sourceTree = "<group>"; };
+		0FAEDCA22179FFD400007443 /* Test_Box2.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test_Box2.aif; sourceTree = "<group>"; };
+		0FAEDCA4217A00CA00007443 /* Test_Box1.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = Test_Box1.aif; sourceTree = "<group>"; };
 		25C55FCA9A662A545E6E7D00 /* Pods-MistyTestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTestTests/Pods-MistyTestTests.release.xcconfig"; sourceTree = "<group>"; };
 		265131D1F4A86AF956F315C7 /* Pods_MistyTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MistyTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C9E7484F2DC6527AC5F39EA /* Pods-MistyTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MistyTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-MistyTest/Pods-MistyTest.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,6 +159,8 @@
 		B98798CF2089D8520045CC42 /* soundfiles */ = {
 			isa = PBXGroup;
 			children = (
+				0FAEDCA4217A00CA00007443 /* Test_Box1.aif */,
+				0FAEDCA22179FFD400007443 /* Test_Box2.aif */,
 				B9C2004C20CFF298002D640B /* wieland_gleim.wav */,
 				B9C2004A20CFF28D002D640B /* lavater_gleim.wav */,
 				B9C2004820CFF281002D640B /* gleim_portrait.wav */,
@@ -381,6 +389,7 @@
 				B9C2004D20CFF298002D640B /* wieland_gleim.wav in Resources */,
 				B9C2004920CFF281002D640B /* gleim_portrait.wav in Resources */,
 				009A9C501FDAAF7800E6C0E3 /* Karsch_end_1.wav in Resources */,
+				0FAEDCA32179FFD400007443 /* Test_Box2.aif in Resources */,
 				006787FC1FC9C5D30015AD81 /* gleimlek.wav in Resources */,
 				00A0FA2E1FDD4F3E000EB16A /* Ramler_end.wav in Resources */,
 				00A0FA341FDD4F3E000EB16A /* ramler_frage.wav in Resources */,
@@ -389,6 +398,7 @@
 				00A0FA311FDD4F3E000EB16A /* Gleim_verweis.wav in Resources */,
 				B9947BF220B705E300CF4DB2 /* GleimZeitereignisse.wav in Resources */,
 				B9C2004B20CFF28D002D640B /* lavater_gleim.wav in Resources */,
+				0FAEDCA5217A00CA00007443 /* Test_Box1.aif in Resources */,
 				00A0FA331FDD4F3E000EB16A /* Gleim_end.wav in Resources */,
 				F9342AB41FC1E32F0018FC78 /* Main.storyboard in Resources */,
 				00A0FA301FDD4F3E000EB16A /* ramler_beg.wav in Resources */,
@@ -399,6 +409,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAEDCA6217A00CA00007443 /* Test_Box1.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +417,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0FAEDCA7217A00CA00007443 /* Test_Box1.aif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

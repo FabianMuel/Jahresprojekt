@@ -7,7 +7,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="780b7983-7647-4b8e-a774-c24c5530a35f" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/../GleimMenuStructure.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GleimMenuStructure.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/controller/XmlReaderWriter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/model/GleimMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$5.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView$8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/MainView.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/addMenuDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/addMenuDialog$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/addMenuDialog$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/addMenuDialog$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/addMenuDialog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/removeMenuDialog$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/removeMenuDialog$2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/removeMenuDialog$3.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/removeMenuDialog$4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MistyBackend/view/removeMenuDialog.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -19,11 +42,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MainView.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/MainView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+            <state relative-caret-position="615">
+              <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="GleimMenu.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/GleimMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="645">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
             </state>
           </provider>
         </entry>
@@ -31,7 +63,7 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
+            <state relative-caret-position="90">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#138#139#0" expanded="true" />
@@ -40,11 +72,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XmlReaderWriter.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="XmlReaderWriter.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="179" selection-start-line="179" selection-end-line="179" />
+            <state relative-caret-position="1537">
+              <caret line="184" column="59" lean-forward="true" selection-start-line="184" selection-start-column="59" selection-end-line="184" selection-end-column="59" />
             </state>
           </provider>
         </entry>
@@ -52,7 +84,7 @@
       <file leaf-file-name="addMenuDialog.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/view/addMenuDialog.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="714">
+            <state relative-caret-position="915">
               <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
             </state>
           </provider>
@@ -103,11 +135,10 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
-    <option name="y" value="37" />
-    <option name="width" value="1048" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="22" />
+    <option name="width" value="1440" />
+    <option name="height" value="878" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -117,6 +148,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -157,8 +190,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -278,18 +309,18 @@
       <workItem from="1525092887712" duration="15412000" />
       <workItem from="1525176855859" duration="10075000" />
       <workItem from="1525342769945" duration="7966000" />
+      <workItem from="1538072463191" duration="239000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="56554000" />
+    <option name="totallyTimeSpent" value="56793000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="23" width="1550" height="848" extended-state="6" />
+    <frame x="0" y="22" width="1440" height="878" extended-state="6" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291536" />
       <window_info anchor="right" id="Palette&#9;" order="8" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
@@ -301,9 +332,8 @@
       <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info id="Capture Tool" order="6" />
       <window_info id="Designer" order="3" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13151042" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.13125" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3291536" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -315,6 +345,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.3291536" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.3291536" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +365,13 @@
     <find-history />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/view/addMenuDialog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java" />
     <entry file="file://$PROJECT_DIR$/src/model/GleimMenu.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -501,24 +540,11 @@
     <entry file="file://$USER_HOME$/Downloads/Hausarbeit_Proggen3_2018_2/Hausarbeit Proggen3 2018/Hausarbeit_Client/Hausarbeit2018_Client/src/view/BibtexClient_view.java" />
     <entry file="file://$PROJECT_DIR$/src/view/View.java" />
     <entry file="file://$PROJECT_DIR$/src/view/ViewFrame.java" />
-    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="177">
-          <caret line="112" selection-start-line="112" selection-end-line="112" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.desktop/java/awt/EventDispatchThread.java" />
     <entry file="file://$PROJECT_DIR$/src/view/removeMenuDialog.java" />
-    <entry file="file://$PROJECT_DIR$/src/model/GleimMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="63" column="25" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/view/addMenuDialog.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="714">
+        <state relative-caret-position="915">
           <caret line="61" column="23" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
         </state>
       </provider>
@@ -532,7 +558,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
+        <state relative-caret-position="90">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#138#139#0" expanded="true" />
@@ -540,20 +566,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
+    <entry file="file://$PROJECT_DIR$/src/view/MainView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="179" selection-start-line="179" selection-end-line="179" />
+        <state relative-caret-position="615">
+          <caret line="41" column="31" selection-start-line="41" selection-start-column="31" selection-end-line="41" selection-end-column="31" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GleimMenuStructure.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/view/MainView.java">
+    <entry file="file://$PROJECT_DIR$/src/model/GleimMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="23" column="36" lean-forward="true" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+        <state relative-caret-position="645">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/controller/XmlReaderWriter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1537">
+          <caret line="184" column="59" lean-forward="true" selection-start-line="184" selection-start-column="59" selection-end-line="184" selection-end-column="59" />
         </state>
       </provider>
     </entry>

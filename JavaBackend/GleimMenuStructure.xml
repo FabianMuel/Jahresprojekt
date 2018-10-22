@@ -55,8 +55,10 @@
                     <VoiceCommand>Kleinen Scherz</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList/>
+                <AudioPath>Test_Box3.aif</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Gleim Freundschaft">
@@ -67,7 +69,7 @@
                     <VoiceCommand>kleine Freundschaft</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>Test_Box2.aif</AudioPath>
                 <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
@@ -94,7 +96,7 @@
                     <VoiceCommand>kleinstreit</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>Test_Box1.aif</AudioPath>
                 <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
@@ -124,7 +126,7 @@
                     <VoiceCommand>kleinbuergerliches</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>Test_Box4.aif</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
