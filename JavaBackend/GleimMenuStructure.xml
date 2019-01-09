@@ -14,6 +14,10 @@
                 <VoiceCommandList>
                     <VoiceCommand>Gleim Portrait</VoiceCommand>
                     <VoiceCommand>Klein Portrait</VoiceCommand>
+                    <VoiceCommand>Klein Patrick</VoiceCommand>
+                    <VoiceCommand>line Portrait </VoiceCommand>
+                    <VoiceCommand>Lime Portrait </VoiceCommand>
+                    <VoiceCommand>Dein Portrait</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
                 <AudioPath>gleim_portrait.wav</AudioPath>
@@ -26,12 +30,15 @@
                     <VoiceCommand>Klein Literatur</VoiceCommand>
                     <VoiceCommand>kleinen Literatur</VoiceCommand>
                     <VoiceCommand>kleine Literatur</VoiceCommand>
+                    <VoiceCommand>kleine Tour </VoiceCommand>
+                    <VoiceCommand>kleine Traktor </VoiceCommand>
+                    <VoiceCommand>client Literatur </VoiceCommand>
+                    <VoiceCommand>kleine Radtour</VoiceCommand>
+                    <VoiceCommand>kleine Twitter Tour</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList>
-                    <ReturnCommand/>
-                </ReturnCommandList>
+                <AudioPath>2_15_18_Gleim_alt.wav</AudioPath>
+                <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Gleim Zeitereignisse">
@@ -42,9 +49,16 @@
                     <VoiceCommand>klein Zeit Ereignisse</VoiceCommand>
                     <VoiceCommand>Gleim Zeitreise</VoiceCommand>
                     <VoiceCommand>Gleim Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Kleinen Zeitalters</VoiceCommand>
+                    <VoiceCommand>Kleinen Zeit Ereignisse </VoiceCommand>
+                    <VoiceCommand>kleine Zeitreise </VoiceCommand>
+                    <VoiceCommand>kleinseite Ereignisse </VoiceCommand>
+                    <VoiceCommand>Kleinanzeigen </VoiceCommand>
+                    <VoiceCommand>kleine Zeitereignisse </VoiceCommand>
+                    <VoiceCommand>Kleinen Zeiger Ereignisse</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_14_19_Gleim_alt.wav</AudioPath>
                 <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
@@ -53,9 +67,14 @@
                     <VoiceCommand>Gleim Scherz</VoiceCommand>
                     <VoiceCommand>Klein Scherz</VoiceCommand>
                     <VoiceCommand>Kleinen Scherz</VoiceCommand>
+                    <VoiceCommand>Nein Scherz</VoiceCommand>
+                    <VoiceCommand>Kleiner Scherz </VoiceCommand>
+                    <VoiceCommand>kein Scherz </VoiceCommand>
+                    <VoiceCommand>kein Herz </VoiceCommand>
+                    <VoiceCommand>Kleinen Schmerz</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_14_19_Gleim_alt.wav</AudioPath>
                 <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
@@ -65,21 +84,30 @@
                     <VoiceCommand>klein Freundschaft</VoiceCommand>
                     <VoiceCommand>kleinen Freundschaft</VoiceCommand>
                     <VoiceCommand>kleine Freundschaft</VoiceCommand>
+                    <VoiceCommand>Nein Freundschaft</VoiceCommand>
+                    <VoiceCommand>Gleich Freundschaft</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList/>
+                <AudioPath>Test_Box2.aif</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
                 <SubMenuList/>
             </GleimMenu>
-            <GleimMenu Name="Gleim Plaene">
+            <GleimMenu Name="Gleim Vorhaben">
                 <VoiceCommandList>
-                    <VoiceCommand>Gleim Plaene</VoiceCommand>
-                    <VoiceCommand>klein Plaene</VoiceCommand>
-                    <VoiceCommand>kleine Plaene</VoiceCommand>
-                    <VoiceCommand>Kleinen Plaenen</VoiceCommand>
+                    <VoiceCommand>Kleinen Vorhaben</VoiceCommand>
+                    <VoiceCommand>Klein vorhabe</VoiceCommand>
+                    <VoiceCommand>Kleinvorhaben</VoiceCommand>
+                    <VoiceCommand>Klein fahren</VoiceCommand>
+                    <VoiceCommand>kleinvorhaben </VoiceCommand>
+                    <VoiceCommand>Kleinfurra</VoiceCommand>
+                    <VoiceCommand>Klein vorbehalten</VoiceCommand>
+                    <VoiceCommand>Kleinen Form</VoiceCommand>
+                    <VoiceCommand>Client für haben</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_14_10_Gleim_alt.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -92,10 +120,16 @@
                     <VoiceCommand>kleinen Streit</VoiceCommand>
                     <VoiceCommand>kleine Streit</VoiceCommand>
                     <VoiceCommand>kleinstreit</VoiceCommand>
+                    <VoiceCommand>Kleinen strahlend</VoiceCommand>
+                    <VoiceCommand>kleinen Streich </VoiceCommand>
+                    <VoiceCommand>Nein Streit</VoiceCommand>
+                    <VoiceCommand>Mein Streit</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList/>
+                <AudioPath>Test_Box1.aif</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Gleim beim Hausherrn">
@@ -106,25 +140,38 @@
                     <VoiceCommand>klein beim Hausherren</VoiceCommand>
                     <VoiceCommand>Gleim beim Hause</VoiceCommand>
                     <VoiceCommand>klein beim Hause</VoiceCommand>
+                    <VoiceCommand>Nein beim Haus Herren</VoiceCommand>
+                    <VoiceCommand>Bleiben beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Kleinen beim Auswaehlen</VoiceCommand>
+                    <VoiceCommand>Drei beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Geheim beim Auswaehlen</VoiceCommand>
+                    <VoiceCommand>Kleinen beim raushaengen</VoiceCommand>
+                    <VoiceCommand>Klein beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Kleinen beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Nein beim Auswaehlen</VoiceCommand>
+                    <VoiceCommand>Klein beim hauseigenen</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_14_11_Gleim_alt.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
                 <SubMenuList/>
             </GleimMenu>
-            <GleimMenu Name="Gleim Persoenliches">
+            <GleimMenu Name="Gleim Selbst">
                 <VoiceCommandList>
-                    <VoiceCommand>Gleim Persoenliches</VoiceCommand>
-                    <VoiceCommand>klein Persoenliches</VoiceCommand>
-                    <VoiceCommand>kleine Persoenliches</VoiceCommand>
-                    <VoiceCommand>Gleim persoenlich ist</VoiceCommand>
-                    <VoiceCommand>klein persoenlich ist</VoiceCommand>
-                    <VoiceCommand>kleinbuergerliches</VoiceCommand>
+                    <VoiceCommand>Klein selbst</VoiceCommand>
+                    <VoiceCommand>Gleim selbst</VoiceCommand>
+                    <VoiceCommand>Bleiben selbst</VoiceCommand>
+                    <VoiceCommand>Kleine selbst</VoiceCommand>
+                    <VoiceCommand>Kleinen selbst</VoiceCommand>
+                    <VoiceCommand>kleine selbst</VoiceCommand>
+                    <VoiceCommand>Gleich selbst</VoiceCommand>
+                    <VoiceCommand>Leider selbst</VoiceCommand>
+                    <VoiceCommand>Bleiben selbst</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_14_19_Gleim_alt.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -136,9 +183,10 @@
                     <VoiceCommand>Klein Klein</VoiceCommand>
                     <VoiceCommand>Gleim klein</VoiceCommand>
                     <VoiceCommand>klein Gleim</VoiceCommand>
+                    <VoiceCommand>genau klein</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_14_12_Gleim_alt.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -152,19 +200,20 @@
                     <VoiceCommand>Rammler klein</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList>
-                    <ReturnCommand/>
-                </ReturnCommandList>
+                <AudioPath>1_13_10_Ramler.wav</AudioPath>
+                <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Ramler Portrait">
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Portrait</VoiceCommand>
                     <VoiceCommand>Rammler Portrait</VoiceCommand>
+                    <VoiceCommand>Sammler Portrait</VoiceCommand>
+                    <VoiceCommand>kammler Portrait</VoiceCommand>
+                    <VoiceCommand>Hammer Portrait</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_11_Ramler.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -174,9 +223,14 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Literatur</VoiceCommand>
                     <VoiceCommand>Rammler Literatur</VoiceCommand>
+                    <VoiceCommand>Hammer Literatur</VoiceCommand>
+                    <VoiceCommand>Werner Literatur</VoiceCommand>
+                    <VoiceCommand>Ferner Literatur</VoiceCommand>
+                    <VoiceCommand>herr Mueller Literatur</VoiceCommand>
+                    <VoiceCommand>herr Mueller bitte retour</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_12_Ramler.wav</AudioPath>
                 <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
@@ -186,9 +240,13 @@
                     <VoiceCommand>Rammler Zeitereignisse</VoiceCommand>
                     <VoiceCommand>Ramler Zeit Ereignisse</VoiceCommand>
                     <VoiceCommand>Rammler Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Ferner Zeitalters</VoiceCommand>
+                    <VoiceCommand>Werner Zeitalters</VoiceCommand>
+                    <VoiceCommand>Hammer Zeit Ereignissen</VoiceCommand>
+                    <VoiceCommand>Karma Zeit Ereignisse</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_13_Ramler.wav</AudioPath>
                 <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
@@ -196,9 +254,13 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Scherz</VoiceCommand>
                     <VoiceCommand>Rammler Scherz</VoiceCommand>
+                    <VoiceCommand>Werner Scherz</VoiceCommand>
+                    <VoiceCommand>Ferner Scherz</VoiceCommand>
+                    <VoiceCommand>Hammer Scherz</VoiceCommand>
+                    <VoiceCommand>Drama Scherz</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_14_Ramler.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -208,9 +270,16 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Freundschaft</VoiceCommand>
                     <VoiceCommand>Rammler Freundschaft</VoiceCommand>
+                    <VoiceCommand>Hammer Freundschaft</VoiceCommand>
+                    <VoiceCommand>Ferner Freundschaft</VoiceCommand>
+                    <VoiceCommand>herr Mueller Freundschaft</VoiceCommand>
+                    <VoiceCommand>Herne Freundschaft</VoiceCommand>
+                    <VoiceCommand>Hammer Freundschaft</VoiceCommand>
+                    <VoiceCommand>Kramer Freundschaft</VoiceCommand>
+                    <VoiceCommand>Anlage Freundschaft</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_15_Ramler.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -220,9 +289,16 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Plaene</VoiceCommand>
                     <VoiceCommand>Rammler Plaene</VoiceCommand>
+                    <VoiceCommand>Werner Plaene</VoiceCommand>
+                    <VoiceCommand>Ferner Plaene</VoiceCommand>
+                    <VoiceCommand>Kramer Plaene</VoiceCommand>
+                    <VoiceCommand>herr Mueller Plaene</VoiceCommand>
+                    <VoiceCommand>rammler Plaene</VoiceCommand>
+                    <VoiceCommand>Herne Plaene</VoiceCommand>
+                    <VoiceCommand>Hammer Plaene</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_16_Ramler.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -232,9 +308,14 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler Streit</VoiceCommand>
                     <VoiceCommand>Rammler Streit</VoiceCommand>
+                    <VoiceCommand>Drama Streit</VoiceCommand>
+                    <VoiceCommand>Ferner Streit </VoiceCommand>
+                    <VoiceCommand>Herne Streit</VoiceCommand>
+                    <VoiceCommand>Hammer Streit</VoiceCommand>
+                    <VoiceCommand>Werner Streit</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_17_Ramler.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -246,9 +327,15 @@
                     <VoiceCommand>Rammler beim Haushernn</VoiceCommand>
                     <VoiceCommand>Ramler beim Hausherren</VoiceCommand>
                     <VoiceCommand>Rammler beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Ferner beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>Kramer beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>Ferner beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Kamera beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Hammer beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>Drama beim Hausherren</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_18_Ramler.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -258,9 +345,15 @@
                 <VoiceCommandList>
                     <VoiceCommand>Ramler persoenliches</VoiceCommand>
                     <VoiceCommand>Rammler persoenliches</VoiceCommand>
+                    <VoiceCommand>Ferner persoenliches</VoiceCommand>
+                    <VoiceCommand>Werner persoenliches</VoiceCommand>
+                    <VoiceCommand>Hammer persoenliches</VoiceCommand>
+                    <VoiceCommand>Karma persoenliches</VoiceCommand>
+                    <VoiceCommand>Drama Persoenlichkeit</VoiceCommand>
+                    <VoiceCommand>Hammer persoenlicheres</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
-                <AudioPath/>
+                <AudioPath>1_13_19_Ramler.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -276,12 +369,13 @@
                     <VoiceCommand>Cars klein</VoiceCommand>
                     <VoiceCommand>Carsten Gleim</VoiceCommand>
                     <VoiceCommand>Carsten klein</VoiceCommand>
+                    <VoiceCommand>Kaarst klein</VoiceCommand>
+                    <VoiceCommand>karsch line</VoiceCommand>
+                    <VoiceCommand>Carlos Klein</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList>
-                    <ReturnCommand/>
-                </ReturnCommandList>
+                <AudioPath>2_15_10_Karsch.wav</AudioPath>
+                <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Karsch Portrait">
@@ -290,12 +384,12 @@
                     <VoiceCommand>Cars Portrait</VoiceCommand>
                     <VoiceCommand>Carsten Portrait</VoiceCommand>
                     <VoiceCommand>Couch Portrait</VoiceCommand>
+                    <VoiceCommand>kaarst Portrait</VoiceCommand>
+                    <VoiceCommand>Karsch Patrick</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList>
-                    <ReturnCommand/>
-                </ReturnCommandList>
+                <AudioPath>2_15_11_Karsch.wav</AudioPath>
+                <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Karsch Literatur">
@@ -303,12 +397,13 @@
                     <VoiceCommand>Karsch Literatur</VoiceCommand>
                     <VoiceCommand>Cars Literatur</VoiceCommand>
                     <VoiceCommand>Carsten Literatur</VoiceCommand>
+                    <VoiceCommand>kaarst Literatur</VoiceCommand>
+                    <VoiceCommand>karsch Literatur</VoiceCommand>
+                    <VoiceCommand>kaarst nette Radtour</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList>
-                    <ReturnCommand/>
-                </ReturnCommandList>
+                <AudioPath>2_15_12_Karsch.wav</AudioPath>
+                <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Karsch Zeitereignisse">
@@ -319,9 +414,13 @@
                     <VoiceCommand>Karsch Zeit Ereignisse</VoiceCommand>
                     <VoiceCommand>Cars Zeit Ereignisse</VoiceCommand>
                     <VoiceCommand>Carsten Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Chaos Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>kaarst Zeitalter</VoiceCommand>
+                    <VoiceCommand>karsch Zeitalters</VoiceCommand>
+                    <VoiceCommand>karsch Zeitalter</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_15_13_Karsch.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -332,9 +431,10 @@
                     <VoiceCommand>Karsch Scherz</VoiceCommand>
                     <VoiceCommand>Cars Scherz</VoiceCommand>
                     <VoiceCommand>Carsten Scherz</VoiceCommand>
+                    <VoiceCommand>Carlos Scherz</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_15_14_Karsch.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -345,9 +445,11 @@
                     <VoiceCommand>Karsch Freundschaft</VoiceCommand>
                     <VoiceCommand>Cars Freundschaft</VoiceCommand>
                     <VoiceCommand>Carsten Freundschaft</VoiceCommand>
+                    <VoiceCommand>Kaarst Freundschaft</VoiceCommand>
+                    <VoiceCommand>Karst Freundschaft</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
+                <AudioPath>2_15_15_Karsch.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -358,12 +460,13 @@
                     <VoiceCommand>Karsch Plaene</VoiceCommand>
                     <VoiceCommand>Cars Plaene</VoiceCommand>
                     <VoiceCommand>Carsten Plaene</VoiceCommand>
+                    <VoiceCommand>kaarst Kleene</VoiceCommand>
+                    <VoiceCommand>karsch Kleene</VoiceCommand>
+                    <VoiceCommand>karsch kleiner</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
-                <ReturnCommandList>
-                    <ReturnCommand/>
-                </ReturnCommandList>
+                <AudioPath>2_15_16_Karsch.wav</AudioPath>
+                <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
             <GleimMenu Name="Karsch Streit">
@@ -371,9 +474,10 @@
                     <VoiceCommand>Karsch Streit</VoiceCommand>
                     <VoiceCommand>Cars Streit</VoiceCommand>
                     <VoiceCommand>Carsten Streit</VoiceCommand>
+                    <VoiceCommand>kaarst Streit</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
+                <AudioPath>pling.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -387,9 +491,12 @@
                     <VoiceCommand>Cars beim Hausherren</VoiceCommand>
                     <VoiceCommand>Carsten beim Hausherrn</VoiceCommand>
                     <VoiceCommand>Carsten beim Hausherren</VoiceCommand>
+                    <VoiceCommand>kaarst beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>Carlos beim Hausherrn </VoiceCommand>
+                    <VoiceCommand>karsch mein Haus Herren</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
+                <AudioPath>pling.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
@@ -400,9 +507,12 @@
                     <VoiceCommand>Karsch Persoenliches</VoiceCommand>
                     <VoiceCommand>Cars Persoenliches</VoiceCommand>
                     <VoiceCommand>Carsten Persoenliches</VoiceCommand>
+                    <VoiceCommand>kaarst persoenliches</VoiceCommand>
+                    <VoiceCommand>Chaos persoenliches</VoiceCommand>
+                    <VoiceCommand>karsch persoenlicheres</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath/>
+                <AudioPath>pling.wav</AudioPath>
                 <ReturnCommandList/>
                 <SubMenuList/>
             </GleimMenu>
@@ -414,31 +524,3511 @@
                     <VoiceCommand>Wieland bleiben</VoiceCommand>
                     <VoiceCommand>Wie lang klein</VoiceCommand>
                 </VoiceCommandList>
-                <SerialCommand>2</SerialCommand>
+                <SerialCommand>7</SerialCommand>
                 <AudioPath>wieland_gleim.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>
                 <SubMenuList/>
             </GleimMenu>
-            <GleimMenu Name="Lavater Gleim">
+<!--            <GleimMenu Name="Lavater Gleim">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavatar Gleim</VoiceCommand>-->
+<!--                    <VoiceCommand>Lavatar klein</VoiceCommand>-->
+<!--                    <VoiceCommand>Lavater bleiben</VoiceCommand>-->
+<!--                    <VoiceCommand>Labertal bleiben</VoiceCommand>-->
+<!--                    <VoiceCommand>Lavater Klein</VoiceCommand>-->
+<!--                    <VoiceCommand>Lavater Gleim</VoiceCommand>-->
+<!--                    <VoiceCommand>La Vater Gleim</VoiceCommand>-->
+<!--                    <VoiceCommand>La Vater bleiben</VoiceCommand>-->
+<!--                    <VoiceCommand>Love Vater bleiben</VoiceCommand>-->
+<!--                    <VoiceCommand>La Vater bleiben</VoiceCommand>-->
+<!--                    <VoiceCommand>La Vater klein</VoiceCommand>-->
+<!--                    <VoiceCommand>La Vater Gleim</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>4</SerialCommand>-->
+<!--                <AudioPath>lavater_gleim.wav</AudioPath>-->
+<!--                <ReturnCommandList/>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater Portrait">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater Portrait</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>4</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList>-->
+<!--                    <ReturnCommand/>-->
+<!--                </ReturnCommandList>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater Literatur">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater Literatur</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>2</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList>-->
+<!--                    <ReturnCommand/>-->
+<!--                </ReturnCommandList>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater Zeitereignisse">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater Zeitereignisse</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>4</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList>-->
+<!--                    <ReturnCommand/>-->
+<!--                </ReturnCommandList>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater Scherz">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater Scherz</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>4</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList>-->
+<!--                    <ReturnCommand/>-->
+<!--                </ReturnCommandList>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater Freundschaft">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater Freundschaft</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>4</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList>-->
+<!--                    <ReturnCommand/>-->
+<!--                </ReturnCommandList>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater Plaene">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater Plaene</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>4</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList>-->
+<!--                    <ReturnCommand/>-->
+<!--                </ReturnCommandList>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater Streit">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater Streit</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>2</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList/>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater beim Hausherren">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater beim Hausherren</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>2</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList>-->
+<!--                    <ReturnCommand/>-->
+<!--                </ReturnCommandList>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+<!--            <GleimMenu Name="Lavater Persoenliches">-->
+<!--                <VoiceCommandList>-->
+<!--                    <VoiceCommand>Lavater Persoenliches</VoiceCommand>-->
+<!--                </VoiceCommandList>-->
+<!--                <SerialCommand>2</SerialCommand>-->
+<!--                <AudioPath>pling.wav</AudioPath>-->
+<!--                <ReturnCommandList>-->
+<!--                    <ReturnCommand/>-->
+<!--                </ReturnCommandList>-->
+<!--                <SubMenuList/>-->
+<!--            </GleimMenu>-->
+            <GleimMenu Name="Kleist Gleim">
                 <VoiceCommandList>
-                    <VoiceCommand>Lavatar Gleim</VoiceCommand>
-                    <VoiceCommand>Lavatar klein</VoiceCommand>
-                    <VoiceCommand>Lavater bleiben</VoiceCommand>
-                    <VoiceCommand>Labertal bleiben</VoiceCommand>
-                    <VoiceCommand>Lavater Klein</VoiceCommand>
-                    <VoiceCommand>Lavater Gleim</VoiceCommand>
-                    <VoiceCommand>La Vater Gleim</VoiceCommand>
-                    <VoiceCommand>La Vater bleiben</VoiceCommand>
-                    <VoiceCommand>Love Vater bleiben</VoiceCommand>
-                    <VoiceCommand>La Vater bleiben</VoiceCommand>
-                    <VoiceCommand>La Vater klein</VoiceCommand>
-                    <VoiceCommand>La Vater Gleim</VoiceCommand>
+                    <VoiceCommand>Von Kleist Gleim</VoiceCommand>
+                    <VoiceCommand>Von Kleist bleiben</VoiceCommand>
+                    <VoiceCommand>von Kleist klein</VoiceCommand>
+                    <VoiceCommand>von Kleist leihen</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist Portrait</VoiceCommand>
+                    <VoiceCommand>Von Kleist Portrait</VoiceCommand>
+                    <VoiceCommand>von Kleist verdrehen</VoiceCommand>
+                    <VoiceCommand>von Kleist Portraits</VoiceCommand>
+                    <VoiceCommand>von Kleist Vertreter</VoiceCommand>
+                    <VoiceCommand>von Kleist Vortraege</VoiceCommand>
+                    <VoiceCommand>von Kleinstbeitraege</VoiceCommand>
+                    <VoiceCommand>von Kleist vortreten</VoiceCommand>
+                    <VoiceCommand>von Kleist Vertraegen</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist Literatur</VoiceCommand>
+                    <VoiceCommand>Volker ist Literatur</VoiceCommand>
+                    <VoiceCommand>Frankreichs Literatur</VoiceCommand>
+                    <VoiceCommand>vom Kreis Guetersloh</VoiceCommand>
+                    <VoiceCommand>von Kleist twittert vor</VoiceCommand>
+                    <VoiceCommand>von Kleist Wetter tun</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Von Kleist Zeitalter</VoiceCommand>
+                    <VoiceCommand>von Kleist Zeitreisen</VoiceCommand>
+                    <VoiceCommand>Volker ist zeitweise</VoiceCommand>
+                    <VoiceCommand>von Kleist Zeitalters</VoiceCommand>
+                    <VoiceCommand>von Kleist Zeitraeume</VoiceCommand>
+                    <VoiceCommand>Volker ist seit Ereignissen</VoiceCommand>
+                    <VoiceCommand>von Kleist seit eines</VoiceCommand>
+                    <VoiceCommand>von Kleist sein eigenes</VoiceCommand>
+                    <VoiceCommand>von Kleist Zeitleiste</VoiceCommand>
+                    <VoiceCommand>von = Einzel</VoiceCommand>
+                    <VoiceCommand>vergleichszeitalters</VoiceCommand>
+                    <VoiceCommand>Frankreich Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>von Kleist seit Ereignisse</VoiceCommand>
+                    <VoiceCommand>von gleichzeitig</VoiceCommand>
+                    <VoiceCommand>von Kleists Ereignissen</VoiceCommand>
+                    <VoiceCommand>Frankreichs Zeit einiges</VoiceCommand>
+                    <VoiceCommand>von Kleist Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>von Kleist zweiter Ereignisse</VoiceCommand>
+                    <VoiceCommand>von Kleist Ereignisse</VoiceCommand>
+                    <VoiceCommand>von = Ereignisse</VoiceCommand>
+                    <VoiceCommand>von Gleichzeit Ereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist Freundschaft</VoiceCommand>
+                    <VoiceCommand>Von Kleist Freundschaft</VoiceCommand>
+                    <VoiceCommand>von Kleinstfreundschaft</VoiceCommand>
+                    <VoiceCommand>vergleicht Freundschaft</VoiceCommand>
+                    <VoiceCommand>und leicht Freundschaft</VoiceCommand>
+                    <VoiceCommand>und Gastfreundschaft</VoiceCommand>
+                    <VoiceCommand>Freundschaft Freundschaft</VoiceCommand>
+                    <VoiceCommand>und weisst Freundschaft</VoiceCommand>
+                    <VoiceCommand>und heisst Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist Plaene</VoiceCommand>
+                    <VoiceCommand>Vergleich Plaene</VoiceCommand>
+                    <VoiceCommand>von Kleist Trainer</VoiceCommand>
+                    <VoiceCommand>von Kleinstkleene</VoiceCommand>
+                    <VoiceCommand>von Kleist Werner</VoiceCommand>
+                    <VoiceCommand>von Kleist Ferne</VoiceCommand>
+                    <VoiceCommand>von Kleist Ferna</VoiceCommand>
+                    <VoiceCommand>von Kleinstplaenen</VoiceCommand>
+                    <VoiceCommand>von Gleisplaene</VoiceCommand>
+                    <VoiceCommand>von Kleist kleiner</VoiceCommand>
+                    <VoiceCommand>von Kleist lernen</VoiceCommand>
+                    <VoiceCommand>von Kleist Planer</VoiceCommand>
+                    <VoiceCommand>von Kleinstplaene</VoiceCommand>
+                    <VoiceCommand>von Kleins Werner</VoiceCommand>
+                    <VoiceCommand>von Kleinst kleiner</VoiceCommand>
+                    <VoiceCommand>von Kleist kleiner</VoiceCommand>
+                    <VoiceCommand>von Kleist kleine</VoiceCommand>
+                    <VoiceCommand>von Kleist Lerner</VoiceCommand>
+                    <VoiceCommand>von Kleist keiner</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist Streit</VoiceCommand>
+                    <VoiceCommand>Von Kleist strahlt</VoiceCommand>
+                    <VoiceCommand>von Kleinststreit</VoiceCommand>
+                    <VoiceCommand>Frankreich gestreikt</VoiceCommand>
+                    <VoiceCommand>von Kleist Streits</VoiceCommand>
+                    <VoiceCommand>von Claus schreibt</VoiceCommand>
+                    <VoiceCommand>Vergleich schreibt</VoiceCommand>
+                    <VoiceCommand>von Kleist Strand</VoiceCommand>
+                    <VoiceCommand>von Kleist schreit</VoiceCommand>
+                    <VoiceCommand>Vergleichs schreibt</VoiceCommand>
+                    <VoiceCommand>von Kleist schreibt</VoiceCommand>
+                    <VoiceCommand>von Kleist Strasse</VoiceCommand>
+                    <VoiceCommand>und weist Streit</VoiceCommand>
+                    <VoiceCommand>von Kleiststrasse</VoiceCommand>
+                    <VoiceCommand>von Kleist streikt</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Von Kleist Parkhaus Herren</VoiceCommand>
+                    <VoiceCommand>von Kleist beim Hause</VoiceCommand>
+                    <VoiceCommand>von Kleist beim auswaehlen</VoiceCommand>
+                    <VoiceCommand>von Clustern beim auswaehlen</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kleist Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Von Kleist Persoenliches</VoiceCommand>
+                    <VoiceCommand>von Kleist persoenliches</VoiceCommand>
+                    <VoiceCommand>von Kleist persoenlicheres</VoiceCommand>
+                    <VoiceCommand>und was persoenliches</VoiceCommand>
+                    <VoiceCommand>und hast persoenliches</VoiceCommand>
+                    <VoiceCommand>von Kleist persoenlich ist</VoiceCommand>
+                    <VoiceCommand>und weisst persoenliches</VoiceCommand>
+                    <VoiceCommand>und heisst persoenliches</VoiceCommand>
+                    <VoiceCommand>vergleicht persoenliches</VoiceCommand>
+                    <VoiceCommand>und greifst persoenliches</VoiceCommand>
+                    <VoiceCommand>von Kleist versoehnliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>9</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Uz Gleim</VoiceCommand>
+                    <VoiceCommand>Ruths klein</VoiceCommand>
+                    <VoiceCommand>Guts klein</VoiceCommand>
+                    <VoiceCommand>Kurz klein</VoiceCommand>
+                    <VoiceCommand>Holz klein</VoiceCommand>
+                    <VoiceCommand>Lutz Klein</VoiceCommand>
+                    <VoiceCommand>utz Klein</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Uz Portrait</VoiceCommand>
+                    <VoiceCommand>Kurz Portrait</VoiceCommand>
+                    <VoiceCommand>Holz Portrait</VoiceCommand>
+                    <VoiceCommand>uns Portrait</VoiceCommand>
+                    <VoiceCommand>ots Portraet</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Uz Literatur</VoiceCommand>
+                    <VoiceCommand>Kurz Literatur</VoiceCommand>
+                    <VoiceCommand>Orts Literatur</VoiceCommand>
+                    <VoiceCommand>ortsliteratur</VoiceCommand>
+                    <VoiceCommand>Holz Literatur</VoiceCommand>
+                    <VoiceCommand>Kurz Literatur</VoiceCommand>
+                    <VoiceCommand>Als Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Uz Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Boots Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Guts Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Kurz Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Gut Zeit Ereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Uz Scherz</VoiceCommand>
+                    <VoiceCommand>Holz Scherz</VoiceCommand>
+                    <VoiceCommand>Kurz Scherz</VoiceCommand>
+                    <VoiceCommand>ortsscherz</VoiceCommand>
+                    <VoiceCommand>Boots Scherz</VoiceCommand>
+                    <VoiceCommand>uns Scherz</VoiceCommand>
+                    <VoiceCommand>Guts Scherz</VoiceCommand>
+                    <VoiceCommand>Kurz Schatz</VoiceCommand>
+                    <VoiceCommand>uns Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Uz Freunschaft</VoiceCommand>
+                    <VoiceCommand>Guts Freundschaft</VoiceCommand>
+                    <VoiceCommand>und Freundschaft</VoiceCommand>
+                    <VoiceCommand>Kurz Freundschaft</VoiceCommand>
+                    <VoiceCommand>Trotz Freundschaft</VoiceCommand>
+                    <VoiceCommand>ortsfreundschaft</VoiceCommand>
+                    <VoiceCommand>uns Freundschaft</VoiceCommand>
+                    <VoiceCommand>Boots Freundschaft</VoiceCommand>
+                    <VoiceCommand>Obst Freundschaft</VoiceCommand>
+                    <VoiceCommand>Guts Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz Vorhaben">
+                <VoiceCommandList>
+                    <VoiceCommand>Kurz vorhaben</VoiceCommand>
+                    <VoiceCommand>Orts Vorhaben</VoiceCommand>
+                    <VoiceCommand>gutsvorhaben</VoiceCommand>
+                    <VoiceCommand>uns vorhaben</VoiceCommand>
+                    <VoiceCommand>ortsvorhaben</VoiceCommand>
+                    <VoiceCommand>utz Vorhaben</VoiceCommand>
+                    <VoiceCommand>bootsvorhaben</VoiceCommand>
+                    <VoiceCommand>Kurz vor haben</VoiceCommand>
+                    <VoiceCommand>Guts Vorhaben</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz Aerger">
+                <VoiceCommandList>
+                    <VoiceCommand>Kurz Aerger</VoiceCommand>
+                    <VoiceCommand>Boots Aerge</VoiceCommand>
+                    <VoiceCommand>Orts Aerger</VoiceCommand>
+                    <VoiceCommand>utz aerger</VoiceCommand>
+                    <VoiceCommand>guts aerger</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Uz beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Kurz beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>Kurz beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Orts beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Guts beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>uns beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>und beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>uns beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>Boots beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>uns beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Als beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>bereits beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Uz selbst">
+                <VoiceCommandList>
+                    <VoiceCommand>Kurz selbst</VoiceCommand>
+                    <VoiceCommand>oops selbst</VoiceCommand>
+                    <VoiceCommand>Boots selbst</VoiceCommand>
+                    <VoiceCommand>Guts selbst</VoiceCommand>
+                    <VoiceCommand>uns selbst</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>6</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Sulzer Gleim</VoiceCommand>
+                    <VoiceCommand>sulzer line</VoiceCommand>
+                    <VoiceCommand>sulzer einen</VoiceCommand>
+                    <VoiceCommand>sulzer klein</VoiceCommand>
+                    <VoiceCommand>user klein</VoiceCommand>
+                    <VoiceCommand>soll's da klein</VoiceCommand>
+                    <VoiceCommand>Sulz sehr klein</VoiceCommand>
+                    <VoiceCommand>Soll Sa klein</VoiceCommand>
+                    <VoiceCommand>salzer Klein</VoiceCommand>
+                    <VoiceCommand>Soll sehr klein</VoiceCommand>
+                    <VoiceCommand>soll's sehr klein</VoiceCommand>
+                    <VoiceCommand>sulzer line</VoiceCommand>
+                    <VoiceCommand>Soll zwar klein</VoiceCommand>
+                    <VoiceCommand>sulzalein</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_10_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Sulzer Portrait</VoiceCommand>
+                    <VoiceCommand>sulzer Patrick</VoiceCommand>
+                    <VoiceCommand>seltsam Portrait</VoiceCommand>
+                    <VoiceCommand>Soll zur Portrait</VoiceCommand>
+                    <VoiceCommand>sulzer Vortraege</VoiceCommand>
+                    <VoiceCommand>Soll zur Portrait</VoiceCommand>
+                    <VoiceCommand>Soll sehr Portrait</VoiceCommand>
+                    <VoiceCommand>Soll sehr Vortraege</VoiceCommand>
+                    <VoiceCommand>seltsame Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_11_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Sulzer bitte retour</VoiceCommand>
+                    <VoiceCommand>Sulzer Literatur</VoiceCommand>
+                    <VoiceCommand>seltsam Literatur</VoiceCommand>
+                    <VoiceCommand>sulzer bitte Radtour</VoiceCommand>
+                    <VoiceCommand>so sehr Literatur</VoiceCommand>
+                    <VoiceCommand>soll's sehr Literatur</VoiceCommand>
+                    <VoiceCommand>soll zwar bitte retour</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_12_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>So letzter Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>sulzer Zeitalters</VoiceCommand>
+                    <VoiceCommand>Sulzer Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Soll sehr Zeitalters</VoiceCommand>
+                    <VoiceCommand>seltsam Zeitalters</VoiceCommand>
+                    <VoiceCommand>Soll zur Zeit Ereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_13_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Sulzer Scherz</VoiceCommand>
+                    <VoiceCommand>seltsam Scherz</VoiceCommand>
+                    <VoiceCommand>Soll sehr Scherz</VoiceCommand>
+                    <VoiceCommand>so sehr Scherz</VoiceCommand>
+                    <VoiceCommand>sollst da Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_14_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Sulzer Freundschaft</VoiceCommand>
+                    <VoiceCommand>so zwar Freundschaft</VoiceCommand>
+                    <VoiceCommand>so sah Freundschaft</VoiceCommand>
+                    <VoiceCommand>seltsame Freundschaft</VoiceCommand>
+                    <VoiceCommand>soweit zur Freundschaft</VoiceCommand>
+                    <VoiceCommand>sollte Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_15_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer Vorhaben">
+                <VoiceCommandList>
+                    <VoiceCommand>sulzer Vorhaben</VoiceCommand>
+                    <VoiceCommand>soll's sehr vorhaben</VoiceCommand>
+                    <VoiceCommand>Sylt sehr vorhaben</VoiceCommand>
+                    <VoiceCommand>soll’s sehr Vorhaben</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_16_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Sulzer Streit</VoiceCommand>
+                    <VoiceCommand>Sulzer schreibt</VoiceCommand>
+                    <VoiceCommand>Soll sehr Streit</VoiceCommand>
+                    <VoiceCommand>somit sehr Streit</VoiceCommand>
+                    <VoiceCommand>so sah Streit</VoiceCommand>
+                    <VoiceCommand>soll sah Streit</VoiceCommand>
+                    <VoiceCommand>seltsam Streit</VoiceCommand>
+                    <VoiceCommand>seltsam Streikt</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_17_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Sulzer beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Sulzer beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>sollst aber wieder aus Herren</VoiceCommand>
+                    <VoiceCommand>sulzer Weinhaus Herrn</VoiceCommand>
+                    <VoiceCommand>sonst aber Haus Herren</VoiceCommand>
+                    <VoiceCommand>seltsame Hausherren</VoiceCommand>
+                    <VoiceCommand>sulzereinhaus Herren</VoiceCommand>
+                    <VoiceCommand>Soll zwar beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>Soll zwar beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>sollte aber Haus Herren</VoiceCommand>
+                    <VoiceCommand>Soll sehr ein Hausherrn</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_18_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Sulzer selbst">
+                <VoiceCommandList>
+                    <VoiceCommand>Seltsam selbst</VoiceCommand>
+                    <VoiceCommand>Sylt sehr selbst</VoiceCommand>
+                    <VoiceCommand>Soll’s sehr selbst</VoiceCommand>
+                    <VoiceCommand>Soll zwar selbst</VoiceCommand>
+                    <VoiceCommand>sulzer selbst</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>4</SerialCommand>
+                <AudioPath>2_26_19_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Weitsch Gleim</VoiceCommand>
+                    <VoiceCommand>Weit klein</VoiceCommand>
+                    <VoiceCommand>white Lion</VoiceCommand>
+                    <VoiceCommand>weit bleiben</VoiceCommand>
+                    <VoiceCommand>weichlein</VoiceCommand>
+                    <VoiceCommand>weil's klein</VoiceCommand>
+                    <VoiceCommand>weit Nein </VoiceCommand>
+                    <VoiceCommand>bereits klein</VoiceCommand>
+                    <VoiceCommand>veitsch bleiben</VoiceCommand>
+                    <VoiceCommand>Weiss klein</VoiceCommand>
+                    <VoiceCommand>weitsch gleim</VoiceCommand>
+                    <VoiceCommand>weitsch klein</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>3</SerialCommand>
-                <AudioPath>lavater_gleim.wav</AudioPath>
+                <AudioPath>1_22_10_Weitsch.wav</AudioPath>
                 <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Weitsch Portrait</VoiceCommand>
+                    <VoiceCommand>Neid Portrait</VoiceCommand>
+                    <VoiceCommand>white Portrait</VoiceCommand>
+                    <VoiceCommand>weil's Portraet</VoiceCommand>
+                    <VoiceCommand>white Portrait</VoiceCommand>
+                    <VoiceCommand>Seit Portrait</VoiceCommand>
+                    <VoiceCommand>Weiss Portrait</VoiceCommand>
+                    <VoiceCommand>Seit ich Portrait</VoiceCommand>
+                    <VoiceCommand>weiz Portrait</VoiceCommand>
+                    <VoiceCommand>weit Portrait</VoiceCommand>
+                    <VoiceCommand>weit Sch Portrait</VoiceCommand>
+                    <VoiceCommand>veitsch Portrait </VoiceCommand>
+                    <VoiceCommand>Seit Portrait</VoiceCommand>
+                    <VoiceCommand>weit schportrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_11_Weitsch.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Weitsch Literatur</VoiceCommand>
+                    <VoiceCommand>Weit Literatur</VoiceCommand>
+                    <VoiceCommand>weit bitte retour</VoiceCommand>
+                    <VoiceCommand>weit Letztere Tour</VoiceCommand>
+                    <VoiceCommand>weitsch mit retour</VoiceCommand>
+                    <VoiceCommand>Seit Literatur</VoiceCommand>
+                    <VoiceCommand>seid bitte retour</VoiceCommand>
+                    <VoiceCommand>veitsch bitte retour</VoiceCommand>
+                    <VoiceCommand>weit Literatur</VoiceCommand>
+                    <VoiceCommand>weitschliteratur</VoiceCommand>
+                    <VoiceCommand>bereits Literatur</VoiceCommand>
+                    <VoiceCommand>bereits Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_12_Weitsch.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Weitsch Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Seit zweiter Ereignisse</VoiceCommand>
+                    <VoiceCommand>weit Zeitalters</VoiceCommand>
+                    <VoiceCommand>weit Zeit Ereignisse </VoiceCommand>
+                    <VoiceCommand>weit seit Ereignisse</VoiceCommand>
+                    <VoiceCommand>weit Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Weil ich Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>weit Sch Zeitalters</VoiceCommand>
+                    <VoiceCommand>weitschzeitalters</VoiceCommand>
+                    <VoiceCommand>weitzeitalters</VoiceCommand>
+                    <VoiceCommand>weit Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>weit seit der Ereignisse</VoiceCommand>
+                    <VoiceCommand>Bei tsch Zeitalters</VoiceCommand>
+                    <VoiceCommand>weit Schzeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Bei tsch Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>veitsch zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_13_Weitsch.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Weitsch Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_14_Weitsch.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Weitsch Freundschaft</VoiceCommand>
+                    <VoiceCommand>Weit Freundschaft</VoiceCommand>
+                    <VoiceCommand>Weil ich Freundschaft</VoiceCommand>
+                    <VoiceCommand>veitsch Freundschaft</VoiceCommand>
+                    <VoiceCommand>Zeit Freundschaft</VoiceCommand>
+                    <VoiceCommand>weitz Freundschaft</VoiceCommand>
+                    <VoiceCommand>weit Schfreundschaft</VoiceCommand>
+                    <VoiceCommand>waitch Freundschaft</VoiceCommand>
+                    <VoiceCommand>Bei tsch Freundschaft</VoiceCommand>
+                    <VoiceCommand>weit Schfreundschaft</VoiceCommand>
+                    <VoiceCommand>weit Freundschaft</VoiceCommand>
+                    <VoiceCommand>Bei Freundschaft</VoiceCommand>
+                    <VoiceCommand>Seit Freundschaft</VoiceCommand>
+                    <VoiceCommand>bereits Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_15_Weitsch.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch Vorhaben">
+                <VoiceCommandList>
+                    <VoiceCommand>Weitsch Vorhaben</VoiceCommand>
+                    <VoiceCommand>weit vorhaben</VoiceCommand>
+                    <VoiceCommand>Seit Vorhaben</VoiceCommand>
+                    <VoiceCommand>weitz Vorhaben</VoiceCommand>
+                    <VoiceCommand>weitsch vorhaben</VoiceCommand>
+                    <VoiceCommand>veitsch Vorhaben</VoiceCommand>
+                    <VoiceCommand>waitch Vorhaben</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_16_Weitsch.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch Aerger">
+                <VoiceCommandList>
+                    <VoiceCommand>Weit Aerger</VoiceCommand>
+                    <VoiceCommand>weil's Aerger</VoiceCommand>
+                    <VoiceCommand>veitsch Aerger</VoiceCommand>
+                    <VoiceCommand>weitsch Aerger</VoiceCommand>
+                    <VoiceCommand>waitch Aerger</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_17_Weitsch.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Weitsch beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Bereits beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>weiz beim Haus Herren</VoiceCommand>
+                    <VoiceCommand>weit mein Haus Herren</VoiceCommand>
+                    <VoiceCommand>weit beim Hausherren</VoiceCommand>
+                    <VoiceCommand>weit beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>bereits beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>weitsch beim Hausherrn</VoiceCommand>
+                    <VoiceCommand>weit beim Hausherren</VoiceCommand>
+                    <VoiceCommand>veitsch beim Hausherrn</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_18_Weitsch.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weitsch selbst">
+                <VoiceCommandList>
+                    <VoiceCommand>weitsch selbst</VoiceCommand>
+                    <VoiceCommand>weit selbst</VoiceCommand>
+                    <VoiceCommand>waitch selbst </VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>3</SerialCommand>
+                <AudioPath>1_22_19_Weitsch.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Wohnzimmer bleiben</VoiceCommand>
+                    <VoiceCommand>bot mir bleiben</VoiceCommand>
+                    <VoiceCommand>Portman leihen</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer klein</VoiceCommand>
+                    <VoiceCommand>portmann kleinen</VoiceCommand>
+                    <VoiceCommand>Boote leihen</VoiceCommand>
+                    <VoiceCommand>Boten wir klein</VoiceCommand>
+                    <VoiceCommand>portmann Klein</VoiceCommand>
+                    <VoiceCommand>Bodmer Gleim</VoiceCommand>
+                    <VoiceCommand>bodmer Klein</VoiceCommand>
+                    <VoiceCommand>bot mir klein</VoiceCommand>
+                    <VoiceCommand>bodmer kleinen</VoiceCommand>
+                    <VoiceCommand>bodmer Klein</VoiceCommand>
+                    <VoiceCommand>Wagner Klein</VoiceCommand>
+                    <VoiceCommand>Wagner Line</VoiceCommand>
+                    <VoiceCommand>Ordner Klein</VoiceCommand>
+                    <VoiceCommand>Ordner Line</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_10_LaRoche.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Bodmer Portrait</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer Portrait</VoiceCommand>
+                    <VoiceCommand>bot mir Portrait</VoiceCommand>
+                    <VoiceCommand>Bootsmann Portrait</VoiceCommand>
+                    <VoiceCommand>Ordner Portrait</VoiceCommand>
+                    <VoiceCommand>Wagner Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_10_LaRoche.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Bodmer Literatur</VoiceCommand>
+                    <VoiceCommand>Bootsmann Literatur</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer Literatur</VoiceCommand>
+                    <VoiceCommand>Bodmer Literatur</VoiceCommand>
+                    <VoiceCommand>bodenwert Literatur</VoiceCommand>
+                    <VoiceCommand>Wortmann Literatur</VoiceCommand>
+                    <VoiceCommand>wohnzimmertemperatur</VoiceCommand>
+                    <VoiceCommand>Boden Literatur</VoiceCommand>
+                    <VoiceCommand>Wagner Literatur</VoiceCommand>
+                    <VoiceCommand>Ordner Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_11_LaRoche.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Bodmer Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Bootsmann Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Bootsmann zweiter Ereignisse</VoiceCommand>
+                    <VoiceCommand>Bootsmann zweite Ereignisse</VoiceCommand>
+                    <VoiceCommand>Bootsmann Zeitalter</VoiceCommand>
+                    <VoiceCommand>Bootsmann zeitweise</VoiceCommand>
+                    <VoiceCommand>Bootsmann Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Butler Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Bock mehr Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Butler Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer zweiter Ereignisse</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer zweite Ereignisse</VoiceCommand>
+                    <VoiceCommand>Boten mir Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer zweiter Ereignisse</VoiceCommand>
+                    <VoiceCommand>Wagner Zeit Ereignisse</VoiceCommand>
+                    <VoiceCommand>Wagner Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Ordner Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_12_LaRoche.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Bodmer Scherz</VoiceCommand>
+                    <VoiceCommand>Guten Scherz</VoiceCommand>
+                    <VoiceCommand>Ordner Scherz</VoiceCommand>
+                    <VoiceCommand>Wagner Scherz</VoiceCommand>
+                    <VoiceCommand>Bootsmann Scherz</VoiceCommand>
+                    <VoiceCommand>Butter Scherz</VoiceCommand>
+                    <VoiceCommand>Bootsmann Schatz</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer Scherz</VoiceCommand>
+                    <VoiceCommand>Botha Scherz</VoiceCommand>
+                    <VoiceCommand>Wortmann scherzt</VoiceCommand>
+                    <VoiceCommand>Wortmann Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_13_LaRoche.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Bodmer Scherz</VoiceCommand>
+                    <VoiceCommand>Wagner Scherz</VoiceCommand>
+                    <VoiceCommand>Ordner Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_14_LaRoche.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Bodmer Freundschaft</VoiceCommand>
+                    <VoiceCommand>Bob war Freundschaft</VoiceCommand>
+                    <VoiceCommand>Burkhard Freundschaft</VoiceCommand>
+                    <VoiceCommand>Bootsmann Freundschaft</VoiceCommand>
+                    <VoiceCommand>portmann Freundschaft</VoiceCommand>
+                    <VoiceCommand>Ordner Freundschaft</VoiceCommand>
+                    <VoiceCommand>Wagner Freundschaft</VoiceCommand>
+                    <VoiceCommand>Oder Freundschaft</VoiceCommand>
+                    <VoiceCommand>Partner Freundschaft</VoiceCommand>
+                    <VoiceCommand>borgmann Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_15_LaRoche.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Vorhaben">
+                <VoiceCommandList>
+                    <VoiceCommand>Wortlaut vorhanden</VoiceCommand>
+                    <VoiceCommand>Bootsmann vorgenommen</VoiceCommand>
+                    <VoiceCommand>Bootsmann Vorhaben</VoiceCommand>
+                    <VoiceCommand>Ordner Vorhaben</VoiceCommand>
+                    <VoiceCommand>Wagner Vorhaben</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer Vorhaben</VoiceCommand>
+                    <VoiceCommand>Bootsmann vorhanden</VoiceCommand>
+                    <VoiceCommand>bodenwertvorhaben</VoiceCommand>
+                    <VoiceCommand>Bootsmann Vorhang</VoiceCommand>
+                    <VoiceCommand>Bootsmann Vornamen</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer Vorhang</VoiceCommand>
+                    <VoiceCommand>Ordner vorhanden</VoiceCommand>
+                    <VoiceCommand>Bootsmann Vornamen</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer Vornamen</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_16_LaRoche.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Bootsmann Streit</VoiceCommand>
+                    <VoiceCommand>Ordner Streit</VoiceCommand>
+                    <VoiceCommand>Werner Streit</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer Streit</VoiceCommand>
+                    <VoiceCommand>Partner Streit</VoiceCommand>
+                    <VoiceCommand>Butter Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_17_LaRoche.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Bodmer beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Bootsmann beim auswaehlen</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer beim auswaehlen</VoiceCommand>
+                    <VoiceCommand>Ordner beim auswaehlen</VoiceCommand>
+                    <VoiceCommand>Bootsmann beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Ordner beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Ordnung beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Ordner beim Hause</VoiceCommand>
+                    <VoiceCommand>Wagner beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Botha beim auswaehlen</VoiceCommand>
+                    <VoiceCommand>Portman beim auswaehlen</VoiceCommand>
+                    <VoiceCommand>Wortmann beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Portman beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Botha beim Hausherren </VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_18_LaRoche.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bodmer selbst">
+                <VoiceCommandList>
+                    <VoiceCommand>Bodmer selbst</VoiceCommand>
+                    <VoiceCommand>Wagner selbst</VoiceCommand>
+                    <VoiceCommand>Partner selbst</VoiceCommand>
+                    <VoiceCommand>Oder selbst</VoiceCommand>
+                    <VoiceCommand>Bootsmann selbst</VoiceCommand>
+                    <VoiceCommand>portmann selbst</VoiceCommand>
+                    <VoiceCommand>Ordner selbst</VoiceCommand>
+                    <VoiceCommand>Wohnzimmer selbst</VoiceCommand>
+                    <VoiceCommand>Wortmann selbst</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>2_20_19_LaRoche.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode Gleim</VoiceCommand>
+                    <VoiceCommand>Oder klein</VoiceCommand>
+                    <VoiceCommand>rodel klein</VoiceCommand>
+                    <VoiceCommand>Rudel klein</VoiceCommand>
+                    <VoiceCommand>roder line</VoiceCommand>
+                    <VoiceCommand>Oder nein</VoiceCommand>
+                    <VoiceCommand>Rudel bleiben</VoiceCommand>
+                    <VoiceCommand>ohne klein</VoiceCommand>
+                    <VoiceCommand>Oder drei</VoiceCommand>
+                    <VoiceCommand>rodel Design</VoiceCommand>
+                    <VoiceCommand>rodel line</VoiceCommand>
+                    <VoiceCommand>Oder kleinen</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_10_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode Portrait</VoiceCommand>
+                    <VoiceCommand>Oder Portrait</VoiceCommand>
+                    <VoiceCommand>Mode Portrait</VoiceCommand>
+                    <VoiceCommand>Oder Patrick</VoiceCommand>
+                    <VoiceCommand>Oder Vortraege</VoiceCommand>
+                    <VoiceCommand>Roter Portraet</VoiceCommand>
+                    <VoiceCommand>rodelportraits</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_11_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode Literatur</VoiceCommand>
+                    <VoiceCommand>Guten Literatur</VoiceCommand>
+                    <VoiceCommand>Oder Literatur</VoiceCommand>
+                    <VoiceCommand>Roter Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_12_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Oder zweiter Ereignisse</VoiceCommand>
+                    <VoiceCommand>Oder zeitweise</VoiceCommand>
+                    <VoiceCommand>Oder Zeitalters</VoiceCommand>
+                    <VoiceCommand>Oder zweiter Klasse</VoiceCommand>
+                    <VoiceCommand>Oder Zeitereignisse</VoiceCommand>
+                    <VoiceCommand>Oder Zeit Ereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_13_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode Scherz</VoiceCommand>
+                    <VoiceCommand>Oder Schatz</VoiceCommand>
+                    <VoiceCommand>rodel Scherz</VoiceCommand>
+                    <VoiceCommand>Oder Scherz</VoiceCommand>
+                    <VoiceCommand>Rote Scherz</VoiceCommand>
+                    <VoiceCommand>Bruder Scherz</VoiceCommand>
+                    <VoiceCommand>ohne Schatz</VoiceCommand>
+                    <VoiceCommand>ohne Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_14_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode Freundschaft</VoiceCommand>
+                    <VoiceCommand>Oder Freundschaft</VoiceCommand>
+                    <VoiceCommand>ohne Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_15_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode Vorhaben">
+                <VoiceCommandList>
+                    <VoiceCommand>Oder Vorhaben</VoiceCommand>
+                    <VoiceCommand>Oder vorhanden</VoiceCommand>
+                    <VoiceCommand>Rohr oder Vorhaben</VoiceCommand>
+                    <VoiceCommand>ohne vorhanden</VoiceCommand>
+                    <VoiceCommand>ohne Vorhaben</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_16_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode Aerger">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode Aerger</VoiceCommand>
+                    <VoiceCommand>Rohde Aerger</VoiceCommand>
+                    <VoiceCommand>Oder Berger</VoiceCommand>
+                    <VoiceCommand>Oder Aerger</VoiceCommand>
+                    <VoiceCommand>Rote Aerger</VoiceCommand>
+                    <VoiceCommand>Oder aergern</VoiceCommand>
+                    <VoiceCommand>Oder Aerger</VoiceCommand>
+                    <VoiceCommand>Bruder Aerger</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_17_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode beim Hausherren</VoiceCommand>
+                    <VoiceCommand>Oder beim Hausherren</VoiceCommand>
+                    <VoiceCommand>rodel beim auswaehlen</VoiceCommand>
+                    <VoiceCommand>Oder beim auswaehlen</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_18_Eschenburg.wav</AudioPath>
+                <ReturnCommandList/>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Rode selbst">
+                <VoiceCommandList>
+                    <VoiceCommand>Rode selbst</VoiceCommand>
+                    <VoiceCommand>Oder selbst</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>8</SerialCommand>
+                <AudioPath>2_26_19_Eschenburg.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Hirzel Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Hirzel Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Müller Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Mueller Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Nicolai Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Nicolai Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Kretschmann Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Kretschmann Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Weisse Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Weisse Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klopstock Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Klopstock Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Richter Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Richter Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Lessing Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Lessing Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Herder beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Herder beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>1_17_10_Nicolai.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_10_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_12_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_13_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_14_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_15_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_16_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_17_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_18_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Wieland Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Wieland Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>7</SerialCommand>
+                <AudioPath>2_27_19_Klotz.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Eschenburg Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Eschenburg Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Klotz Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Klotz Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von La Roche Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>von La Roche Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Jacobi Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Jacobi Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Recke Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Recke Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="von Goeckingk Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>von Goeckingk Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Seume Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Seume Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Heinse Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Heinse Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bürger Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Buerger Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bertuch Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Bertuch Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Gleim">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Gleim</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Portrait">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Portrait</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Literatur">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Literatur</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Zeitereignisse">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Zeitereignisse</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Scherz">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Scherz</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Freundschaft">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Freundschaft</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Plaene">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Plaene</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Streit">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Streit</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae beim Hausherren">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae beim Hausherren</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Zachariae Persoenliches">
+                <VoiceCommandList>
+                    <VoiceCommand>Zachariae Persoenliches</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>2</SerialCommand>
+                <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="EasterEgg">
+                <VoiceCommandList>
+                    <VoiceCommand>Ich schwoere feierlich ich bin ein Tunichtgut</VoiceCommand>
+                    <VoiceCommand>Ich schwoere feierlich ich bin einfach nicht gut</VoiceCommand>
+                    <VoiceCommand>Ich schwoere feierlich ich bin ein Tu nicht gut</VoiceCommand>
+                    <VoiceCommand>Ich schwoere feierlich ich bin ein Tool nicht gut</VoiceCommand>
+                    <VoiceCommand>Ich schwoere feierlich ich bin enttaeuscht gut</VoiceCommand>
+                    <VoiceCommand>Ich schwoere feierlich ich bin natuerlich gut</VoiceCommand>
+                    <VoiceCommand>Ich schwoere feierlich ich bin ein ziemlich gut</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>5</SerialCommand>
+                <AudioPath>Fantastic Beasts - abspann.mp3</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
                 <SubMenuList/>
             </GleimMenu>
         </SubMenuList>

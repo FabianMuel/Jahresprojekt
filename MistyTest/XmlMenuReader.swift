@@ -73,7 +73,7 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
             currentMenu.addReturnCommand(command: string)
         }
         
-        print("found characters: <"+string+"> for current element: "+currentElement)
+//        print("found characters: <"+string+"> for current element: "+currentElement)
     }
     
     /*
@@ -81,10 +81,9 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
      */
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?) {
         
-        print("Endelement: "+elementName)
+//        print("Endelement: "+elementName)
         if elementName == "GleimMenu" {
-            print("added <"+currentMenu.getName()+"> to parent <"+parentMenu.getName()+">" )
-        //    parentMenu.addSubMenuElement(element: currentMenu)
+//            print("added <"+currentMenu.getName()+"> to parent <"+parentMenu.getName()+">" )
             currentMenu = parentMenu
             parentMenu = GleimMenu.getParentMenu(childOfParent: currentMenu, searchMenu: topLevelMenu)
         }
@@ -106,7 +105,7 @@ class XmlMenuReader: NSObject, XMLParserDelegate {
                 parentMenu.addSubMenuElement(element: currentMenu)
             }
             currentMenu.setName(name: attributeDict["Name"]!)
-            print("GLEIMMENU NAME: "+attributeDict["Name"]!)
+//            print("GLEIMMENU NAME: "+attributeDict["Name"]!)
         }
     }
 }
