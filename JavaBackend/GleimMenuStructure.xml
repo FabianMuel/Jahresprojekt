@@ -104,7 +104,7 @@
                     <VoiceCommand>Kleinfurra</VoiceCommand>
                     <VoiceCommand>Klein vorbehalten</VoiceCommand>
                     <VoiceCommand>Kleinen Form</VoiceCommand>
-                    <VoiceCommand>Client für haben</VoiceCommand>
+                    <VoiceCommand>Client fuer haben</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>1</SerialCommand>
                 <AudioPath>2_14_10_Gleim_alt.wav</AudioPath>
@@ -1119,7 +1119,7 @@
                     <VoiceCommand>sulzer Vorhaben</VoiceCommand>
                     <VoiceCommand>soll's sehr vorhaben</VoiceCommand>
                     <VoiceCommand>Sylt sehr vorhaben</VoiceCommand>
-                    <VoiceCommand>soll’s sehr Vorhaben</VoiceCommand>
+                    <VoiceCommand>soll's sehr Vorhaben</VoiceCommand>
                 </VoiceCommandList>
                 <SerialCommand>4</SerialCommand>
                 <AudioPath>2_26_16_Eschenburg.wav</AudioPath>
@@ -4009,6 +4009,34 @@
                 </VoiceCommandList>
                 <SerialCommand>2</SerialCommand>
                 <AudioPath>pling.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bilder sprecht">
+                <VoiceCommandList>
+                    <VoiceCommand>Bilder sprecht</VoiceCommand>
+                    <VoiceCommand>Peter spricht</VoiceCommand>
+                    <VoiceCommand>Bilder spricht</VoiceCommand>
+                    <VoiceCommand>Peter sprecht</VoiceCommand>
+                    <VoiceCommand>Bilder sprechen</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>1</SerialCommand>
+                <AudioPath>programHoert.wav</AudioPath>
+                <ReturnCommandList>
+                    <ReturnCommand/>
+                </ReturnCommandList>
+                <SubMenuList/>
+            </GleimMenu>
+            <GleimMenu Name="Bilder schweigt">
+                <VoiceCommandList>
+                    <VoiceCommand>Bilder schweigt</VoiceCommand>
+                    <VoiceCommand>Bilder schreibt</VoiceCommand>
+                    <VoiceCommand>Peter schweigt</VoiceCommand>
+                </VoiceCommandList>
+                <SerialCommand>1</SerialCommand>
+                <AudioPath>programmHoertNicht.wav</AudioPath>
                 <ReturnCommandList>
                     <ReturnCommand/>
                 </ReturnCommandList>

@@ -23,6 +23,7 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     var player = AVAudioPlayer()
     var serialPort = ORSSerialPort(path: "/dev/cu.usbmodem1461")
     var audioIsPlaying = false
+    var programIsListening = true
 
     @IBOutlet var textField: NSTextField!
     
@@ -159,29 +160,39 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
      Resets timer, changes the menu if needed and calls the functions to play the audio.
      */
     func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
-        if audioIsPlaying==false {
+        if audioIsPlaying==false{
             print(command)
             
             for menuElement in currentMenu.getSubMenuList() {
                 for elementCommand in menuElement.getOwnCommandList() {
                     if elementCommand == command {
-                        
-                        self.sendDataToSP(commandData: menuElement.getSerialCommand())
-                        
-                        let audioFilePath = menuElement.getAudioFilePath()
-                        if audioFilePath != "" {
-                            Timer.scheduledTimer(withTimeInterval: soundDelay, repeats: false) { (soundDelay) in
-                                self.playSound(file: menuElement.getAudioFilePath(), ext: "")
-                            }
+                        if  programIsListening == true && menuElement.getName() == "Bilder schweigt"{
+                            programIsListening = false
+                            writeToTextWindow("Programm gestoppt")
+                            
+                            prepareSound(menuElement: menuElement)
+                            
+                        }else if programIsListening == false && menuElement.getName() == "Bilder sprecht" {
+                            programIsListening = true
+                            writeToTextWindow("Programm fortgesetzt")
+                            
+                            prepareSound(menuElement: menuElement)
+
+                        }else if programIsListening == true{
+                            
+                            self.sendDataToSP(commandData: menuElement.getSerialCommand())
+                            
+                            prepareSound(menuElement: menuElement)
+                            
+//                            if menuElement.getSubMenuCommandList().count != 0{
+//                                currentMenu = menuElement
+//                                updateSpeechCommands()
+//                                print("changed")
+//                            }
+                            
+                            writeToTextWindow(command + " --> " + menuElement.getName())
                         }
-                        
-                        if menuElement.getSubMenuCommandList().count != 0{
-                            currentMenu = menuElement
-                            updateSpeechCommands()
-                            print("changed")
-                        }
-                        
-                        writeToTextWindow(command + " --> " + menuElement.getName())
+
                         return
                     }
                 }
@@ -196,6 +207,19 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
                 //            }
                 //        }
                 
+            }
+        }
+        else if programIsListening == false{
+            programIsListening = true
+            writeToTextWindow("Programm wird fortgesetzt")
+        }
+    }
+    
+    func prepareSound(menuElement: GleimMenu) {
+        let audioFilePath = menuElement.getAudioFilePath()
+        if audioFilePath != "" {
+            Timer.scheduledTimer(withTimeInterval: soundDelay, repeats: false) { (soundDelay) in
+                self.playSound(file: menuElement.getAudioFilePath(), ext: "")
             }
         }
     }
