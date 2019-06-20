@@ -1,30 +1,19 @@
 //  MistyTest
 //
-<<<<<<< HEAD
 //  Created by Jahresprojekt2017/18/19 on 13.02.2019
 //  Copyright © 2019 Ivo Max Muellner, Eiko Eickhoff, Gina Schlott
 //  All rights reserved
-=======
-//  Created by Jahresprojekt2017/18 on 08.04.18.
-//  Copyright © 2018 Ivo Max Muellner, Gina Schlott, Eiko Eickhoff
-// All rights reserved
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
 
 import Cocoa
 import AVFoundation
 
 
-<<<<<<< HEAD
-=======
-
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
 /*
  Main - connects Code and Storybord
  Sets the menus, commandlists and audiosamples.
  Plays sound on command.
  Updates programm, if a command is recoginized or the timer is up.
  */
-<<<<<<< HEAD
 class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDelegate, ORSSerialPortDelegate, FileStalkerDelegate{
     
     @IBOutlet var textField: NSTextField!
@@ -35,19 +24,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     
     var speechRecognizer = NSSpeechRecognizer()
     var player = AVAudioPlayer()
-=======
-class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDelegate, ORSSerialPortDelegate, FileStalkerDelegate, WindowControllerDelegate {
-    
-    let window = WindowController()
-    
-    var speechRecognizer = NSSpeechRecognizer()
-    var player = AVAudioPlayer()
-    var serialPort = ORSSerialPort(path: "/dev/cu.usbmodem1461")
-    var audioIsPlaying = false
-    var programIsListening = true
-
-    @IBOutlet var textField: NSTextField!
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     
     var serialPort = ORSSerialPort(path: "/dev/cu.usbmodem1471")
     
@@ -67,7 +43,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     var currentMenu = GleimMenu()
     
     var timer = Timer()
-<<<<<<< HEAD
     var timerPause = Timer()
     var timerTopicReset = Timer()
     var tX = Timer()
@@ -76,17 +51,10 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     let timerPauseInterval = 900.0 //when nobody said something since 15 min
     let timerTopicInterval = 30.0 //when nobody said a Topic since 30 sec
     
-=======
-    let timerInterval = 1.0 //TimeOut und reset auf TopLevelMenu in Sekunden (double)
-    let soundDelay = 0.4
-    
-    //let stopCommand = "stop"
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     let stopCommandSerial = "0"
     
-    let fileStalker = FileStalker(timerInterval: 0.05, filename: "/Applications/MAMP/htdocs/Gleimhaus/personen/file.txt")
+//    let fileStalker = FileStalker(timerInterval: 0.05, filename: "/Applications/MAMP/htdocs/Gleimhaus/personen/file.txt")
    
-    
     
     /*
      Gets serialport for the arduino and creates the menu.
@@ -95,16 +63,8 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.window?.delegate = self
-<<<<<<< HEAD
         view.layer?.zPosition = .greatestFiniteMagnitude
         view.window?.level = .floating
-=======
-        
-        window.delegate = self
-        
-        
-        _ = XmlMenuReader(menuCreator: menuCreator)
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
         
         let spm = ORSSerialPortManager()
         let s = spm.availablePorts
@@ -118,11 +78,7 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
         for port in s {
             if port.name.contains("usbmodem") {
                 serialPort = ORSSerialPort(path: port.path)
-<<<<<<< HEAD
                 writeToTextExtraWindow("Port-Name: " + port.name)
-=======
-                writeToTextWindow("Port-Name: " + port.name)
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
             }
         }
         serialPort?.delegate=self
@@ -130,15 +86,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
         serialPort?.open()
         
         speechRecognizer?.delegate = self
-<<<<<<< HEAD
-=======
-        /*    while !xml.complete {
-         //wait
-         } */
-        topLevelMenu = menuCreator.getMenu()
-        currentMenu = topLevelMenu
-        updateSpeechCommands()
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
         speechRecognizer?.blocksOtherRecognizers = false
         speechRecognizer?.listensInForegroundOnly = false
         speechRecognizer?.startListening()  //laesst recognizer auf befehle hoeren
@@ -150,7 +97,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
             self.keyDown(with: $0)
             return $0
         }
-<<<<<<< HEAD
         NSEvent.addLocalMonitorForEvents(matching: .keyDown){
             if self.keyDownO(with: $0){
                 return nil
@@ -171,42 +117,17 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     }
 
 
-=======
-        writeToTextWindow("Fertig geladen!!!")
-        playSound(file: "SystemFertigGeladen", ext: "wav")
-    }
-    
-    
-    func systemStopp() {
-        print("systemStopp")
-        Light_Audio_Out()
-        exit(0)
-    }
-    
-    
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     /*
      -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
                                 S P R A C H E R K E N N U N G    H A N D L I N G
      -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
      */
-<<<<<<< HEAD
    
-=======
-    func updateSpeechCommands() {
-        var newCommands = currentMenu.getSubMenuCommandList()
-        newCommands.append(contentsOf: currentMenu.getReturnCommandList())
-        //newCommands.append(stopCommand)
-        //muss noch entfernd werden, wenn das Projekt abgegeben wird
-        speechRecognizer?.commands=newCommands
-    }
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     
     /*
      Is called when the speechRecognizer hears a known command.
      Resets timer, changes the menu if needed and calls the functions to play the audio.
      */
-<<<<<<< HEAD
     func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
         if audioIsPlaying==false{
             for menuElement in currentMenu.getSubMenuList() {
@@ -320,19 +241,12 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
                 }
             }
         }
-=======
-    func sendDataToSP(commandData: String) {
-       
-        serialPort?.send(commandData.data(using: .utf8)!)
-        
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     }
     
     
     
     
     /*
-<<<<<<< HEAD
      Turn off the light and stop audio
      */
     @objc func Light_Audio_Out(){
@@ -343,22 +257,10 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
         writeToTextExtraWindow("lightsOut")
         audioIsPlaying = false
         detectTopics = false
-=======
-     Put out the light and stop audio
-     */
-    @objc func Light_Audio_Out(){
-        print("Licht aus")
-        sendDataToSP(commandData: stopCommandSerial)
-        //        if(player.isPlaying) {
-        player.stop()
-        //        }
-        audioIsPlaying = false
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     }
 
     
     /*
-<<<<<<< HEAD
      -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
                                                 A U D I O    S T U F F
      -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
@@ -385,7 +287,7 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
             resetTimer(1)
         }
         
-        let url = URL(fileURLWithPath: NSHomeDirectory()+"/Desktop/Gleim300Assets/"+file+".wav")
+        let url = URL(fileURLWithPath: NSHomeDirectory()+"/Desktop/Gleim300Assets/soundfiles/"+file+".wav")
         
         do {
             player = try AVAudioPlayer(contentsOf: url)
@@ -397,30 +299,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
         } catch let error {
             print(error.localizedDescription)
         }
-=======
-     Resets and starts the timer to put out the light and stop audio.
-     */
-    func resetTimer(_ duration: Double){
-        timer.invalidate()
-        startTimer(duration)
-    }
-    
-    /*
-     Starts a timer, that is needed for going back if the user didn't say anything after a certain time.
-     */
-    func startTimer(_ duration: Double){
-        print("Timer gestartet " + String(duration))
-        timer = Timer.scheduledTimer(timeInterval: duration, target: self, selector: #selector(Light_Audio_Out), userInfo: nil, repeats: false)
-    }
-    
-    /*
-     Calls the function sending the data, if said data was changed.
-     Aufruf in FileStalker
-     */
-    func fileContentChanged(fileSerialCommand serialCommand: String, fileAudio audiofile: String) {
-        sendDataToSP(commandData: serialCommand)
-        playSound(file: audiofile, ext: "")
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     }
     
 
@@ -433,7 +311,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     /*
      Turn off the light
      */
-<<<<<<< HEAD
     @objc func Light_Out(){
         sendDataToSP(commandData: stopCommandSerial)
         writeToTextExtraWindow("lightsOut")
@@ -447,91 +324,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
         } else {
             writeToTextExtraWindow("Arduino getrennt (Port geschlossen)")
             statusAendern(4)
-=======
-    func speechRecognizer(_ sender: NSSpeechRecognizer, didRecognizeCommand command: String) {
-        if audioIsPlaying==false{
-            print(command)
-            
-            for menuElement in currentMenu.getSubMenuList() {
-                for elementCommand in menuElement.getOwnCommandList() {
-                    if elementCommand == command {
-                        if  programIsListening == true && menuElement.getName() == "Bilder schweigt"{
-                            programIsListening = false
-                            writeToTextWindow("Programm gestoppt")
-                            
-                            prepareSound(menuElement: menuElement)
-                            
-                        }else if programIsListening == false && menuElement.getName() == "Bilder sprecht" {
-                            programIsListening = true
-                            writeToTextWindow("Programm fortgesetzt")
-                            
-                            prepareSound(menuElement: menuElement)
-
-                        }else if programIsListening == true{
-                            
-                            self.sendDataToSP(commandData: menuElement.getSerialCommand())
-                            
-                            prepareSound(menuElement: menuElement)
-                            
-//                            if menuElement.getSubMenuCommandList().count != 0{
-//                                currentMenu = menuElement
-//                                updateSpeechCommands()
-//                                print("changed")
-//                            }
-                            
-                            writeToTextWindow(command + " --> " + menuElement.getName())
-                        }
-
-                        return
-                    }
-                }
-                // ?
-                //        for returnCommand in currentMenu.getReturnCommandList(){
-                //            if returnCommand == command {
-                //                sendDataToSP(commandData: stopCommandSerial)
-                //                currentMenu = topLevelMenu
-                //                updateSpeechCommands()
-                //                resetTimer(1)
-                //                return
-                //            }
-                //        }
-                
-            }
-        }
-        else if programIsListening == false{
-            programIsListening = true
-            writeToTextWindow("Programm wird fortgesetzt")
-        }
-    }
-    
-    func prepareSound(menuElement: GleimMenu) {
-        let audioFilePath = menuElement.getAudioFilePath()
-        if audioFilePath != "" {
-            Timer.scheduledTimer(withTimeInterval: soundDelay, repeats: false) { (soundDelay) in
-                self.playSound(file: menuElement.getAudioFilePath(), ext: "")
-            }
-        }
-    }
-    
-    /*
-     Plays the audio.
-     */
-    func playSound(file:String, ext:String) -> Void {
-        
-        let url = Bundle.main.url(forResource: file, withExtension: ext)!
-        
-        //print(url)
-        do {
-            player = try AVAudioPlayer(contentsOf: url)
-            //       guard let player = player else { return }
-            
-            player.prepareToPlay()
-            player.play()
-            audioIsPlaying = true
-            resetTimer(player.duration-soundDelay);
-        } catch let error {
-            print(error.localizedDescription)
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
         }
     }
     
@@ -543,7 +335,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     }
     
     func serialPortWasRemoved(fromSystem serialPort: ORSSerialPort) {
-<<<<<<< HEAD
         writeToTextExtraWindow("Arduino getrennt (Port geschlossen)")
         arduinoConnected = false
         statusAendern(4)
@@ -556,21 +347,11 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     }
     func serialPort(_ serialPort: ORSSerialPort, didReceive data: Data) {
 //        writeToTextWindow("Port: \(data)")
-=======
-        writeToTextWindow("Arduino getrennt (Port geschlossen)")
-    }
-    func serialPortWasOpened(_ serialPort: ORSSerialPort) {
-        writeToTextWindow("Arduino verbunden (Port geöffnet)")
-    }
-    func serialPort(_ serialPort: ORSSerialPort, didReceive data: Data) {
-//        print("Port: \(data)")
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     }
     func serialPort(_ serialPort: ORSSerialPort, didEncounterError error: Error) {
         print(error)
     }
     
-<<<<<<< HEAD
     
     /*
      -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -   -
@@ -646,20 +427,11 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     */
     
     var temp = ""
-=======
-    override var representedObject: Any? {
-        didSet {
-            // Update the view, if already loaded.
-        }
-    }
-    
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
     /*
      Backup plan in case the audiolistener doesn't work anymore.
      Plays the sound via keyinput.
      This method is only needed for debugging and testing new things.
      */
-<<<<<<< HEAD
     func keyDownO(with event: NSEvent) -> Bool{
         if event.keyCode == 53 || event.keyCode == 116 || event.keyCode == 121 || (event.keyCode != 49 && event.keyCode != 36){ //esc Taste
             Audio_Out()
@@ -767,19 +539,10 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
             if !menuElement.isTopic() && !menuElement.isPause() {
                 portraits.append([menuElement.getAudioFilePath(),menuElement.getName(),String(menuElement.getSerialCommand())])
             }
-=======
-    override func keyDown(with event: NSEvent) {
-        if event.keyCode == 53 { //esc Taste
-            sendDataToSP(commandData: stopCommandSerial)
-            print("esc")
-            player.stop()
-            resetTimer(1)
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
         }
     }
     
     /*
-<<<<<<< HEAD
      Calls the function sending the data, if said data was changed.
      Aufruf in FileStalker
      */
@@ -815,70 +578,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
         Light_Audio_Out()
         exit(0)
     }
-=======
-     Closes the app, put out light and audio
-     */
-    @IBAction func closeApp(_ sender: NSButton) {
-        Light_Audio_Out()
-        exit(0)
-    }
-    
-    func writeToTextWindow(_ str:String){
-        var tempText = textField.stringValue
-        tempText.append("\n")
-        tempText.append(str)
-        textField.stringValue = tempText
-    }
-    
-    
-    //    func windowShouldClose(_ sender: NSWindow) -> Bool{
-    //        print("sollte beenden")
-    //        Light_Audio_Out()
-    //        exit(0)
-    //    }
-    
-    //    func windowWillClose(notification: NSNotification) {
-    //        Light_Audio_Out()
-    //        exit(0)
-    //    }
-    
-    //    override func windowDidLoad() {
-    //        self.view.window?.delegate = self
-    //    }
-    
-    //    override func viewDidAppear() {
-    //        self.view.window?.delegate = self
-    //        self.window.delegate = self
-    //    }
-    
-    //    private func windowShouldClose(_ sender: Any) {
-    //        print("sollte beenden")
-    //        Light_Audio_Out()
-    //        exit(0)
-    //    }
-    
-    //    func lichterAlleAus() {
-    //        sendDataToSP(commandData: stopCommandSerial)
-    //    }
-    
-    /*
-     GERADE NICHT GENUTZT?
-     Updates the menu and commands if the menu is reset to main menu.
-     */
-    //    @objc func resetMenu() {
-    //        print("reset commands")
-    //        sendDataToSP(commandData: stopCommandSerial)
-    //        if(player.isPlaying) {
-    //            player.stop()
-    //        }
-    //        resetTimer(1)
-    //        currentMenu = topLevelMenu
-    //        updateSpeechCommands()
-    //    }
-    
-    
-}
->>>>>>> 1dc483a5da9928c4bc560be69a26411895c6ef8a
 
     
 }
