@@ -19,15 +19,17 @@ class GleimMenu{
     private var commandList = [String]()
     private var serialCommand = ""
     private var returnCommandList = [String]()
+    private var topic = false
     
     /*constructor*/
-    init(name: String, subMenu: Array<GleimMenu>, audioFilePath: String, commandList: Array<String>, serialCommand: String, returnCommandList: Array<String>){
+    init(name: String, subMenu: Array<GleimMenu>, audioFilePath: String, commandList: Array<String>, serialCommand: String, returnCommandList: Array<String>, topic: Bool){
         self.name=name
         self.subMenuList=subMenu
         self.audioFilePath=audioFilePath
         self.commandList=commandList
         self.serialCommand=serialCommand
         self.returnCommandList=returnCommandList
+        self.topic=topic
     }
     
     init(name: String){
@@ -91,6 +93,24 @@ class GleimMenu{
         return returnCommandList
     }
     
+    public func isTopic() -> Bool {
+//        if getName()=="Gleim" || getName()=="Portrait" || getName()=="Literatur" || getName()=="Zeitereignisse" || getName()=="Scherz" || getName()=="Freundschaft" || getName()=="Projekte" || getName()=="Streit" || getName()=="beim Hausherren" || getName()=="selbst" {
+//            return true
+//        } else {
+//            return false
+//        }
+        return topic
+        
+    }
+    public func isPause() -> Bool {
+        if getSerialCommand()=="0" {
+            return true
+        } else {
+            return false
+        }
+        
+    }
+    
     public func setName(name: String) {
         self.name=name
     }
@@ -121,6 +141,9 @@ class GleimMenu{
     
     public func addReturnCommand(command: String){
         returnCommandList.append(command)
+    }
+    public func setIsTopic(topic: Bool){
+        self.topic = topic
     }
     
 }
