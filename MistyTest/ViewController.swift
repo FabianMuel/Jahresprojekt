@@ -90,8 +90,9 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
         speechRecognizer?.listensInForegroundOnly = false
         speechRecognizer?.startListening()  //laesst recognizer auf befehle hoeren
         
-        fileStalker.delegate = self
-        fileStalker.startStalking() //start listening to file and notify when content changed
+        // für die mobile website auf Tablet zum abfragen der Änderungen in datei
+//        fileStalker.delegate = self
+//        fileStalker.startStalking() //start listening to file and notify when content changed
         
         NSEvent.addLocalMonitorForEvents(matching: .keyDown) {
             self.keyDown(with: $0)
@@ -140,7 +141,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
                             statusAendern(3)    //Programm pausiert
                             
                             playSound(file:"pause", ext:"wav")  //Pausieren Sound abspielen
-//                            prepareSound(menuElement: menuElement)  //Pausieren Sound abspielen
                             timerPause.invalidate() //Timer stoppen
                             detectTopics = false
                             
@@ -154,7 +154,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
                                 statusTextCell.stringValue = "Fehler, Arduino getrennt"
                             }
                             playSound(file:"aktiv", ext:"wav")  //Pausieren Sound abspielen
-//                            prepareSound(menuElement: menuElement)
                             
                             // neuen timer starten
                             timerPause.invalidate()
@@ -198,37 +197,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
                             // der timer wird neu gestartet
                             timerPause.invalidate()
                             startTimerForPause()
-                            
-                        // wenn thema gesagt wird, ohne dass ein portrait aktiv ist
-                        }else if isListening == true && detectTopics == false && menuElement.isTopic(){
-                            
-//                            // nur bei bedarf aktivierbar
-//
-//                            // zufällig wird ein portrait ausgewählt, daten ausgelesen und gespeichert
-//                            let randName = portraits[Int(arc4random_uniform(UInt32(portraits.count)))]
-//                            audioPathPart1 = randName[0]
-//                            audioPathPart2 = menuElement.getAudioFilePath()
-//                            audioPathPart3 = randName[1]
-//
-//                            // gibt den befehl in das ausgabe fenster
-//                            writeToTextWindow(command + " --> " + menuElement.getName() + " - " + audioPathPart3)
-//
-//                            // licht wird an gemacht
-//                            self.sendDataToSP(commandData: randName[2])
-//
-//                            // timer werden neu gestartet
-//                            timerPause.invalidate()
-//                            startTimerForPause()
-//                            startTopicTimer()
-//
-//                            // audio pfad wird zusammengesetzt und abgespielt
-//                            Timer.scheduledTimer(withTimeInterval: soundDelay, repeats: false) { (soundDelay) in
-//                                self.playSound(file: self.audioPathPart1 + self.audioPathPart2 + self.audioPathPart3 + ".wav", ext: "")
-//
-//                            }
-//                            timerPause.invalidate()
-//                            startTimerForPause()
-//
                         }
                         
                         if menuElement.getSubMenuCommandList().count != 0{
@@ -409,13 +377,7 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     func stopTopicTimer(){
         timerTopicReset.invalidate()
     }
-//    //debugging timer
-//    func intervalShowTimer(){
-//        tX = Timer.scheduledTimer(timeInterval: 3, target: self, selector: #selector(showTimer), userInfo: nil, repeats: true)
-//    }
-//    @objc func showTimer(){
-//        writeToTextExtraWindow(String(Int(timerPause.fireDate.timeIntervalSince(Date()))))
-//    }
+
     
     
     
@@ -563,8 +525,6 @@ class ViewController: NSViewController, NSWindowDelegate, NSSpeechRecognizerDele
     func restartProgram(){
         // does nothing
     }
-    
-    
     
     /*
      Closes the app, put out light and audio
